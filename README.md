@@ -35,7 +35,7 @@ Personal repository for learning and practicing web components techniques throug
 | 20  | Plan Section                           | CSS Transform, CSS Nesting        |
 
 
- 020.Plan Section (2.5D)
+
  021.Coupon in Corner
  022.Gradient Background
  023.Simple Privacy Dropdown 
