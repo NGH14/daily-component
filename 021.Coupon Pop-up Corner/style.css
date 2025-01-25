@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100vh;
+	width: 100%;
+	font-family: 'Inter', serif;
+	background-color: #0f1115;
+	color: #fafafa;
+}
+
+main {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+button {
+  background-color: transparent;
+  outline: transparent;
+  border: transparent;
+}
+
+.coupon__popup {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+
+  height: 75px;
+	font-size: 0.75rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+  
+	gap: 20px;
+	padding: 15px;
+
+
+	background-color: #19191b;
+	border: 1px dashed #e4e4e7;
+	border-radius: 10px;
+
+	.coupon__text {
+		color: #888;
+	}
+}
+
+.coupon__title {
+	position: relative;
+	.coupon__title--image {
+	
+		height: 55px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    fill: #19191b;
+    stroke: 1px #999;
+  }
+  .coupon__title--text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+  }
+}
+
+.coupon__close {
+  position: absolute;
+  color: #e4e4e7;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
+}

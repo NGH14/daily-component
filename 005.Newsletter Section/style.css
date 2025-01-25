@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(#F9FAFB, #D2D6DB);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Main container */
+.newsletter {
+  width: 95vw;
+  height: 95vh;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 16px 120px;
+}
+
+/* Left column */
+.newsletter__content {
+  flex: 1;
+}
+
+/* Main heading */
+.newsletter__content h2 {
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+/* Benefits list */
+.newsletter__benefits {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.newsletter__benefits li {
+  margin-bottom: 8px;
+  color: #525252;
+}
+
+/* Form styling */
+.form__input-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.form__input-group input {
+  border: 1px solid #525252;
+  width: 65%;
+  margin-right: 15px;
+  height: 38px;
+  padding: 10px;
+}
+
+.button--primary {
+  background: #4338CA;
+  color: white;
+  padding: 5px 12px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Right column - Image */
+.newsletter__image {
+  flex: 1;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.newsletter__image img {
+  width: 100%;
+  height: 75%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Helper text */
+.form__hint {
+  color: #525252;
+  margin: 8px 0;
+}
+
+/* Error message */
+.form__error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+/* Success message */
+.newsletter__success {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  background: #F0FDF4;
+  border: 1px solid #BBF7D0;
+  padding: 5px;
+  border-radius: 10px;
+  color: #15803D;
+  line-height: 24px;
+  font-size: 12px;
+  transform: translateX(-50%);
+}
+
+.badge--success {
+  border: 1px solid;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: white;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 1024px) {
+  .newsletter {
+    display: block;
+    padding: 30px;
+    overflow: auto;
+  }
+
+  .newsletter__content {
+    width: 100%;
+  }
+
+  .newsletter__image {
+    width: 100%;
+    height: auto;
+    margin-top: 35px;
+  }
+
+  .newsletter__image img {
+    width: 100%;
+    height: 40%;
+    margin: 0;
+    border-radius: 18px;
+  }
+
+  .newsletter__success {
+    width: 80%;
+  }
+}

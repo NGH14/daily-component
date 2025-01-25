@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+form {
+  font-size: 20px;
+  padding: 20px 40px;
+}
+
+.form_container {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: white;
+
+  overflow: hidden;
+  max-width: 100%;
+
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.form_header {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 0;
+  margin-bottom: 3rem;
+
+  /*   margin: 0; */
+}
+
+.form_header h2 {
+  font-size: 2.5rem;
+}
+
+.form_header>p {
+  font-size: 1.35rem;
+  width: 100%;
+  /*   margin: 0; */
+}
+
+.form_control label {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+lable,
+input {
+  display: block;
+  margin: 1rem 0;
+  border-radius: 4px;
+
+  padding: 1rem;
+  width: 100%;
+  min-height: 4rem;
+}
+
+.form_control {
+  position: relative;
+}
+
+.form_control input {
+  margin-bottom: 30px;
+}
+
+.form_message {
+  position: absolute;
+  visibility: hidden;
+
+  top: 8rem;
+  left: 3px;
+
+  font-size: 1.155rem;
+  color: red;
+}
+
+.form_control-error input {
+  border: 3px solid red;
+}
+
+.form_control-success input {
+  border: 3px solid green;
+}
+
+.form_control-error .form_message {
+  visibility: visible;
+  cursor: not-allowed;
+}
+
+.form-submit {
+  display: block;
+  padding: 10px;
+  margin: 30px auto;
+
+  width: 100%;
+  height: 50%;
+
+  border-radius: 4px;
+  color: #fff;
+  background-image: linear-gradient(to right, #2db78d, #1fc898);
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.form_control i {
+  position: absolute;
+  visibility: hidden;
+  right: 15px;
+  top: 5rem;
+  transform: scale(1.25, 1.25);
+}
+
+.form_control-error i.fa-exclamation-circle {
+  visibility: visible;
+  color: red;
+}
+
+.form_control-success i.fa-check-circle {
+  visibility: visible;
+  color: green;
+}
+
+button:disabled {
+  border: 1px solid #999999;
+
+  opacity: 0.2;
+  cursor: not-allowed;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Hero Section</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+
+		<style></style>
+	</head>
+	<body>
+		<section class="newsletter">
+			<article class="newsletter__content">
+				<header>
+					<h2>
+						Get the finest curated abstracts delivered weekly to your inbox
+					</h2>
+				</header>
+
+				<nav>
+					<ul class="newsletter__benefits">
+						<li>Exclusive access to new abstract images and collections</li>
+						<li>Unlock special promotions only for subscribers</li>
+						<li>Regular doses of artistic inspirations</li>
+					</ul>
+				</nav>
+
+				<form class="newsletter__form" id="newsletter-form">
+					<fieldset class="form__input-group">
+						<label for="email" class="visually-hidden">Email address</label>
+						<input
+							id="email"
+							name="email"
+							placeholder="Enter your email"
+							required
+						/>
+						<button type="submit" class="button button--primary">
+							Subscribe
+						</button>
+					</fieldset>
+
+					<output
+						id="error-message"
+						class="form__error"
+						role="alert"
+						aria-live="polite"
+					></output>
+					<p id="email-hint" class="form__hint">
+						We only send you the best! No spam.
+					</p>
+				</form>
+			</article>
+
+			<figure class="newsletter__image">
+				<img
+					src="assets/abstract.webp"
+					alt="Abstract art piece showcasing newsletter content"
+				/>
+			</figure>
+
+			<output
+				class="newsletter__success"
+				id="success-message"
+				hidden
+				role="alert"
+			>
+				<strong class="badge badge--success">Success</strong>
+				<p>Subscription successful! Please check your email to confirm</p>
+			</output>
+		</section>
+		<script type="module" src="index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,116 @@
+:root {
+	--color-primary-bg: #f9fafb;
+	--color-primary-border: currentColor;
+	--color-primary-text: #525252;
+
+	--color-danger-bg: #fef2f2;
+	--color-danger-border: currentColor;
+	--color-danger-text: #dc2626;
+
+	--color-warning-bg: #fffbeb;
+	--color-warning-border: currentColor;
+	--color-warning-text: #b45309;
+
+	--color-success-bg: #f0fdf4;
+	--color-success-border: currentColor;
+	--color-success-text: #15803d;
+
+	--color-brand-bg: #eef2ff;
+	--color-brand-border: currentColor;
+	--color-brand-text: #4338ca;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Metrophobic', sans-serif;
+	height: 100vh;
+	width: 100%;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.badge__section {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.badge__variants {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+
+	p {
+		display: inline;
+	}
+}
+
+.badge {
+	border-radius: 9999px;
+	text-align: center;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.badge--size-sm {
+	height: 20px;
+	padding: 1px 5px;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.badge--size-md {
+	height: 24px;
+	padding: 1px 7px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.badge--size-lg {
+	height: 28px;
+	padding: 3px 9px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.badge--color-primary {
+	background: var(--color-primary-bg);
+	border-color: var(--color-primary-border);
+	color: var(--color-primary-text);
+}
+
+.badge--color-danger {
+	background: var(--color-danger-bg);
+	border-color: var(--color-danger-border);
+	color: var(--color-danger-text);
+}
+
+.badge--color-warning {
+	background: var(--color-warning-bg);
+	border-color: var(--color-warning-border);
+	color: var(--color-warning-text);
+}
+
+.badge--color-success {
+	background: var(--color-success-bg);
+	border-color: var(--color-success-border);
+	color: var(--color-success-text);
+}
+
+.badge--color-brand {
+	background: var(--color-brand-bg);
+	border-color: var(--color-brand-border);
+	color: var(--color-brand-text);
+}

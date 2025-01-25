@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	font-family: 'Gabarito', serif;
+	background-color: #0f1115;
+	color: #fafafa;
+}
+
+.plan__box {
+	height: 100%;
+	gap: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: perspective(400px);
+	transform-style: preserve-3d;
+}
+
+.plan__card--left,
+.plan__card--right {
+	height: max-content;
+	width: 300px;
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	gap: 20px;
+	align-items: flex-start;
+
+	padding: 30px 20px;
+	color: #fafafa;
+	border-radius: 10px;
+	border: 2px solid rgb(43, 50, 61);
+
+	background-color: #12141a;
+
+	li {
+		list-style: none;
+	}
+
+	.plan__price,
+	.plan__title {
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+}
+
+.plan__card--left {
+	will-change: transform;
+	transform: rotateY(10deg);
+	.plan__button {
+		width: 100%;
+		min-height: fit-content;
+		background-color: #fafafa;
+		padding: 10px;
+		font-weight: 700;
+		border-radius: 5px;
+		border: transparent;
+	}
+}
+.plan__card--right {
+	will-change: transform;
+	transform: rotateY(355deg);
+	.plan__button {
+		width: 100%;
+		min-height: fit-content;
+		background-color: #f3e815;
+		padding: 10px;
+		font-weight: 700;
+		border-radius: 5px;
+		border: transparent;
+	}
+}
+
+.plan__feature--items {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.plan__feature--icon > svg {
+	height: 15px;
+	width: 15px;
+}
+
+.plan__note {
+	font-size: 0.8rem;
+	font-weight: 400;
+	color: #888;
+	width: 100%;
+	text-align: center;
+}

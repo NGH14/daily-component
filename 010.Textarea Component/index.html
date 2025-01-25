@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<header>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Day #9: Versatile Textarea Component</title>
+		<link rel="stylesheet" href="style.css" />
+	</header>
+	<body>
+		<section class="description">
+			<section id="description__primary">
+				<label for="description__primary--textarea">Description</label>
+				<textarea
+					id="description__primary--textarea"
+					title="Description"
+					placeholder="Write your message..."
+					rows="4"
+					cols="50"
+				></textarea>
+				
+        <section class="description__primary--counter">
+					<p id="error_message">Please shorten your description</p>
+					
+					<p class="counter">
+						<span id="counter_current">0</span><span id="counter_total">&#47;500</span>
+					</p>
+					
+				</section>
+			</section>
+
+		</section>
+	
+		<script src="script.js"></script>		
+</body>
+</html>

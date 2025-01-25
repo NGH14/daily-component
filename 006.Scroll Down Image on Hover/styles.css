@@ -1,0 +1,25 @@
+body {
+  background-color: #777876;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  color: #F0F3F7;
+}
+
+.img-wrapper {
+  border-radius: 8px;
+  height: 500px;
+  overflow: hidden;
+}
+
+img {
+  transform: translateY(0%);
+  transition: transform .8s cubic-bezier(.4, .6, .8, 1);
+}
+
+img:hover {
+  transform: translateY(calc(-100% + 500px));
+}
