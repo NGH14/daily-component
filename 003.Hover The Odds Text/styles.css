@@ -1,0 +1,53 @@
+
+
+body {
+  background-color: #778877;
+  font-family: "Lato", sans-serif;
+}
+
+.text {
+  line-height: 1.2;
+  font-size: 100px;
+  width: rem;
+  display: inline-block;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.25s linear;
+  color: #111414;
+}
+
+.text:before {
+  padding: 0;
+  content: "";
+  position: absolute;
+  bottom: 35%;
+  left: auto;
+  right: 0;
+  width: 0;
+  height: 8%;
+  border-radius: 80px;
+  background-color: #e74c3c;
+  transform: translateY(-50%);
+
+  transition: .8s cubic-bezier(0.4, 0, 0, 1);
+  z-index: 1;
+}
+
+.text:hover:before {
+  width: 100%;
+  right: auto;
+  left: 0;
+}
+
+
+.wrap {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+span:nth-child(even) {
+  position: relative;
+  z-index: 2;
+}
