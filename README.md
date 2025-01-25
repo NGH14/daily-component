@@ -31,10 +31,10 @@ Personal repository for learning and practicing web components techniques throug
 | 16  | Text Blurring                          | CSS Child Combinator              |
 | 17  | System Badge                           | CSS currentColor, Flexbox         |
 | 18  | Tooltip                                | HTML Sematic Tag                  |
+| 19  | Fading Cirle                           | CSS Transition, CSS Position      |
+| 20  | Plan Section                           | CSS Transform, CSS Nesting        |
 
 
- 018.Tooltip (abbr)
- 019.Fading Cirle (CSS only)
  020.Plan Section (2.5D)
  021.Coupon in Corner
  022.Gradient Background
