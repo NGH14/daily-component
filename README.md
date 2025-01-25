@@ -26,10 +26,18 @@ Personal repository for learning and practicing web components techniques throug
 | 11  | Underneath Footer                      | CSS z-index Overlapping           |
 | 12  | Grid Responsive                        | CSS Grid Template                 |
 | 13  | Toast Component                        | CSS Flex-Box, Positioning         |
+| 14  | Toast Component                        | CSS Flex-Box, Positioning         |
+| 15  | Progress Indicator                     | CSS Animation Timeline            |
+| 16  | Text Blurring                          | CSS Child Combinator              |
 
-
-
-
-
-
+ 016.Text Blurring
+ 017.System Badge (currentColor)
+ 018.Tooltip (abbr)
+ 019.Fading Cirle (CSS only)
+ 020.Plan Section (2.5D)
+ 021.Coupon in Corner
+ 022.Gradient Background
+ 023.Simple Privacy Dropdown 
+ 024.Simple Video Background
+ 025.Image Gallery 2.5D
 
