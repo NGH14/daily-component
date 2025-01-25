@@ -33,12 +33,9 @@ Personal repository for learning and practicing web components techniques throug
 | 18  | Tooltip                                | HTML Sematic Tag                  |
 | 19  | Fading Cirle                           | CSS Transition, CSS Position      |
 | 20  | Plan Section                           | CSS Transform, CSS Nesting        |
+| 21  | Coupon in Corner                       | Work with svg, CSS Position       |
+| 22  | Gradient Background                    | CSS Gradient, CSS Background      |
+| 23  | Privacy Dropdown                       | JS Handle Event                   |
+| 23  | Video Background                       | CSS Position, CSS Layer           |
 
-
-
- 021.Coupon in Corner
- 022.Gradient Background
- 023.Simple Privacy Dropdown 
- 024.Simple Video Background
- 025.Image Gallery 2.5D
 
