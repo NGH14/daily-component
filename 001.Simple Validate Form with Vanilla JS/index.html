@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+		<title>Day #1: Simple Form with Vanilla JS</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="form_container">
+				<form autocomplete="off" class="signup_form" id="signup_form">
+					<div class="form_header">
+						<h2 class="tittle">Create New Account</h2>
+						<p>
+							Join us for FREE to get instant email updates &#10084;&#65039;!
+						</p>
+					</div>
+
+					<div class="form_control">
+						<label for="fullname">Full Name</label>
+						<input
+							type="text"
+							class="fullname"
+							id="fullname"
+							placeholder="e.g. Vu Huu Nghia"
+						/>
+						<i class="fa fa-check-circle"></i>
+						<i class="fa fa-exclamation-circle"></i>
+						<span class="form_message"></span>
+					</div>
+
+					<div class="form_control">
+						<label for="email">Email</label>
+						<input
+							type="email"
+							class="email"
+							id="email"
+							placeholder="e.g. vuhuunghia@gmail.com"
+						/>
+						<i class="fa fa-check-circle"></i>
+						<i class="fa fa-exclamation-circle"></i>
+						<span class="form_message"></span>
+					</div>
+
+					<div class="form_control">
+						<label for="password">Password</label>
+						<input
+							type="password"
+							class="password"
+							id="password"
+							placeholder=" 8 characters with upper and lower case"
+						/>
+						<i class="fa fa-check-circle"></i>
+						<i class="fa fa-exclamation-circle"></i>
+						<span class="form_message"></span>
+					</div>
+
+					<div class="form_control">
+						<label for="password_confirmation">Confirm Password</label>
+						<input
+							type="password"
+							class="password"
+							id="password_confirmation"
+						/>
+						<i class="fa fa-check-circle"></i>
+						<i class="fa fa-exclamation-circle"></i>
+						<span class="form_message"></span>
+					</div>
+
+					<button id="form-submit" class="form-submit" disabled>
+						Sign up <i class="fa fa-arrow-right"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+  <script type="module" src="script.js"></script>
+	</body>
+</html>
