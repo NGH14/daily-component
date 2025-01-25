@@ -29,9 +29,10 @@ Personal repository for learning and practicing web components techniques throug
 | 14  | Toast Component                        | CSS Flex-Box, Positioning         |
 | 15  | Progress Indicator                     | CSS Animation Timeline            |
 | 16  | Text Blurring                          | CSS Child Combinator              |
+| 17  | System Badge                           | CSS currentColor, Flexbox         |
+| 18  | Tooltip                                | HTML Sematic Tag                  |
 
- 016.Text Blurring
- 017.System Badge (currentColor)
+
  018.Tooltip (abbr)
  019.Fading Cirle (CSS only)
  020.Plan Section (2.5D)
