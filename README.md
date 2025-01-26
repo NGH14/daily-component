@@ -36,6 +36,8 @@ Personal repository for learning and practicing web components techniques throug
 | 21  | Coupon in Corner                       | Work with svg, CSS Position       |
 | 22  | Gradient Background                    | CSS Gradient, CSS Background      |
 | 23  | Privacy Dropdown                       | JS Handle Event                   |
-| 23  | Video Background                       | CSS Position, CSS Layer           |
+| 24  | Video Background                       | CSS Position, CSS Layer           |
+| 25  | Image Gallery 2.5D                     | CSS Variable, CSS Transform       |
+
 
 
