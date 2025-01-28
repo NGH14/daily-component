@@ -1,18 +1,18 @@
-const imageContainer = document.querySelector(".image-container");
-const prevBtn = document.getElementById("prev");
-const nextBtn = document.getElementById("next");
+const imageContainer = document.querySelector(".img__container");
+const nextBtn = document.getElementById("btn__next");
+const prevBtn = document.getElementById("btn__prev");
 
 let x = 0;
 
-prevBtn.addEventListener("click", () => {
+prevBtn.onclick = () => {
   x = x + 45;
   rotate();
-});
+};
 
-nextBtn.addEventListener("click", () => {
+nextBtn.onclick = () => {
   x = x - 45;
   rotate();
-});
+};
 
 function rotate() {
   imageContainer.style.transform = `perspective(1000px) rotateY(${x}deg)`;
