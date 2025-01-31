@@ -1,4 +1,4 @@
-const imageContainer = document.querySelector(".img__container");
+const imageContainer = document.getElementsByClassName("img__container");
 const nextBtn = document.getElementById("btn__next");
 const prevBtn = document.getElementById("btn__prev");
 
