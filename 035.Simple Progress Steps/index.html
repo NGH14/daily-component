@@ -15,15 +15,15 @@
 <body>
     <main>
         <nav class="wrapper" aria-label="Progress">
-            <section class="progress-wrapper" role="progressbar" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1">
-                <div class="progress" id="progress"></div>
-                <div class="circle active" role="status" aria-label="Step 1 of 4 (Current)">1</div>
-                <div class="circle" role="status" aria-label="Step 2 of 4">2</div>
-                <div class="circle" role="status" aria-label="Step 3 of 4">3</div>
-                <div class="circle" role="status" aria-label="Step 4 of 4">4</div>
-            </section>
+            <ul class="progress-wrapper" role="progressbar" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1">
+                <li id="progress-bar"></li>
+                <li class="step active" role="status" aria-label="Step 1 of 4 (Current)">1</li>
+                <li class="step" role="status" aria-label="Step 2 of 4">2</li>
+                <li class="step" role="status" aria-label="Step 3 of 4">3</li>
+                <li class="step" role="status" aria-label="Step 4 of 4">4</li>
+            </ul>
             <section class="button-group">
-                <button class="btn" id="step-prev" aria-label="Previous step" disabled>Previous</button>
+                <button class="btn" id="step-prev" aria-label="Previous step" disabled>Back</button>
                 <button class="btn" id="step-next" aria-label="Next step">Next</button>
             </section>
         </nav>

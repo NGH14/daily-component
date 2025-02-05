@@ -1,45 +1,45 @@
 document.addEventListener('DOMContentLoaded', () => {
-	const progress = document.querySelector('#progress');
+	const progress = document.querySelector('#progress-bar');
 	const prevBtn = document.querySelector('#step-prev');
 	const nextBtn = document.querySelector('#step-next');
-	const circles = document.querySelectorAll('.circle');
+	const steps = document.querySelectorAll('.step');
 
 	let activeIndex = 1;
-
 	nextBtn.addEventListener('click', () => {
-		activeIndex++;
-		if (activeIndex > circles.length) {
-			activeIndex = circles.length;
+		if (activeIndex > steps.length) {
+			activeIndex = steps.length;
 		}
-
+		
+		activeIndex++;
 		updateStep();
 	});
 
 	prevBtn.addEventListener('click', () => {
-		activeIndex--;
-		if (activeIndex < 1) {
+		if (activeIndex < 0) {
 			activeIndex = 1;
 		}
-
+		activeIndex--;
 		updateStep();
 	});
 
 	function updateStep() {
-		circles.forEach((circle, index) => {
+		steps.forEach((step, index) => {
 			if (index < activeIndex) {
-				circle.classList.add('active');
+				step.classList.add('active');
 			} else {
-				circle.classList.remove('active');
+				step.classList.remove('active');
 			}
 		});
 
 		const actives = document.querySelectorAll('.active');
-		progress.style.width =
-			((actives.length - 1) / (circles.length - 1)) * 100 + '%';
+
+		const progressWidth = ((actives.length-1) / (steps.length - 1)) * 100;
+		
+		progress.style.width = `${progressWidth}%`;
 
 		if (activeIndex === 1) {
 			prevBtn.disabled = true;
-		} else if (activeIndex === circles.length) {
+		} else if (activeIndex === steps.length) {
 			nextBtn.disabled = true;
 		} else {
 			prevBtn.disabled = false;
