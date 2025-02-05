@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+    <title>Progress Steps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <nav class="wrapper" aria-label="Progress">
+            <section class="progress-wrapper" role="progressbar" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1">
+                <div class="progress" id="progress"></div>
+                <div class="circle active" role="status" aria-label="Step 1 of 4 (Current)">1</div>
+                <div class="circle" role="status" aria-label="Step 2 of 4">2</div>
+                <div class="circle" role="status" aria-label="Step 3 of 4">3</div>
+                <div class="circle" role="status" aria-label="Step 4 of 4">4</div>
+            </section>
+            <section class="button-group">
+                <button class="btn" id="step-prev" aria-label="Previous step" disabled>Previous</button>
+                <button class="btn" id="step-next" aria-label="Next step">Next</button>
+            </section>
+        </nav>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
