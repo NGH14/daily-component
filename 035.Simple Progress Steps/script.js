@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 	prevBtn.addEventListener('click', () => {
-		if (activeIndex < 0) {
+		if (activeIndex < 1) {
 			activeIndex = 1;
 		}
 		activeIndex--;
