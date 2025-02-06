@@ -37,18 +37,18 @@ body {
 	margin-bottom: 30px;
 	max-width: 100%;
 	width: 350px;
-}
 
-.progress-wrapper::before {
-	content: '';
-	background-color: var(--secondary-color);
-	position: absolute;
-	top: 50%;
-	left: 0;
-	transform: translateY(-50%);
-	height: 4px;
-	width: 100%;
-	z-index: -1;
+	&::before {
+			content: '';
+			background-color: var(--secondary-color);
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			height: 4px;
+			width: 100%;
+			z-index: -1;
+		}
 }
 
 #progress-bar {
