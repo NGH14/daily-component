@@ -1,11 +1,12 @@
-function createPagination(totalPages, currentPage = 1, ellipse = false) {
-  const container = document.getElementById('pagination');
+function createPagination(totalPages, currentPage = 1, rangeSize = 2) {
+  const container = document.getElementById('pagination__section');
   const ul = document.createElement('ul');
   
-  let prePage = Math.max(2, currentPage - 1);
-  let nextPage = Math.min(totalPages - 1, currentPage + 1);
+  let prePage = Math.max(rangeSize, currentPage - rangeSize);
+  let nextPage = Math.min(totalPages - 1  , currentPage + rangeSize);
   
   ul.className = 'pagination';
+
 
   if (currentPage > 1) {
     appendItem(ul, currentPage - 1, '←');
@@ -13,29 +14,24 @@ function createPagination(totalPages, currentPage = 1, ellipse = false) {
 
   appendItem(ul, 1, '1', currentPage === 1);
 
-  if (ellipse) {
-    if (prePage > 2) {
-      appendDots(ul);
-    }
-
-    if (nextPage < totalPages - 1) {
-      appendDots(ul);
-    }
-    
+  if (prePage > 2) {
+    appendDots(ul);
   }
 
   for (let i = prePage; i <= nextPage; i++) {
     appendItem(ul, i, i.toString(), currentPage === i);
   }
 
- 
-
+  
+  if (nextPage < totalPages - 1) {
+    appendDots(ul);
+  }
   if (totalPages > 1) {
     appendItem(ul, totalPages, totalPages.toString(), currentPage === totalPages);
   }
 
   if (currentPage < totalPages) {
-    appendItem(ul, currentPage + 1, '→');
+    appendItem(ul, currentPage + rangeSize, '→');
   }
 
   container.innerHTML = '';
@@ -67,5 +63,5 @@ function appendDots(ul, href) {
   ul.appendChild(li);
 }
 
-const totalPages = 300;
+const totalPages = 20;
 createPagination(totalPages);
