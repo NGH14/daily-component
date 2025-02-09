@@ -38,6 +38,3 @@ Personal repository for learning and practicing web components techniques throug
 | 23  | Privacy Dropdown                       | JS Handle Event                   |
 | 24  | Video Background                       | CSS Position, CSS Layer           |
 | 25  | Image Gallery 2.5D                     | CSS Variable, CSS Transform       |
-
-
-
