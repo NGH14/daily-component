@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let i = 0;  
   let typing = document.getElementById('typing__text');
   const STRING = 'Simple Typing with setTimeout';
-  const SPEED = 50;  
+  const SPEED = 100;  
 
 
   function typeWriter() {
