@@ -1,66 +1,69 @@
-function createPagination(totalPages, currentPage = 1, rangeSize = 2) {
-  const container = document.getElementById('pagination__section');
-  const ul = document.createElement('ul');
-  
-  let prePage = Math.max(rangeSize, currentPage - rangeSize);
-  let nextPage = Math.min(totalPages - 1  , currentPage + rangeSize);
-  
-  ul.className = 'pagination';
+function createPagination(totalPages, currentPage = 1, rangeSize = 1) {
+	const container = document.getElementById('pagination__section');
+	const ul = document.createElement('ul');
 
+	let prePage = Math.max(2, currentPage - rangeSize);
+	let nextPage = Math.min(totalPages - 1, currentPage + rangeSize);
 
-  if (currentPage > 1) {
-    appendItem(ul, currentPage - 1, '←');
-  }
+	ul.className = 'pagination';
 
-  appendItem(ul, 1, '1', currentPage === 1);
+	if (currentPage > 1) {
+		appendItem(ul, currentPage - 1, '←');
+	}
 
-  if (prePage > 2) {
-    appendDots(ul);
-  }
+	appendItem(ul, 1, '1', currentPage === 1);
 
-  for (let i = prePage; i <= nextPage; i++) {
-    appendItem(ul, i, i.toString(), currentPage === i);
-  }
+	if (prePage > 2) {
+		appendDots(ul);
+	}
 
-  
-  if (nextPage < totalPages - 1) {
-    appendDots(ul);
-  }
-  if (totalPages > 1) {
-    appendItem(ul, totalPages, totalPages.toString(), currentPage === totalPages);
-  }
+	for (let i = prePage; i <= nextPage; i++) {
+		appendItem(ul, i, i.toString(), currentPage === i);
+	}
 
-  if (currentPage < totalPages) {
-    appendItem(ul, currentPage + rangeSize, '→');
-  }
+	if (nextPage < totalPages - 1) {
+		appendDots(ul);
+	}
+	if (totalPages > 1) {
+		appendItem(
+			ul,
+			totalPages,
+			totalPages.toString(),
+			currentPage === totalPages,
+		);
+	}
 
-  container.innerHTML = '';
-  container.appendChild(ul);
+	if (currentPage < totalPages) {
+		appendItem(ul, currentPage + rangeSize, '→');
+	}
+
+	container.innerHTML = '';
+	container.appendChild(ul);
 }
 
 function appendItem(ul, pageNum, text, isActive = false) {
-  const li = document.createElement('li');
-  const a = document.createElement('a');
+	const li = document.createElement('li');
+	const a = document.createElement('a');
 
-  li.className = `page-item ${isActive ? 'active' : ''}`;
-  a.href = '#';
-  a.textContent = text;
+	li.className = `page-item ${isActive ? 'active' : ''}`;
+	a.href = '#';
+	a.textContent = text;
 
-  a.onclick = (e) => {
-    e.preventDefault();
-    createPagination(totalPages, pageNum);
-    console.log('Page changed to:', pageNum);
-  };
+	a.onclick = (e) => {
+		e.preventDefault();
+		createPagination(totalPages, pageNum);
+		console.log('Page changed to:', pageNum);
+	};
 
-  li.appendChild(a);
-  ul.appendChild(li);
+	li.appendChild(a);
+	ul.appendChild(li);
 }
 
 function appendDots(ul, href) {
-  const li = document.createElement('li');
-  li.className = 'page-item dots';
-  li.textContent = '...';
-  ul.appendChild(li);
+	const li = document.createElement('li');
+	li.className = 'page-item dots';
+	li.textContent = '...';
+	ul.appendChild(li);
 }
 
 const totalPages = 20;
