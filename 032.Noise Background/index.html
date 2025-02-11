@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.cdnfonts.com/css/recoleta" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Day #32: Noise Background</title>
+	</head>
+	<body>
+		<section>
+			<h1>Noise Background</h1>
+      <p>Digital wallpaper that features a visual texture resembling <b>"noise"</b>, which typically appears as a grainy, speckled pattern</p>
+		</section>
+
+		<svg>
+  <filter id="noise">
+    <feTurbulence 
+      type="fractalNoise" 
+      baseFrequency="0.7" 
+      stitchTiles="stitch"/>
+     <feColorMatrix in="colorNoise" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
+        <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
+        <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
+  </filter>
+  
+</svg>
+
+
+	</body>
+</html>
