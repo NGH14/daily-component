@@ -1,19 +1,52 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  height: 100vh;
-  background: #8C8C8C;
-  overflow: hidden;
-  position: relative;
+	height: 100vh;
+	background: #0a0a0a;
+	overflow: hidden;
+	position: relative;
 
-  video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  }
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	clip-path: inset(0 round 1em);
+	filter: grayscale(1);
+	transition: ease-in-out 0.3s;
+}
+
+main {
+	width: 800px;
+	height: 20vw;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5em;
+}
+
+figure {
+	width: 100%;
+	height: 100%;
+  
+	cursor: pointer;
+	transition: ease-in-out 0.3s;
+
+	&:is(:hover, :active) {
+		width: 300em;
+		height: 30vw;
+    
+		& > img {
+			filter: grayscale(0);
+		}
+	}
 }
