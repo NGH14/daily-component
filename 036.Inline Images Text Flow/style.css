@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	padding: 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+
+main {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #171111;
+  color: #fafafa;
+  text-align: justify;
+  padding: 3em;
+}
+
+.desc {
+	font-size: 48px;
+	line-height: 72px;
+}
+
+.inline__img {
+	width: 3em;
+	height: 1em;
+	margin-top: 14px;
+	display: inline;
+	vertical-align: top;
+  object-fit: cover;
+  border-radius: 8px;
+}
