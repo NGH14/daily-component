@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  background-color: #f7f6f1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colored__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #5D41DE;
+	padding: 12px;
+	gap: 8px;
+
+  font-size: 18px;
+
+	height: 3em;
+	width: 8em;
+	border: none;
+	background-color: color-mix(in srgb, currentColor 10%, transparent);
+	border-radius: 10px;
+
+	&:hover {
+    background-color: color-mix(in srgb, currentColor 20%, transparent);
+	}
+
+  .icon {
+    stroke: currentColor;
+  }
+
+	&:hover .icon {
+		animation: spinning 2s ease-out infinite;
+	}
+}
+
+.colored__button--label {
+	line-height: 20px;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+}
+
+@keyframes spinning {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
