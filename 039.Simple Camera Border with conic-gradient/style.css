@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f3f3f3;
+}
+
+main {
+	--conner-width: 30px;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+	padding: 8px;
+	border: 3px solid #171111;
+	mask: conic-gradient(at var(--conner-width) var(--conner-width), #0000 75%, #000 0) 0 0 /
+			calc(100% - var(--conner-width)) calc(100% - var(--conner-width)),
+		conic-gradient(#000 0 0) content-box;
+}
