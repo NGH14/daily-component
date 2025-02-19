@@ -17,6 +17,7 @@ body {
 	background-color: light-dark(var(--primary-white), var(--primary-black));
 	width: 100%;
 	height: 100vh;
+	caret-color: transparent;
 }
 
 button {
@@ -24,6 +25,7 @@ button {
 	outline: lightskyblue;
 	background-color: transparent;
 	border-radius: 8px;
+	cursor: pointer;
 }
 
 .theme__toggle {
@@ -41,7 +43,7 @@ button {
 .theme__toggle--button svg {
 	width: 50px;
 	height: auto;
-} 
+}
 
 .theme__toggle--light {
 	display: var(--theme-toggle-sun-icon-display);
@@ -54,7 +56,6 @@ button {
 	:root {
 		--theme-toggle-sun-icon-display: none;
 		--theme-toggle-moon-icon-display: block;
-
 	}
  }
 
@@ -62,6 +63,5 @@ button {
  	:root {
  		--theme-toggle-sun-icon-display: block;
  		--theme-toggle-moon-icon-display: none;
-
  	}
  }
