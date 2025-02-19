@@ -6,7 +6,6 @@ const LIGHT_THEME = 'light';
 // Get DOM elements once at startup
 const themeToggleButton = document.querySelector('.theme__toggle--button');
 
-// Function to set the theme and update the UI accordingly
 function setTheme(theme) {
   document.documentElement.style.setProperty(
     '--theme-toggle-sun-icon-display',
@@ -33,7 +32,6 @@ function getCurrentTheme() {
     : DARK_THEME;
 }
 
-// Function to toggle between light and dark themes
 function toggleTheme() {
   const currentTheme = getCurrentTheme();
   const newTheme = currentTheme === DARK_THEME ? LIGHT_THEME : DARK_THEME;
