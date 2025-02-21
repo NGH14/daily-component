@@ -44,7 +44,8 @@ body {
     width: 30px;
     border-radius: 16px;
     left: 0;
-    bottom: 0;
+    top: 50%;
+    transform: translateY(-50%);
     background-color: white;
     border: 1px solid #999;
     box-shadow: 0 1px 2px #777;
@@ -57,7 +58,7 @@ input:checked {
     background-color: #63c264;
     border: 2px solid transparent;
     &:before {
-      transform: translateX(35px);
+      transform: translate(35px, -50%);
     }
   }
 }
