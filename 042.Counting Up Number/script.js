@@ -17,7 +17,6 @@ function countingUp(element, endValue = 100, duration = 1000) {
       requestAnimationFrame(animate);
     }
   }
-
   requestAnimationFrame(animate);
 }
 
