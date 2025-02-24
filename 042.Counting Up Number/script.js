@@ -13,7 +13,6 @@ function countingUp(element, endValue = 100, duration = 1000) {
     currentNumber = Math.floor(progress * endValue);
 
     element.textContent = currentNumber;
-    console.log(progress);
     if (progress < 1) {
       requestAnimationFrame(animate);
     }
