@@ -10,6 +10,7 @@ body {
   align-items: center;
   height: 100dvh;
   caret-color: transparent;
+	background-color: #f1f1f1;
 }
 
 .star__rating {
@@ -22,7 +23,7 @@ body {
     &::before {
       content: '★★★★★';
       background-clip: text;
-      background-image: linear-gradient(90deg, gold var(--percent), #f1f1ff var(--percent));
+      background-image: linear-gradient(90deg, gold var(--percent), #999 var(--percent));
       color: transparent;
     }
   }
