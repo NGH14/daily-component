@@ -1,0 +1,44 @@
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #171111;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 100%;
+}
+
+figure {
+  margin: 30px;
+  img {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+figure:has(figcaption) {
+  background: #bababa;
+  padding: 0.6rem;
+  border-radius: 5px;
+}
+
+figure:has(img) figcaption {
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  margin-block: 0.3em;
+}
