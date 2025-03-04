@@ -6,25 +6,26 @@
 
 main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-
-.main__container {
   position: relative;
   z-index: 2;
-  background-color: #777;
-  margin-inline: 20px;
-  border-radius: 0px 0px 20px 20px;
+  background-color: #fafafa;
+  color: #171111;
 }
 
 footer {
+  margin: 20px;
   padding: 20px;
-  background-color: #fff;
+  color: #f1c1c1;
+  background-color: #333;
+  border-radius: 30px;
   position: sticky;
   bottom: 0;
   z-index: 1;
-  height: auto;
+  height: 500px;
+  h2 {
+    color: #f1b1b1;
+  }
 }
