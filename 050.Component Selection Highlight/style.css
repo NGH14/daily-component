@@ -33,7 +33,7 @@ main {
   font-size: 2rem;
   position: relative;
 
-  &:hover, &:focus {
+  &:hover, &:focus-within {
     border: 1px solid var(--primary);
     .component__select--tooltip {
       visibility: visible;
