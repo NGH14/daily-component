@@ -28,12 +28,19 @@ main {
 
 .component__select {
   --pd: 10px;
-
+  border: 1px solid transparent;
   padding: var(--pd);
   font-size: 2rem;
   position: relative;
 
-  &:hover, &:focus-within {
+  &:hover {
+    border: 1px solid var(--primary);
+    .component__select--tooltip {
+      visibility: visible;
+    }
+  }
+
+  &:focus-within {
     border: 1px solid var(--primary);
     .component__select--tooltip {
       visibility: visible;
