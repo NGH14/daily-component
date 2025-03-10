@@ -1,0 +1,66 @@
+0000000000000000000000000000000000000000 75b5cd03f0f7311b117dc1ad471b6ddcaec5e5f2 nghia <naovu@protonmail.com> 1739127385 +0700	commit (initial): fix: init git after got the bug about fatal: bad object HEAD
+75b5cd03f0f7311b117dc1ad471b6ddcaec5e5f2 4a9443719492c252e5ba041085a627a548529090 nghia <naovu@protonmail.com> 1739127524 +0700	rebase (start): checkout refs/remotes/origin/main
+4a9443719492c252e5ba041085a627a548529090 4a9443719492c252e5ba041085a627a548529090 nghia <naovu@protonmail.com> 1739127524 +0700	rebase (finish): returning to refs/heads/main
+4a9443719492c252e5ba041085a627a548529090 4a9443719492c252e5ba041085a627a548529090 nghia <naovu@protonmail.com> 1739127544 +0700	rebase (start): checkout refs/remotes/origin/main
+4a9443719492c252e5ba041085a627a548529090 4a9443719492c252e5ba041085a627a548529090 nghia <naovu@protonmail.com> 1739127544 +0700	rebase (finish): returning to refs/heads/main
+4a9443719492c252e5ba041085a627a548529090 a53f6e3a75565dec6053668a57555af02be51300 nghia <naovu@protonmail.com> 1739127917 +0700	commit: feat: increase typing speed and clean up CSS formatting
+a53f6e3a75565dec6053668a57555af02be51300 916407a62bebb81e58e8ba973f2443f45c706fa5 nghia <naovu@protonmail.com> 1739127941 +0700	commit: chore: remove unnecessary whitespace from README.md
+916407a62bebb81e58e8ba973f2443f45c706fa5 00edc3556b89c68fb70bc7b9da1b78bcf11c10a0 nghia <naovu@protonmail.com> 1739161723 +0700	commit: chore: remove empty .gitkeep file from Simple Follow Cursor directory
+00edc3556b89c68fb70bc7b9da1b78bcf11c10a0 23a34b0fb31277123ce54886ae74d4b9aef0b72c nghia <naovu@protonmail.com> 1739161767 +0700	commit: feat: add initial HTML and CSS files for Simple Follow Cursor feature
+23a34b0fb31277123ce54886ae74d4b9aef0b72c 900a8a8a507b6232480d23502be637bc9e4a09ad nghia <naovu@protonmail.com> 1739163939 +0700	commit: feat: implement Simple Follow Cursor feature with HTML, CSS, and JavaScript
+900a8a8a507b6232480d23502be637bc9e4a09ad 2006253b24a3b0c8675fc3e8176049f0c3243624 nghia <naovu@protonmail.com> 1739163975 +0700	commit: chore: remove unused elements from HTML and CSS files
+2006253b24a3b0c8675fc3e8176049f0c3243624 be23259c57a9309a609b1e6e06d9274a1208d93e nghia <naovu@protonmail.com> 1739240712 +0700	commit: chore: remove empty .gitkeep file from Noise Gradient directory
+be23259c57a9309a609b1e6e06d9274a1208d93e 8a96ebb6edd3b9c1028e17e230b7c084e0626800 nghia <naovu@protonmail.com> 1739242250 +0700	commit: feat: add initial HTML and CSS files for Noise Background feature
+8a96ebb6edd3b9c1028e17e230b7c084e0626800 bd3c33dcd87040ab7dbcf0e7b02b0473f7ece7c3 nghia <naovu@protonmail.com> 1739242566 +0700	commit: chore: rename Day #32
+bd3c33dcd87040ab7dbcf0e7b02b0473f7ece7c3 96db7f20317d250d6306136b587c4cec86da3861 nghia <naovu@protonmail.com> 1739323397 +0700	commit: chore: remove empty .gitkeep file from Simple Responsive Tables directory
+96db7f20317d250d6306136b587c4cec86da3861 01fb623209c4fb60782ab1116acff64ccd375349 nghia <naovu@protonmail.com> 1739323403 +0700	commit: feat: add HTML and CSS files for Expanding Button feature
+01fb623209c4fb60782ab1116acff64ccd375349 e8a5116d88eb15818d3825e2409eeef40b7fd10c nghia <naovu@protonmail.com> 1739323409 +0700	commit: chore: remove empty .gitkeep file from Parallax Transition directory
+e8a5116d88eb15818d3825e2409eeef40b7fd10c 5495e84ce305678be6c5768df9bff61dacf3d4e0 nghia <naovu@protonmail.com> 1739323416 +0700	commit: feat: add HTML, CSS, and JavaScript files for Simple Progress Steps feature
+5495e84ce305678be6c5768df9bff61dacf3d4e0 f4f5c9826b44fa67e9bc439068c226d5fa2743b7 nghia <naovu@protonmail.com> 1739323422 +0700	commit: chore: remove HTML and CSS files for Expanding Button feature
+f4f5c9826b44fa67e9bc439068c226d5fa2743b7 d43cecc2af75f3098a472de4942f6e17cbf76a63 nghia <naovu@protonmail.com> 1739323425 +0700	commit: chore: add empty .gitkeep file to Parallax Transition directory
+d43cecc2af75f3098a472de4942f6e17cbf76a63 b89239c032f2f2fb86a8c8d3377a99ce985b8f91 nghia <naovu@protonmail.com> 1739323428 +0700	commit: chore: add empty .gitkeep file to Simple Responsive Tables directory
+b89239c032f2f2fb86a8c8d3377a99ce985b8f91 816a69c1c08c6528b0789b688c7c06111daf1621 nghia <naovu@protonmail.com> 1739323432 +0700	commit: chore: remove HTML, CSS, and JavaScript files for Simple Progress Steps feature
+816a69c1c08c6528b0789b688c7c06111daf1621 c9050016d9f241992ee19bd58fde4d78f4d472f2 nghia <naovu@protonmail.com> 1739415184 +0700	commit: chore: remove .gitkeep file from Simple Responsive Tables directory
+c9050016d9f241992ee19bd58fde4d78f4d472f2 21528a03e8bb037ca13007fa149bb3988006d661 nghia <naovu@protonmail.com> 1739415493 +0700	commit: chore: add Image Hover Zoom In feature with HTML and CSS files
+21528a03e8bb037ca13007fa149bb3988006d661 5f755a49c307659caf45705893cef2723bdf4b79 nghia <naovu@protonmail.com> 1739416845 +0700	commit: chore: update Image Hover Zoom In feature with new image sources and enhanced styles
+5f755a49c307659caf45705893cef2723bdf4b79 351a9993b04f9222f5e55b94a24126d87016114c nghia <naovu@protonmail.com> 1739416851 +0700	commit: chore: add HTML and CSS files for Image Hover Zoom In feature
+351a9993b04f9222f5e55b94a24126d87016114c c8065cea1523adaae0fed0d0416281c0d1756091 nghia <naovu@protonmail.com> 1739507744 +0700	commit: chore: add .gitkeep file to Card Hover Blur Effect directory
+c8065cea1523adaae0fed0d0416281c0d1756091 dc7b05feaca22e9593ff6761bd70af90849144f9 nghia <naovu@protonmail.com> 1739507821 +0700	commit: chore: add .gitkeep file to Card Hover Blur Effect directory
+dc7b05feaca22e9593ff6761bd70af90849144f9 75d7fa59727debee743226ddf0abef7f33c37c1f nghia <naovu@protonmail.com> 1739508870 +0700	commit: chore: add HTML and CSS files for Card Hover Blur Effect feature
+75d7fa59727debee743226ddf0abef7f33c37c1f 68ca68c463020b70f386df541775f7e1884ad86b nghia <naovu@protonmail.com> 1739613844 +0700	commit: chore: add HTML and CSS files for Inline Images Text Flow feature
+68ca68c463020b70f386df541775f7e1884ad86b a72769c93533fede520b713dbf9b39149065737e nghia <naovu@protonmail.com> 1739693870 +0700	commit: chore: update title for Progress Steps to include Day #31
+a72769c93533fede520b713dbf9b39149065737e 02c3c8e7822b8d5741ecb8e6c81a6e3e4b272d3f nghia <naovu@protonmail.com> 1739731447 +0700	commit: chore: add HTML and CSS files for Grid Image with Caption feature
+02c3c8e7822b8d5741ecb8e6c81a6e3e4b272d3f fbeec1be9486d51e8a25579961de8f34c4f1bce5 nghia <naovu@protonmail.com> 1739859214 +0700	commit: feat: Day #38 example of currentColor and color-mix with example Button with icon
+fbeec1be9486d51e8a25579961de8f34c4f1bce5 f4575ca07d49b184fc88933d27334c9f49a55eea nghia <naovu@protonmail.com> 1739903480 +0700	commit: feat: add Day #39 example of Camera Border using conic-gradient
+f4575ca07d49b184fc88933d27334c9f49a55eea 7fbbdf8c962f8729168ebd8efe2e39eeec9156d5 nghia <naovu@protonmail.com> 1739995261 +0700	commit: feat: implement theme toggle functionality with light and dark modes
+7fbbdf8c962f8729168ebd8efe2e39eeec9156d5 d7c238ca4947a20b32b82b7e02ffaf66385ea973 nghia <naovu@protonmail.com> 1739995758 +0700	commit: refactor: remove unused theme functions for cleaner code
+d7c238ca4947a20b32b82b7e02ffaf66385ea973 71e903b1a56b6fc7abf4885a4e355039b49df404 nghia <naovu@protonmail.com> 1740080247 +0700	commit: feat: add Day #40 example of Stack Avatars with HTML and CSS
+71e903b1a56b6fc7abf4885a4e355039b49df404 75e18bbb1061cf0dd8eceb80866995a20188c982 nghia <naovu@protonmail.com> 1740080600 +0700	commit: feat: add object-fit property to images for better display in Stack Avatars example
+75e18bbb1061cf0dd8eceb80866995a20188c982 5da24429dc2f5d34b246b8ac4623584bedd98c9b nghia <naovu@protonmail.com> 1740165590 +0700	commit: feat: add Day #41 example of Toggle Button with iOS style
+5da24429dc2f5d34b246b8ac4623584bedd98c9b 27964d3cac396493ebb986e0f2a7d0a7d80d67e5 nghia <naovu@protonmail.com> 1740165986 +0700	commit: fix: adjust toggle button positioning for better alignment
+27964d3cac396493ebb986e0f2a7d0a7d80d67e5 5a4548b2d438a5f589c9d5f86c76bdbd267d54c4 nghia <naovu@protonmail.com> 1740290805 +0700	commit: feat: add Day #42 example of Counting Up Number animation with HTML, CSS, and JavaScript
+5a4548b2d438a5f589c9d5f86c76bdbd267d54c4 e72b89435c8bedda8a0b45f9252d925532c90e96 nghia <naovu@protonmail.com> 1740290813 +0700	commit: fix: add console log for progress in Counting Up Number animation
+e72b89435c8bedda8a0b45f9252d925532c90e96 41595f6f798af8d9fd51db1c2cf9dd86236cc124 nghia <naovu@protonmail.com> 1740389176 +0700	commit: fix: remove console log from Counting Up Number animation
+41595f6f798af8d9fd51db1c2cf9dd86236cc124 9a98184a212b3b0da1f1b57494752f00ddebf8c9 nghia <naovu@protonmail.com> 1740389185 +0700	commit: fix: remove unnecessary blank line in countingUp function
+9a98184a212b3b0da1f1b57494752f00ddebf8c9 b6b8e375942cfe3d837a44e250fa149d0002a8fa nghia <naovu@protonmail.com> 1740423953 +0700	commit: feat: add Day #43 example of Simple Bounce Loader with HTML and CSS
+b6b8e375942cfe3d837a44e250fa149d0002a8fa 79506cfdc56618024706d76ca8c1ded902604a22 nghia <naovu@protonmail.com> 1740569111 +0700	commit: feat: add Day #44 example of Rating Star Display with HTML and CSS
+79506cfdc56618024706d76ca8c1ded902604a22 0b052cef7d2feefb594a8b9c5eb4bddf5cb56566 nghia <naovu@protonmail.com> 1740569287 +0700	commit: fix: update background color and gradient for star rating display
+0b052cef7d2feefb594a8b9c5eb4bddf5cb56566 5168b7c3ab5996759e7d3d7bcbb2ccac9d383543 nghia <naovu@protonmail.com> 1740693129 +0700	commit: feat: add Day #45 example of Diagonal List Card with HTML and CSS
+5168b7c3ab5996759e7d3d7bcbb2ccac9d383543 e6504b2e0784a64036a14f6a928fb68e9f0446ff nghia <naovu@protonmail.com> 1740808700 +0700	commit: feat: add Day #46 example of CSS has() for Image Caption with HTML and CSS
+e6504b2e0784a64036a14f6a928fb68e9f0446ff 0c4b1da70a2db73cb8d33c47c7e2480455a4e722 nghia <naovu@protonmail.com> 1741003061 +0700	commit: feat: add Day #47 example of Simply Text Marquee with HTML and CSS
+0c4b1da70a2db73cb8d33c47c7e2480455a4e722 badb13b050f143cfe1f55e62f734041dac2fe9ad nghia <naovu@protonmail.com> 1741006404 +0700	commit: feat: add Day #47 example of Simply Text Marquee with CSS only
+badb13b050f143cfe1f55e62f734041dac2fe9ad fcad8f3957ed21a1e1c0c9d9d870ed74c3006585 nghia <naovu@protonmail.com> 1741098189 +0700	commit: feat: update layout and content for Underneath Footer example
+fcad8f3957ed21a1e1c0c9d9d870ed74c3006585 fb86c4642a67a387554ddcdd1272b6821837877a nghia <naovu@protonmail.com> 1741236856 +0700	commit: chore: rename day 47
+fb86c4642a67a387554ddcdd1272b6821837877a a62746c471cc062fe3fd15cb1bf4c9ff8b1e8785 nghia <naovu@protonmail.com> 1741312208 +0700	commit: feat: add Day #48 example of Text Style with Border using HTML and CSS
+a62746c471cc062fe3fd15cb1bf4c9ff8b1e8785 ea69f2d6eaef1a29a43443ea8da22f3440d654b4 nghia <naovu@protonmail.com> 1741317310 +0700	commit: chore: rename day #48
+ea69f2d6eaef1a29a43443ea8da22f3440d654b4 a484aa8412bf5bb216419aba33c5fa6c6aed8089 nghia <naovu@protonmail.com> 1741317598 +0700	commit: feat: adjust padding and border style for highlighted text button
+a484aa8412bf5bb216419aba33c5fa6c6aed8089 72b9af396b7bf5890754a68c8eed20e8e36f102f nghia <naovu@protonmail.com> 1741409785 +0700	commit: feat: add initial files for Framed Numbering Style example
+72b9af396b7bf5890754a68c8eed20e8e36f102f 7ef1a309a177eb00e40100d20e3840b90e97aa6f nghia <naovu@protonmail.com> 1741409797 +0700	commit: feat: add initial HTML and CSS files for Framed Numbering Style example
+7ef1a309a177eb00e40100d20e3840b90e97aa6f e6821d8262b350208f660ee41865ff1e1ca07f38 nghia <naovu@protonmail.com> 1741413660 +0700	commit: feat: create new Framed Style example with HTML and CSS
+e6821d8262b350208f660ee41865ff1e1ca07f38 cdc7661dc1e060202c871fe45f8edeb2605bcfa3 nghia <naovu@protonmail.com> 1741459763 +0700	commit: feat: add HTML and CSS files for Component Selection Highlight example
+cdc7661dc1e060202c871fe45f8edeb2605bcfa3 254f5bee29058084bee45c66f894087cc265df35 nghia <naovu@protonmail.com> 1741459940 +0700	commit: feat: update hover and focus styles to include focus-within for improved accessibility
+254f5bee29058084bee45c66f894087cc265df35 cc35e0995aa3242fb0754b22d26d37b73006b2be nghia <naovu@protonmail.com> 1741460343 +0700	commit: feat: enhance accessibility by adding tabindex to content and improving focus styles
+cc35e0995aa3242fb0754b22d26d37b73006b2be 94f07e09675fa2c1fa38ac8b73c072a0c1751728 nghia <naovu@protonmail.com> 1741542996 +0700	commit: feat: add initial HTML and CSS files for Simple Circle Text Animation example
+94f07e09675fa2c1fa38ac8b73c072a0c1751728 0ce96d4d8d093c9ad1778da81a5ebcd8649172f2 nghia <naovu@protonmail.com> 1741544857 +0700	commit: feat: remove Simple Circle Text Animation and add Simple Spinning Text with SVG example
+0ce96d4d8d093c9ad1778da81a5ebcd8649172f2 a3c8625c2b73538f2978c58bf1d36d853607700d nghia <naovu@protonmail.com> 1741545158 +0700	commit: feat: update spinning text example with improved styling and structure
+a3c8625c2b73538f2978c58bf1d36d853607700d ab8a8db9983299d39b8c82677d08226e62689e08 nghia <naovu@protonmail.com> 1741545173 +0700	commit: feat: remove unnecessary color property from spinning text CSS
