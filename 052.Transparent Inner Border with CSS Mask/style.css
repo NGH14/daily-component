@@ -8,12 +8,10 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-color: #171111;
-  font-family: 'Inter', sans-serif;
+  background-color: #fbfbfb;
 }
 
 main {
-  --primary: #116dff;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -27,13 +25,13 @@ main {
 }
 
 img {
-  --o: 20px;
+  --size: 20px;
   /* offset of the border*/
-  --b: 15px;
+  --border: 5px;
   /* border thickness */
-
+  border-radius: 8px;
   mask:
-    conic-gradient(#0000 0) no-repeat 50%/ calc(100% - 2*(var(--o) + var(--b))) calc(100% - 2*(var(--o) + var(--b))),
-    conic-gradient(from 90deg at var(--o) var(--o), #0000 25%, #000 0) 0 0/calc(100% - var(--o)) calc(100% - var(--o));
-  width: 250px;
+    conic-gradient(#000 0 0) no-repeat 50%/ calc(100% - 2*(var(--size) + var(--border))) calc(100% - 2*(var(--size) + var(--border))),
+    conic-gradient(from 90deg at var(--size) var(--size), #0000 25%, #000 0) 0 0/calc(100% - var(--size)) calc(100% - var(--size));
+  width: 550px;
 }
