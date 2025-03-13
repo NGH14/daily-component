@@ -26,9 +26,7 @@ main {
 
 img {
   --size: 20px;
-  /* offset of the border*/
   --border: 5px;
-  /* border thickness */
   border-radius: 8px;
   mask:
     conic-gradient(#000 0 0) no-repeat 50%/ calc(100% - 2*(var(--size) + var(--border))) calc(100% - 2*(var(--size) + var(--border))),
