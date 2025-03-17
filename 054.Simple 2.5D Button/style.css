@@ -21,6 +21,7 @@ main {
   align-items: center;
   caret-color: transparent;
   font-size: 62.5%;
+  font-family: "Inter", sans-serif;
 }
 
 button {
