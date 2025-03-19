@@ -1,15 +1,14 @@
-
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   width: 100dvw;
   height: 100dvh;
   background-color: #171111;
-  font-family: "Inter" , sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 main {
@@ -30,16 +29,32 @@ figure {
   }
 }
 
+section:hover figure:not(:hover) {
+  /* CSS properties for non-hovered figures */
+  opacity: 0.7;
+  transform: scale(0.95);
+  filter: blur(3px) grayscale(0.8);
+  transition: all 0.3s ease;
+}
+
 figure:has(figcaption) {
   background: #bababa;
   padding: 0.6rem;
   border-radius: 5px;
 }
 
+figure:not(:has(figcaption)) img {
+  width: calc(300px + 0.6rem * 2 + 0.3rem * 2);
+  /* 300px + (0.6rem * 2) for left and right padding  */
+  height: calc(100% + 1rem + 0.3rem * 2 + 0.6rem * 2);
+  /* 100% + (0.3rem * 2) for margin-block for top and bottom padding + 1rem for font-size  */
+  border-radius: 5px;
+}
+
 figure:has(img) figcaption {
   text-align: center;
-  font-size: 24px;
+  font-size: 1rem;
   font-style: italic;
   font-weight: 500;
-  margin-block: 0.3em;
+  margin-block: 0.3rem;
 }
