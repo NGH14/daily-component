@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Day #46: CSS has() for Highlight type</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="food__types">
+        Vietnamese Foods:
+        <ul>
+          <li>
+            <p data-type="soup">Soup</p>
+          </li>
+          <li>
+            <p data-type="baguette">Baguette</p>
+          </li>
+          <li>
+            <p data-type="dessert">Dessert</p>
+          </li>
+        </ul>
+      </section>
+      <section class="food__images">
+        <a data-type="dessert">
+          <img alt="Che Bap" src="./Che_Bap.jpg" />
+          A mix of corn, coconut cream and tapioca pearls.
+        </a>
+        <a data-type="baguette">
+          <img alt="Banh Mi" src="./Banh_Mi.jpg" />
+          A typical Vietnamese roll or sandwich is a fusion of meats and vegetables from native Vietnamese cuisine.
+        </a>
+        <a data-type="soup">
+          <img alt="Bun Bo" src="./Bun_Bo.jpg" />
+          A spicy, flavorful noodle soup dishs, featuring beef and a rich, spicy broth.
+        </a>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --highlight: hsl(102, 60%, 70%);
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #fbfafa;
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.food__types {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  font-weight: 800;
+
+  ul {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    background: transparent;
+    border: 1px solid hsl(0deg 0% 0% / 0.5);
+    border-radius: 4px;
+    padding: 4px 16px;
+    font-size: inherit;
+    cursor: pointer;
+  }
+}
+
+.food__images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 8px;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 4px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+}
+
+main:has([data-type='dessert']:hover) [data-type='dessert'],
+main:has([data-type='baguette']:hover) [data-type='baguette'],
+main:has([data-type='soup']:hover) [data-type='soup'] {
+  background: var(--highlight);
+  filter: none;
+  opacity: 1;
+}
+/* Only blur the non-matching images when hover list */
+main:has(.food__types [data-type='dessert']:hover)
+  .food__images
+  [data-type]:not([data-type='dessert']),
+main:has(.food__types [data-type='baguette']:hover)
+  .food__images
+  [data-type]:not([data-type='baguette']),
+main:has(.food__types [data-type='soup']:hover)
+  .food__images
+  [data-type]:not([data-type='soup']) {
+  filter: blur(2px);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+/* Only blur the non-matching images when hover image but not the list elements */
+main:has(.food__images [data-type='dessert']:hover)
+  .food__images
+  [data-type]:not([data-type='dessert']),
+main:has(.food__images [data-type='baguette']:hover)
+  .food__images
+  [data-type]:not([data-type='baguette']),
+main:has(.food__images [data-type='soup']:hover)
+  .food__images
+  [data-type]:not([data-type='soup']) {
+  filter: blur(2px);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
