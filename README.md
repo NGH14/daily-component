@@ -11,7 +11,7 @@ Personal repository for learning and practicing web components techniques throug
 
 ## 📅 Progress
 
-| Day | Component                                  | Main Concept        |
+| Day | Component                                  | Tags                |
 | --- | ------------------------------------------ | ------------------- |
 | 1   | Simple Validate Form with Vanilla JS       | CSS, HTML, JS       |
 | 2   | Simple Skeleton with Vanilla JS            | CSS, HTML, JS       |
@@ -72,4 +72,4 @@ Personal repository for learning and practicing web components techniques throug
 | 57  | Animated Noise Background                  | CSS, HTML, PNG      |
 | 58  | CSS has() for Highlight Category           | CSS, HTML, JPG      |
 | 59  | Group Avatar                               | CSS, HTML           |
-| 60  | Simple Gradient Text                       | CSS, HTML           |
+| 60  | Test                                       | CSS, HTML           |

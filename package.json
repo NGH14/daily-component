@@ -1,0 +1,23 @@
+{
+  "name": "daily-component",
+  "version": "1.0.0",
+  "types": "module",
+  "description": "Personal repository for learning and practicing web components techniques through daily coding exercises.",
+  "main": "newProject.mjs",
+  "scripts": {
+    "start": "node newProject.mjs",
+    "readme": "node updateREADME.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NGH14/daily-component.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NGH14/daily-component/issues"
+  },
+  "homepage": "https://github.com/NGH14/daily-component#readme"
+}
