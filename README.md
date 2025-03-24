@@ -14,6 +14,8 @@ Personal repository for learning and practicing web components techniques throug
 | Day | Component                                  | Tags                |
 | --- | ------------------------------------------ | ------------------- |
 |
+|
+|
 | 1  | Simple Validate Form with Vanilla JS   | CSS, HTML, JS                  |
 | 2  | Simple Skeleton with Vanilla JS        | CSS, HTML, JS                  |
 | 3  | Hover The Odds Text                    | CSS, HTML                      |
@@ -73,3 +75,4 @@ Personal repository for learning and practicing web components techniques throug
 | 57  | Animated Noise Background              | CSS, HTML, PNG                 |
 | 58  | CSS has() for Highlight Category       | CSS, HTML, JPG                 |
 | 59  | Group Avatar                           | CSS, HTML                      |
+| 60  | Hover Button Animation By Transform    | CSS, HTML                      |
