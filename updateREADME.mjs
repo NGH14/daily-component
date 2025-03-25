@@ -84,7 +84,7 @@ export default function addProjectsToReadMe() {
       tags = 'Folder Created';
     }
 
-    return `| ${project.day}  | ${project.projectName.padEnd(
+    return  `| ${project.day}  | ${project.projectName.padEnd(
       38,
       ' ',
     )} | ${tags.padEnd(30, ' ')} |`;
@@ -92,7 +92,7 @@ export default function addProjectsToReadMe() {
 
   // Replace the entire table with the updated version
   const tableHeader = readmeContent.match(
-    /\| Day \| Component\s*\| Tags\s*\|\s*\n\|[-\s|]+\|/,
+    tableRegex,
   )[0];
   const updatedTable = tableHeader + '\n' + newRows.join('\n') + '\n';
 
