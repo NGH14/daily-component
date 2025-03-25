@@ -59,16 +59,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Function to find the next day number
 function findNextDayNumber() {
+  const dayRegex = /^\d+\./;
   const dirs = fs.readdirSync('.')
     .filter(file => fs.statSync(file).isDirectory())
-    .filter(dir => /^\d+\./.test(dir));
+    .filter(dir => dayRegex.test(dir));
 
   if (dirs.length === 0) {
     return 1;
   }
 
   const dayNumbers = dirs
-    .map(dir => parseInt(dir.match(/^(\d+)\./)[1]))
+    .map(dir => parseInt(dir.match(dayRegex)[1]))
     .filter(num => !isNaN(num));
 
   return Math.max(...dayNumbers) + 1;

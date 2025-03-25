@@ -87,7 +87,7 @@ export default function addProjectsToReadMe() {
     return  `| ${project.day}  | ${project.projectName.padEnd(
       38,
       ' ',
-    )} | ${tags.padEnd(30, ' ')} |\n`;
+    )} | ${tags.padEnd(30, ' ')} |`;
   });
 
   // Replace the entire table with the updated version
