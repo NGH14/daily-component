@@ -73,4 +73,5 @@ Personal repository for learning and practicing web components techniques throug
 | 58  | CSS has() for Highlight Category       | CSS, HTML, JPG                 |
 | 59  | Group Avatar                           | CSS, HTML                      |
 | 60  | Hover Button Animation By Transform    | CSS, HTML                      |
+| 61  | Customize Checkbox                     | CSS, HTML                      |
 <!-- PROGRESS TABLE END -->
