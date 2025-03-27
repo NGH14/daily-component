@@ -1,6 +1,6 @@
-import fs  from 'fs';
-import path  from 'path';
-import readline  from 'readline';
+import fs from 'fs';
+import path from 'path';
+import readline from 'readline';
 import addProjectsToReadMe from './updateREADME.mjs';
 
 const rl = readline.createInterface({
@@ -31,13 +31,11 @@ function createHtmlTemplate(projectName, includeJS) {
 // CSS template
 function createCssTemplate(projectName) {
   return `/* ${projectName} Styles */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   line-height: 1.6;
   padding: 20px;
@@ -48,10 +46,8 @@ body {
 // JS template
 function createJsTemplate(projectName) {
   return `// ${projectName} JavaScript
-
 document.addEventListener('DOMContentLoaded', () => {
   console.log('${projectName} loaded!');
-
   // Your code here
 });
 `;
@@ -59,35 +55,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Function to find the next day number
 function findNextDayNumber() {
-  const dayRegex = /^\d+\./;
+  const dayRegex = /^\d{3}\./;
   const dirs = fs.readdirSync('.')
     .filter(file => fs.statSync(file).isDirectory())
     .filter(dir => dayRegex.test(dir));
 
   if (dirs.length === 0) {
-    return 1;
+    return '001';
   }
 
   const dayNumbers = dirs
-    .map(dir => parseInt(dir.match(dayRegex)[1]))
+    .map(dir => parseInt(dir.match(/\d{3}/)[0]))
     .filter(num => !isNaN(num));
 
-  return Math.max(...dayNumbers) + 1;
+  const nextDay = Math.max(...dayNumbers) + 1;
+  return nextDay.toString().padStart(3, '0');
 }
 
 // Main function to create a new project
 function createNewProject() {
   const nextDay = findNextDayNumber();
 
-  rl.question(`Creating project #${nextDay}. Enter project name: `, (projectName) => {
-    // Format project name (capitalize words)
-    const formattedName = projectName
-      .split(' ')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
+  rl.question('Enter a brief project name (one or two words): ', (projectName) => {
+    // Trim and remove any non-alphanumeric characters
+    const sanitizedName = projectName
+      .trim()
+      .replace(/[^a-zA-Z0-9]/g, '')
+      .toLowerCase();
 
-    // Create folder name with day number
-    const folderName = `${String(nextDay).padStart(3, '0')}.${formattedName}`;
+    // Create folder name with padded day number and sanitized project name
+    const folderName = `${nextDay}.${sanitizedName}`;
 
     rl.question('Do you need JavaScript for this project? (y/N): ', (needJS) => {
       const includeJS = needJS.toLowerCase() === 'y';
@@ -95,6 +92,12 @@ function createNewProject() {
       // Create the folder
       fs.mkdirSync(folderName);
       console.log(`Created folder: ${folderName}`);
+
+      // Format project name for display (capitalize first letter)
+      const formattedName = sanitizedName
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
 
       // Create and write HTML file
       fs.writeFileSync(
