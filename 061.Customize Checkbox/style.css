@@ -1,12 +1,84 @@
-/* Customize Checkbox Styles */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
-  line-height: 1.6;
-  padding: 20px;
+  background: #f1f1dc;
+  height: 100dvh;
+  display: grid;
+  place-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1em;
+}
+
+form {
+  --form-color: #e2a02d;
+  --form-disabled: #999;
+  outline: transparent;
+}
+
+.form__control {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.form__control + .form__control {
+  margin-top: 1em;
+}
+
+.form__control--disabled {
+  color: var(--form-disabled);
+  cursor: not-allowed;
+}
+
+input[type='checkbox'] {
+  appearance: none;
+  background-color: var(--form-background);
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+
+  &:before {
+    content: '';
+    width: 0.5em;
+    height: 0.5em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0) rotate(45deg);
+    transform-origin: bottom left;
+    transition: .12s transform ease-in;
+    box-shadow: inset 1em 1em var(--form-color);
+  }
+  &:checked::before {
+    transform: scale(1);
+  }
+  :disabled {
+    --form-color: var(--form-disabled);
+    color: var(--form-disabled);
+    cursor: not-allowed;
+  }
 }

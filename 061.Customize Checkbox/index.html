@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Customize Checkbox</title>
-  <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
-  <h1>Customize Checkbox</h1>
-  <div class="container">
-    <!-- Your content here -->
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Day #61: Customize Checkbox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Customize Checkbox</h1>
+    <form action="">
+      <label class="form__control">
+        <input type="checkbox" name="checkbox" />
+        Default
+      </label>
+
+      <label class="form__control">
+        <input type="checkbox" name="checkbox-checked" checked />
+        Checked
+      </label>
+
+      <label class="form__control form__control--disabled">
+        <input type="checkbox" name="checkbox-disabled" disabled />
+        Disabled
+      </label>
+
+      <label class="form__control form__control--disabled">
+        <input
+          type="checkbox"
+          name="checkbox-disabled-checked"
+          checked
+          disabled
+        />
+        Disabled - Checked
+      </label>
+    </form>
+  </body>
 </html>
