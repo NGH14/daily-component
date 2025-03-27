@@ -14,7 +14,7 @@ export default function addProjectsToReadMe() {
     .map((dir) => {
       const match = dir.match(folderPattern);
       if (match) {
-        const day = parseInt(match[1]);
+        const day = parseInt(match[1], 10);
         const projectName = match[2].trim();
 
         // Get all files in the project folder
@@ -27,9 +27,9 @@ export default function addProjectsToReadMe() {
               files
                 .map((file) => path.extname(file).toLowerCase())
                 .filter((ext) => ext && ext.length > 1) // Filter out empty or single-char extensions
-                .map((ext) => ext.substring(1)),
+                .map((ext) => ext.substring(1)) // Remove the dot
             ),
-          ]; // Remove the dot
+          ];
         } catch (err) {
           console.warn(`Could not read files in ${dir}: ${err.message}`);
         }
@@ -49,27 +49,30 @@ export default function addProjectsToReadMe() {
   projects.sort((a, b) => a.day - b.day);
 
   // Read current README content
-  if (!fs.existsSync('README.md')) {
+  const readmePath = 'README.md';
+  if (!fs.existsSync(readmePath)) {
     console.error('README.md does not exist. Please create it first.');
     return;
   }
 
-  let readmeContent = fs.readFileSync('README.md', 'utf8');
+  let readmeContent = fs.readFileSync(readmePath, 'utf8');
 
-  // Find the progress table in the README
-  const tableRegex =
-    /\| Day \| Component\s*\| Tags\s*\|\s*\n\|[-\s|]+\|\s*\n((?:\|[^\n]*\|\n)*)/;
+  // Define markers to locate the progress table section
+  const startMarker = '<!-- PROGRESS TABLE START -->';
+  const endMarker = '<!-- PROGRESS TABLE END -->';
+
+  // Create a regex that captures everything between the markers
+  const tableRegex = new RegExp(`(${startMarker}\\n)([\\s\\S]*?)\\n(${endMarker})`);
+
   const tableMatch = readmeContent.match(tableRegex);
-
   if (!tableMatch) {
-    console.error('Could not find the Progress table in README.md');
+    console.error('Could not find the progress table markers in README.md');
     return;
   }
 
-  // Extract existing table rows
-  const existingRows = tableMatch[1]
-    .split('\n')
-    .filter((row) => row.trim() !== '' && row.includes('|'));
+  // Build the header for the table
+  const headerRows = `| Day | Component | Tags |
+|-----|-----------|------|`;
 
   // Create rows for all projects with sorted file extension tags
   const newRows = projects.map((project) => {
@@ -84,27 +87,20 @@ export default function addProjectsToReadMe() {
       tags = 'Folder Created';
     }
 
-    return  `| ${project.day}  | ${project.projectName.padEnd(
-      38,
-      ' ',
-    )} | ${tags.padEnd(30, ' ')} |`;
+    return `| ${project.day}  | ${project.projectName.padEnd(38, ' ')} | ${tags.padEnd(30, ' ')} |`;
   });
 
-  // Replace the entire table with the updated version
-  const tableHeader = readmeContent.match(
-    tableRegex,
-  )[0];
-  const updatedTable = tableHeader + '\n' + newRows.join('\n') + '\n';
+  // Build the updated table content with header and new rows
+  const updatedTableContent =
+    tableMatch[1] + headerRows + '\n' + newRows.join('\n') + '\n' + tableMatch[3];
 
-  // Replace the old table with the updated one
-  const updatedReadme = readmeContent.replace(tableRegex, updatedTable);
+  // Replace only the section between the markers
+  const updatedReadme = readmeContent.replace(tableRegex, updatedTableContent);
 
   // Write the updated content back to README.md
-  fs.writeFileSync('README.md', updatedReadme);
+  fs.writeFileSync(readmePath, updatedReadme);
 
-  console.log(
-    `README.md has been updated with ${projects.length} projects total.`,
-  );
+  console.log(`README.md has been updated with ${projects.length} projects total.`);
 }
 
 addProjectsToReadMe();
