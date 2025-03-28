@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Day #62: Customize Ratio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Customize Ratio</h1>
+    <form action="">
+      <label class="form__control">
+        <input type="ratio" name="ratio" />
+        Default
+      </label>
+
+      <label class="form__control">
+        <input type="ratio" name="ratio-checked" checked />
+        Checked
+      </label>
+
+      <label class="form__control form__control--disabled">
+        <input type="ratio" name="ratio-disabled" disabled />
+        Disabled
+      </label>
+
+      <label class="form__control form__control--disabled">
+        <input
+          type="ratio"
+          name="ratio-disabled-checked"
+          checked
+          disabled
+        />
+        Disabled - Checked
+      </label>
+    </form>
+  </body>
+</html>
