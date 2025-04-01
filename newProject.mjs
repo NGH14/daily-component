@@ -80,11 +80,18 @@ function createNewProject() {
     // Trim and remove any non-alphanumeric characters
     const sanitizedName = projectName
       .trim()
-      .replace(/[^a-zA-Z0-9]/g, '')
+      .replace(/[^a-zA-Z0-9]/g, ' ')
       .toLowerCase();
 
+    // Format project name for display (capitalize first letter)
+    const formattedName = sanitizedName
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+
+
     // Create folder name with padded day number and sanitized project name
-    const folderName = `${nextDay}.${sanitizedName}`;
+    const folderName = `${nextDay}.${formattedName}`;
 
     rl.question('Do you need JavaScript for this project? (y/N): ', (needJS) => {
       const includeJS = needJS.toLowerCase() === 'y';
@@ -93,11 +100,7 @@ function createNewProject() {
       fs.mkdirSync(folderName);
       console.log(`Created folder: ${folderName}`);
 
-      // Format project name for display (capitalize first letter)
-      const formattedName = sanitizedName
-        .split(' ')
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(' ');
+
 
       // Create and write HTML file
       fs.writeFileSync(
