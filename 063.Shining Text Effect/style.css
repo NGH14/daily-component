@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100dvh;
+
+  position: relative;
+  background: #171117;
+
+  display: grid;
+  place-content: center;
+
+  font-family: 'Inter', sans-serif;
+}
+
+.text__shine {
+  background-image: linear-gradient(
+    90deg,
+    #e0e0e0 0,
+    #ffffff 10%,
+    #d0d0d0 20%
+  );
+  background-position: 0;
+  background-clip: text;
+
+
+  animation: shine 2s infinite linear;
+  animation-fill-mode: forwards;
+
+  color: transparent;
+  font-weight: 900;
+  font-size: 50px;
+  white-space: nowrap;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+
+  60% {
+    background-position: 120px;
+  }
+
+  100% {
+    background-position: 180px;
+  }
+}

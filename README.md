@@ -74,4 +74,6 @@ Personal repository for learning and practicing web components techniques throug
 | 59  | Group Avatar                           | CSS, HTML                      |
 | 60  | Hover Button Animation By Transform    | CSS, HTML                      |
 | 61  | Customize Checkbox                     | CSS, HTML                      |
+| 62  | Customize Radio                        | CSS, HTML                      |
+| 63  | Shining Text Effect                    | CSS, HTML                      |
 <!-- PROGRESS TABLE END -->
