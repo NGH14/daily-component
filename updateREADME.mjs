@@ -63,8 +63,8 @@ export default function addProjectsToReadMe() {
 
   // Create a regex that captures everything between the markers
   const tableRegex = new RegExp(`(${startMarker}\\n)([\\s\\S]*?)\\n(${endMarker})`);
-
   const tableMatch = readmeContent.match(tableRegex);
+
   if (!tableMatch) {
     console.error('Could not find the progress table markers in README.md');
     return;
@@ -74,7 +74,7 @@ export default function addProjectsToReadMe() {
   const headerRows = `| Day | Component | Tags |
 |-----|-----------|------|`;
 
-  // Create rows for all projects with sorted file extension tags
+  // Create rows for all projects with sorted file extension tags and linked folder names
   const newRows = projects.map((project) => {
     // Sort file extensions alphabetically and convert to uppercase
     let tags = project.fileExtensions
@@ -87,7 +87,11 @@ export default function addProjectsToReadMe() {
       tags = 'Folder Created';
     }
 
-    return `| ${project.day}  | ${project.projectName.padEnd(38, ' ')} | ${tags.padEnd(30, ' ')} |`;
+    // Create a Markdown link to the project folder
+    const linkedProjectName = `[${project.projectName}](./${encodeURIComponent(project.folderName)})`;
+
+    return `| ${project.day}  | ${linkedProjectName.padEnd(45 + 4, ' ')} | ${tags.padEnd(45, ' ')} |`;
+    // Added 4 extra spaces to account for the markdown link syntax [](...)
   });
 
   // Build the updated table content with header and new rows
@@ -99,7 +103,6 @@ export default function addProjectsToReadMe() {
 
   // Write the updated content back to README.md
   fs.writeFileSync(readmePath, updatedReadme);
-
   console.log(`README.md has been updated with ${projects.length} projects total.`);
 }
 
