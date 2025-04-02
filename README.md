@@ -10,6 +10,7 @@ Personal repository for learning and practicing web components techniques throug
 - Experimenting with web techniques
 
 ## 📅 Progress
+
 <!-- PROGRESS TABLE START -->
 | Day | Component | Tags |
 |-----|-----------|------|
@@ -76,4 +77,5 @@ Personal repository for learning and practicing web components techniques throug
 | 61  | [Customize Checkbox](./061.Customize%20Checkbox)  | CSS, HTML                                     |
 | 62  | [Customize Radio](./062.Customize%20Radio)        | CSS, HTML                                     |
 | 63  | [Shining Text Effect](./063.Shining%20Text%20Effect) | CSS, HTML                                     |
+| 64  | [Simple Waving Loader](./064.Simple%20Waving%20Loader) | CSS, HTML                                     |
 <!-- PROGRESS TABLE END -->

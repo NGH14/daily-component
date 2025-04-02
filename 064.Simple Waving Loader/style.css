@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100dvh;
+
+  position: relative;
+  background: #171117;
+
+  display: grid;
+  place-content: center;
+
+  font-family: 'Inter', sans-serif;
+}
+
+.loader__wave {
+  --waveColor: hsl(222, 80%, 53%);
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.loader__bar {
+  width: 20px;
+  height: 30px;
+  margin: 0 5px;
+  background-color: var(--waveColor);
+  border-radius: 18px;
+  animation: waving 1.2s ease-in-out infinite;
+
+  &:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  &:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+}
+
+@keyframes waving {
+  0% {
+    height: 20%;
+  }
+
+  50% {
+    height: 60%;
+  }
+
+  100% {
+    height: 20%;
+  }
+}
