@@ -1,4 +1,4 @@
-# Daily Component :snake:
+# :snake: Daily Component 
 
 Personal repository for learning and practicing web components techniques through daily coding exercises.
 
