@@ -78,4 +78,5 @@ Personal repository for learning and practicing web components techniques throug
 | 62  | [Customize Radio](./062.Customize%20Radio)        | CSS, HTML                                     |
 | 63  | [Shining Text Effect](./063.Shining%20Text%20Effect) | CSS, HTML                                     |
 | 64  | [Simple Waving Loader](./064.Simple%20Waving%20Loader) | CSS, HTML                                     |
+| 65  | [Simple Ellipse Text](./065.Simple%20Ellipse%20Text) | CSS, HTML                                     |
 <!-- PROGRESS TABLE END -->
