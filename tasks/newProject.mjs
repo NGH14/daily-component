@@ -3,45 +3,15 @@ import path from 'path';
 import readline from 'readline';
 import addProjectsToReadMe from './updateREADME.mjs';
 
+import { createCssTemplate } from './template/templateCSS.mjs';
+import { createHtmlTemplate } from './template/templateHTML.mjs';
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
 
-// HTML template with proper linking for CSS and optional JS
-function createHtmlTemplate(projectName, includeJS) {
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${projectName}</title>
-  <link rel="stylesheet" href="style.css">
-  ${includeJS ? '<script src="script.js" defer></script>' : ''}
-</head>
-<body>
-  <h1>${projectName}</h1>
-  <div class="container">
-    <!-- Your content here -->
-  </div>
-</body>
-</html>`;
-}
 
-// CSS template
-function createCssTemplate(projectName) {
-  return `/* ${projectName} Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  line-height: 1.6;
-  padding: 20px;
-}
-`;
-}
 
 // JS template
 function createJsTemplate(projectName) {
@@ -89,6 +59,9 @@ function createNewProject() {
       .map(word => word.charAt(0).toUpperCase() + word.slice(1))
       .join(' ');
 
+    const titleName = `Day #${nextDay}: ${formattedName}`;
+
+
 
     // Create folder name with padded day number and sanitized project name
     const folderName = `${nextDay}.${formattedName}`;
@@ -105,7 +78,7 @@ function createNewProject() {
       // Create and write HTML file
       fs.writeFileSync(
         path.join(folderName, 'index.html'),
-        createHtmlTemplate(formattedName, includeJS)
+        createHtmlTemplate(titleName, includeJS)
       );
       console.log('Created index.html');
 

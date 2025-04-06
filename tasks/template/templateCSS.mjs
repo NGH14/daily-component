@@ -1,0 +1,30 @@
+
+export function createCssTemplate(projectName) {
+  return `
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100dvh;
+
+  position: relative;
+  background: #171117;
+
+  display: grid;
+  place-content: center;
+
+  font-family: 'Inter', sans-serif;
+  color: #fbfbfa;
+}
+`;
+}
