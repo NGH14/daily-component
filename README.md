@@ -79,5 +79,5 @@ Personal repository for learning and practicing web components techniques throug
 | 63  | [Shining Text Effect](./063.Shining%20Text%20Effect) | CSS, HTML                                     |
 | 64  | [Simple Waving Loader](./064.Simple%20Waving%20Loader) | CSS, HTML                                     |
 | 65  | [Simple Ellipse Text](./065.Simple%20Ellipse%20Text) | CSS, HTML                                     |
-| 66  | [Group Of Cards](./066.Group%20Of%20Cards)        | CSS, HTML                                     |
+| 66  | [Simple Card With Transition](./066.Simple%20Card%20With%20Transition) | CSS, HTML                                     |
 <!-- PROGRESS TABLE END -->
