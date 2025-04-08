@@ -1,4 +1,4 @@
-# :snake: Daily Component 
+# :snake: Daily Component
 
 Personal repository for learning and practicing web components techniques through daily coding exercises.
 
@@ -80,4 +80,5 @@ Personal repository for learning and practicing web components techniques throug
 | 64  | [Simple Waving Loader](./064.Simple%20Waving%20Loader) | CSS, HTML                                     |
 | 65  | [Simple Ellipse Text](./065.Simple%20Ellipse%20Text) | CSS, HTML                                     |
 | 66  | [Simple Card With Transition](./066.Simple%20Card%20With%20Transition) | CSS, HTML                                     |
+| 67  | [Button Keyboard Style](./067.Button%20Keyboard%20Style) | CSS, HTML                                     |
 <!-- PROGRESS TABLE END -->
