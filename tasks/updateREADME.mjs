@@ -4,7 +4,7 @@ import path from 'path';
 /**
  * Creates a JSON file with project data and updates the README.md
  */
-export function addProjectsToReadMe() {
+ function addProjectsToReadMe() {
   console.time('Total execution time');
 
   // Get all folders that match the pattern "###.Project Name"
@@ -293,3 +293,5 @@ if (checkForChanges()) {
 } else {
   console.log("Using existing data - no changes detected");
 }
+
+export default addProjectsToReadMe;
