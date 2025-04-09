@@ -7,6 +7,13 @@
 			"problemMatcher": [],
 			"label": "npm: readme",
 			"detail": "node updateREADME.mjs"
+		},
+		{
+			"type": "npm",
+			"script": "start",
+			"problemMatcher": [],
+			"label": "init the new project",
+			"detail": "node ./tasks/newProject.mjs"
 		}
 	]
 }

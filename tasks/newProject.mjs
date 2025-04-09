@@ -5,6 +5,7 @@ import addProjectsToReadMe from './updateREADME.mjs';
 
 import { createCssTemplate } from './template/templateCSS.mjs';
 import { createHtmlTemplate } from './template/templateHTML.mjs';
+import { createJsTemplate } from './template/templateJS.mjs';
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -13,15 +14,7 @@ const rl = readline.createInterface({
 
 
 
-// JS template
-function createJsTemplate(projectName) {
-  return `// ${projectName} JavaScript
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('${projectName} loaded!');
-  // Your code here
-});
-`;
-}
+
 
 // Function to find the next day number
 function findNextDayNumber() {

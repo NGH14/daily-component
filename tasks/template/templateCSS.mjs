@@ -1,4 +1,3 @@
-
 export function createCssTemplate(projectName) {
   return `
 * {
@@ -18,7 +17,7 @@ body {
   height: 100dvh;
 
   position: relative;
-  background: #171117;
+  background-color: #171117;
 
   display: grid;
   place-content: center;
