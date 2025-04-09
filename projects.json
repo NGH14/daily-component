@@ -1,0 +1,538 @@
+[
+  {
+    "id": "001",
+    "title": "Simple Validate Form with Vanilla JS",
+    "createdDate": "2025-01-04",
+    "modifiedDate": "2025-01-10",
+    "tech": "CSS, HTML, JavaScript",
+    "path": "001.Simple Validate Form with Vanilla JS"
+  },
+  {
+    "id": "002",
+    "title": "Simple Skeleton with Vanilla JS",
+    "createdDate": "2025-01-04",
+    "modifiedDate": "2025-01-13",
+    "tech": "CSS, HTML, JavaScript",
+    "path": "002.Simple Skeleton with Vanilla JS"
+  },
+  {
+    "id": "003",
+    "title": "Hover The Odds Text",
+    "createdDate": "2025-01-04",
+    "modifiedDate": "2025-01-04",
+    "tech": "CSS, HTML",
+    "path": "003.Hover The Odds Text"
+  },
+  {
+    "id": "004",
+    "title": "Google Input Style",
+    "createdDate": "2025-01-04",
+    "modifiedDate": "2025-01-04",
+    "tech": "CSS, HTML",
+    "path": "004.Google Input Style"
+  },
+  {
+    "id": "005",
+    "title": "Newsletter",
+    "createdDate": "2025-01-05",
+    "modifiedDate": "2025-03-10",
+    "tech": "CSS, HTML, JavaScript",
+    "path": "005.Newsletter"
+  },
+  {
+    "id": "006",
+    "title": "Scroll Long Image on Hover",
+    "createdDate": "2025-01-06",
+    "modifiedDate": "2025-01-06",
+    "tech": "CSS, HTML",
+    "path": "006.Scroll Long Image on Hover"
+  },
+  {
+    "id": "007",
+    "title": "Simple Quote",
+    "createdDate": "2025-01-07",
+    "modifiedDate": "2025-01-07",
+    "tech": "CSS, HTML, WEBP",
+    "path": "007.Simple Quote"
+  },
+  {
+    "id": "008",
+    "title": "Simple Grids",
+    "createdDate": "2025-01-08",
+    "modifiedDate": "2025-01-09",
+    "tech": "CSS, HTML, JSON, JavaScript",
+    "path": "008.Simple Grids"
+  },
+  {
+    "id": "009",
+    "title": "Glass Effect",
+    "createdDate": "2025-01-09",
+    "modifiedDate": "2025-01-10",
+    "tech": "CSS, HTML",
+    "path": "009.Glass Effect"
+  },
+  {
+    "id": "010",
+    "title": "Simple Textarea",
+    "createdDate": "2025-01-09",
+    "modifiedDate": "2025-01-10",
+    "tech": "CSS, HTML, JavaScript",
+    "path": "010.Simple Textarea "
+  },
+  {
+    "id": "011",
+    "title": "Underneath Footer",
+    "createdDate": "2025-01-11",
+    "modifiedDate": "2025-03-04",
+    "tech": "CSS, HTML",
+    "path": "011.Underneath Footer"
+  },
+  {
+    "id": "012",
+    "title": "Simple Grid",
+    "createdDate": "2025-01-12",
+    "modifiedDate": "2025-01-12",
+    "tech": "CSS, HTML",
+    "path": "012.Simple Grid "
+  },
+  {
+    "id": "013",
+    "title": "Simple Toast",
+    "createdDate": "2025-01-06",
+    "modifiedDate": "2025-01-13",
+    "tech": "CSS, HTML",
+    "path": "013.Simple Toast"
+  },
+  {
+    "id": "014",
+    "title": "Simple System Theme",
+    "createdDate": "2025-01-14",
+    "modifiedDate": "2025-02-19",
+    "tech": "CSS, HTML, JavaScript",
+    "path": "014.Simple System Theme"
+  },
+  {
+    "id": "015",
+    "title": "Progress Indicator (CSS only)",
+    "createdDate": "2025-01-15",
+    "modifiedDate": "2025-01-15",
+    "tech": "CSS, HTML",
+    "path": "015.Progress Indicator (CSS only)"
+  },
+  {
+    "id": "016",
+    "title": "Text Blurring",
+    "createdDate": "2025-01-16",
+    "modifiedDate": "2025-01-16",
+    "tech": "CSS, HTML",
+    "path": "016.Text Blurring"
+  },
+  {
+    "id": "017",
+    "title": "System Badge (currentColor)",
+    "createdDate": "2025-01-17",
+    "modifiedDate": "2025-01-22",
+    "tech": "CSS, HTML",
+    "path": "017.System Badge (currentColor)"
+  },
+  {
+    "id": "018",
+    "title": "Tooltip (abbr)",
+    "createdDate": "2025-01-18",
+    "modifiedDate": "2025-01-19",
+    "tech": "CSS, HTML",
+    "path": "018.Tooltip (abbr)"
+  },
+  {
+    "id": "019",
+    "title": "Fading Cirle (CSS only)",
+    "createdDate": "2025-01-19",
+    "modifiedDate": "2025-01-19",
+    "tech": "CSS, HTML",
+    "path": "019.Fading Cirle (CSS only)"
+  },
+  {
+    "id": "020",
+    "title": "Plan Section (2.5D)",
+    "createdDate": "2025-01-20",
+    "modifiedDate": "2025-01-25",
+    "tech": "CSS, HTML",
+    "path": "020.Plan Section (2.5D)"
+  },
+  {
+    "id": "021",
+    "title": "Coupon in Corner",
+    "createdDate": "2025-01-21",
+    "modifiedDate": "2025-01-25",
+    "tech": "CSS, HTML",
+    "path": "021.Coupon in Corner"
+  },
+  {
+    "id": "022",
+    "title": "Gradient Text",
+    "createdDate": "2025-01-22",
+    "modifiedDate": "2025-03-27",
+    "tech": "CSS, HTML",
+    "path": "022.Gradient Text"
+  },
+  {
+    "id": "023",
+    "title": "Simple Privacy Dropdown",
+    "createdDate": "2025-01-23",
+    "modifiedDate": "2025-01-23",
+    "tech": "CSS, HTML, JavaScript",
+    "path": "023.Simple Privacy Dropdown "
+  },
+  {
+    "id": "024",
+    "title": "Simple Video Background",
+    "createdDate": "2025-01-24",
+    "modifiedDate": "2025-01-24",
+    "tech": "CSS, HTML",
+    "path": "024.Simple Video Background"
+  },
+  {
+    "id": "025",
+    "title": "Image Gallery 2.5D",
+    "createdDate": "2025-01-25",
+    "modifiedDate": "2025-02-05",
+    "tech": "CSS, HTML, JavaScript",
+    "path": "025.Image Gallery 2.5D"
+  },
+  {
+    "id": "026",
+    "title": "Simple Tab",
+    "createdDate": "2025-01-28",
+    "modifiedDate": "2025-02-06",
+    "tech": "CSS, HTML",
+    "path": "026.Simple Tab"
+  },
+  {
+    "id": "027",
+    "title": "Simple Pagination",
+    "createdDate": "2025-01-28",
+    "modifiedDate": "2025-02-09",
+    "tech": "CSS, HTML, JavaScript",
+    "path": "027.Simple Pagination"
+  },
+  {
+    "id": "028",
+    "title": "Expand Text Button",
+    "createdDate": "2025-02-05",
+    "modifiedDate": "2025-02-09",
+    "tech": "CSS, HTML",
+    "path": "028.Expand Text Button"
+  },
+  {
+    "id": "029",
+    "title": "Simple Text Typing",
+    "createdDate": "2025-01-31",
+    "modifiedDate": "2025-02-09",
+    "tech": "CSS, HTML, JavaScript",
+    "path": "029.Simple Text Typing"
+  },
+  {
+    "id": "030",
+    "title": "Simple Follow Cursor",
+    "createdDate": "2025-01-31",
+    "modifiedDate": "2025-02-10",
+    "tech": "CSS, HTML, JavaScript",
+    "path": "030.Simple Follow Cursor"
+  },
+  {
+    "id": "031",
+    "title": "Simple Progress Steps",
+    "createdDate": "2025-02-05",
+    "modifiedDate": "2025-02-18",
+    "tech": "CSS, HTML, JavaScript",
+    "path": "031.Simple Progress Steps"
+  },
+  {
+    "id": "032",
+    "title": "Noise Filter Background",
+    "createdDate": "2025-02-02",
+    "modifiedDate": "2025-02-11",
+    "tech": "CSS, HTML",
+    "path": "032.Noise Filter Background"
+  },
+  {
+    "id": "033",
+    "title": "Text Overlay Video",
+    "createdDate": "2025-02-05",
+    "modifiedDate": "2025-03-12",
+    "tech": "CSS, HTML",
+    "path": "033.Text Overlay Video"
+  },
+  {
+    "id": "034",
+    "title": "Image Hover Zoom In",
+    "createdDate": "2025-01-31",
+    "modifiedDate": "2025-02-13",
+    "tech": "CSS, HTML",
+    "path": "034.Image Hover Zoom In"
+  },
+  {
+    "id": "035",
+    "title": "Card Hover Blur Effect",
+    "createdDate": "2025-02-01",
+    "modifiedDate": "2025-02-14",
+    "tech": "CSS, HTML",
+    "path": "035.Card Hover Blur Effect"
+  },
+  {
+    "id": "036",
+    "title": "Inline Images Text Flow",
+    "createdDate": "2025-02-15",
+    "modifiedDate": "2025-02-15",
+    "tech": "CSS, HTML",
+    "path": "036.Inline Images Text Flow"
+  },
+  {
+    "id": "037",
+    "title": "Grid Image with Caption",
+    "createdDate": "2025-02-16",
+    "modifiedDate": "2025-02-16",
+    "tech": "CSS, HTML",
+    "path": "037.Grid Image with Caption"
+  },
+  {
+    "id": "038",
+    "title": "Button with text Color and Color Mix",
+    "createdDate": "2025-02-18",
+    "modifiedDate": "2025-02-18",
+    "tech": "CSS, HTML",
+    "path": "038.Button with text Color and Color Mix"
+  },
+  {
+    "id": "039",
+    "title": "Simple Camera Border with conic-gradient",
+    "createdDate": "2025-02-18",
+    "modifiedDate": "2025-02-18",
+    "tech": "CSS, HTML",
+    "path": "039.Simple Camera Border with conic-gradient"
+  },
+  {
+    "id": "040",
+    "title": "Stack Avatars CSS only",
+    "createdDate": "2025-02-20",
+    "modifiedDate": "2025-02-20",
+    "tech": "CSS, HTML",
+    "path": "040.Stack Avatars CSS only"
+  },
+  {
+    "id": "041",
+    "title": "Toggle Button IOS style",
+    "createdDate": "2025-02-21",
+    "modifiedDate": "2025-02-21",
+    "tech": "CSS, HTML",
+    "path": "041.Toggle Button IOS style"
+  },
+  {
+    "id": "042",
+    "title": "Counting Up Number",
+    "createdDate": "2025-02-23",
+    "modifiedDate": "2025-02-24",
+    "tech": "CSS, HTML, JavaScript",
+    "path": "042.Counting Up Number"
+  },
+  {
+    "id": "043",
+    "title": "Simple Bounce Loader",
+    "createdDate": "2025-02-24",
+    "modifiedDate": "2025-02-26",
+    "tech": "CSS, HTML",
+    "path": "043.Simple Bounce Loader"
+  },
+  {
+    "id": "044",
+    "title": "Simple Rating Star",
+    "createdDate": "2025-02-26",
+    "modifiedDate": "2025-02-26",
+    "tech": "CSS, HTML",
+    "path": "044.Simple Rating Star"
+  },
+  {
+    "id": "045",
+    "title": "Diagonal List Card",
+    "createdDate": "2025-02-27",
+    "modifiedDate": "2025-02-27",
+    "tech": "CSS, HTML",
+    "path": "045.Diagonal List Card"
+  },
+  {
+    "id": "046",
+    "title": "has() CSS to Image Caption",
+    "createdDate": "2025-03-01",
+    "modifiedDate": "2025-03-19",
+    "tech": "CSS, HTML",
+    "path": "046.has() CSS to Image Caption"
+  },
+  {
+    "id": "047",
+    "title": "Simply Text Marquee CSS Only",
+    "createdDate": "2025-03-03",
+    "modifiedDate": "2025-03-03",
+    "tech": "CSS, HTML",
+    "path": "047.Simply Text Marquee CSS Only"
+  },
+  {
+    "id": "048",
+    "title": "Highlighted Text Button Style",
+    "createdDate": "2025-03-07",
+    "modifiedDate": "2025-03-07",
+    "tech": "CSS, HTML",
+    "path": "048.Highlighted Text Button Style"
+  },
+  {
+    "id": "049",
+    "title": "Framed Style",
+    "createdDate": "2025-03-08",
+    "modifiedDate": "2025-03-08",
+    "tech": "CSS, HTML",
+    "path": "049.Framed Style"
+  },
+  {
+    "id": "050",
+    "title": "Component Selection Highlight",
+    "createdDate": "2025-03-08",
+    "modifiedDate": "2025-03-08",
+    "tech": "CSS, HTML",
+    "path": "050.Component Selection Highlight"
+  },
+  {
+    "id": "051",
+    "title": "Simple Spinning Text with SVG",
+    "createdDate": "2025-03-09",
+    "modifiedDate": "2025-03-09",
+    "tech": "CSS, HTML",
+    "path": "051.Simple Spinning Text with SVG"
+  },
+  {
+    "id": "052",
+    "title": "Transparent Inner Border with CSS Mask",
+    "createdDate": "2025-03-12",
+    "modifiedDate": "2025-03-12",
+    "tech": "CSS, HTML",
+    "path": "052.Transparent Inner Border with CSS Mask"
+  },
+  {
+    "id": "053",
+    "title": "Simple Card With Clip-Path",
+    "createdDate": "2025-03-13",
+    "modifiedDate": "2025-03-13",
+    "tech": "CSS, HTML",
+    "path": "053.Simple Card With Clip-Path"
+  },
+  {
+    "id": "054",
+    "title": "Simple 2.5D Button",
+    "createdDate": "2025-03-15",
+    "modifiedDate": "2025-03-17",
+    "tech": "CSS, HTML",
+    "path": "054.Simple 2.5D Button"
+  },
+  {
+    "id": "055",
+    "title": "Simple Grid Background With Conic-Gradient",
+    "createdDate": "2025-03-16",
+    "modifiedDate": "2025-03-16",
+    "tech": "CSS, HTML",
+    "path": "055.Simple Grid Background With Conic-Gradient"
+  },
+  {
+    "id": "056",
+    "title": "Simple del & ins HTML tag",
+    "createdDate": "2025-03-17",
+    "modifiedDate": "2025-03-17",
+    "tech": "CSS, HTML",
+    "path": "056.Simple del & ins HTML tag"
+  },
+  {
+    "id": "057",
+    "title": "Animated Noise Background",
+    "createdDate": "2025-03-18",
+    "modifiedDate": "2025-03-18",
+    "tech": "CSS, HTML, PNG",
+    "path": "057.Animated Noise Background"
+  },
+  {
+    "id": "058",
+    "title": "CSS has() for Highlight Category",
+    "createdDate": "2025-03-20",
+    "modifiedDate": "2025-03-20",
+    "tech": "CSS, HTML, JPG",
+    "path": "058.CSS has() for Highlight Category"
+  },
+  {
+    "id": "059",
+    "title": "Group Avatar",
+    "createdDate": "2025-03-21",
+    "modifiedDate": "2025-03-21",
+    "tech": "CSS, HTML",
+    "path": "059.Group Avatar"
+  },
+  {
+    "id": "060",
+    "title": "Hover Button Animation By Transform",
+    "createdDate": "2025-03-24",
+    "modifiedDate": "2025-03-27",
+    "tech": "CSS, HTML",
+    "path": "060.Hover Button Animation By Transform "
+  },
+  {
+    "id": "061",
+    "title": "Customize Checkbox",
+    "createdDate": "2025-03-27",
+    "modifiedDate": "2025-03-27",
+    "tech": "CSS, HTML",
+    "path": "061.Customize Checkbox"
+  },
+  {
+    "id": "062",
+    "title": "Customize Radio",
+    "createdDate": "2025-03-28",
+    "modifiedDate": "2025-04-01",
+    "tech": "CSS, HTML",
+    "path": "062.Customize Radio"
+  },
+  {
+    "id": "063",
+    "title": "Shining Text Effect",
+    "createdDate": "2025-04-01",
+    "modifiedDate": "2025-04-02",
+    "tech": "CSS, HTML",
+    "path": "063.Shining Text Effect"
+  },
+  {
+    "id": "064",
+    "title": "Simple Waving Loader",
+    "createdDate": "2025-04-02",
+    "modifiedDate": "2025-04-02",
+    "tech": "CSS, HTML",
+    "path": "064.Simple Waving Loader"
+  },
+  {
+    "id": "065",
+    "title": "Simple Ellipse Text",
+    "createdDate": "2025-04-04",
+    "modifiedDate": "2025-04-06",
+    "tech": "CSS, HTML",
+    "path": "065.Simple Ellipse Text"
+  },
+  {
+    "id": "066",
+    "title": "Simple Card With Transition",
+    "createdDate": "2025-04-06",
+    "modifiedDate": "2025-04-08",
+    "tech": "CSS, HTML",
+    "path": "066.Simple Card With Transition"
+  },
+  {
+    "id": "067",
+    "title": "Button Keyboard Style",
+    "createdDate": "2025-04-08",
+    "modifiedDate": "2025-04-09",
+    "tech": "CSS, HTML",
+    "path": "067.Button Keyboard Style"
+  }
+]
