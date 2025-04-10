@@ -15,6 +15,7 @@ export function createHtmlTemplate(projectName, includeJS) {
   ${includeJS ? '<script src="script.js" defer></script>' : ''}
 </head>
 <body>
+
 </body>
 </html>`;
 }
