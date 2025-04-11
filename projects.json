@@ -550,5 +550,13 @@
     "modifiedDate": "2025-04-10",
     "tech": "CSS, HTML",
     "path": "069.Simple Notify Button"
+  },
+  {
+    "id": "070",
+    "title": "Image On Error Placeholder",
+    "createdDate": "2025-04-11",
+    "modifiedDate": "2025-04-11",
+    "tech": "CSS, HTML, JavaScript",
+    "path": "070.Image On Error Placeholder"
   }
 ]

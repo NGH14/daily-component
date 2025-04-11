@@ -83,4 +83,5 @@ Personal repository for learning and practicing web components techniques throug
 | 67  | [Button Keyboard Style](./067.Button%20Keyboard%20Style) | 2025-04-08 | 2025-04-09 | CSS, HTML |
 | 68  | [Directionally Aware Button](./068.Directionally%20Aware%20Button) | 2025-04-09 | 2025-04-10 | CSS, HTML, JavaScript |
 | 69  | [Simple Notify Button](./069.Simple%20Notify%20Button) | 2025-04-10 | 2025-04-10 | CSS, HTML |
+| 70  | [Image On Error Placeholder](./070.Image%20On%20Error%20Placeholder) | 2025-04-11 | 2025-04-11 | CSS, HTML, JavaScript |
 <!-- PROGRESS TABLE END -->
