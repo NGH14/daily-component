@@ -556,7 +556,15 @@
     "title": "Image On Error Placeholder",
     "createdDate": "2025-04-11",
     "modifiedDate": "2025-04-11",
-    "tech": "CSS, HTML, JavaScript",
+    "tech": "CSS, HTML, JPG",
     "path": "070.Image On Error Placeholder"
+  },
+  {
+    "id": "071",
+    "title": "Simple Faqs Section",
+    "createdDate": "2025-04-13",
+    "modifiedDate": "2025-04-13",
+    "tech": "CSS, HTML",
+    "path": "071.Simple Faqs Section"
   }
 ]
