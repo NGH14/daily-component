@@ -85,4 +85,5 @@ Personal repository for learning and practicing web components techniques throug
 | 69  | [Simple Notify Button](./069.Simple%20Notify%20Button) | 2025-04-10 | 2025-04-10 | CSS, HTML |
 | 70  | [Image On Error Placeholder](./070.Image%20On%20Error%20Placeholder) | 2025-04-11 | 2025-04-11 | CSS, HTML, JPG |
 | 71  | [Simple FAQs Section](./071.Simple%20FAQs%20Section) | 2025-04-13 | 2025-04-13 | CSS, HTML |
+| 72  | [Simple Menu CSS Variable](./072.Simple%20Menu%20CSS%20Variable) | 2025-04-14 | 2025-04-14 | CSS, HTML |
 <!-- PROGRESS TABLE END -->

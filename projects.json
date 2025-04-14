@@ -566,5 +566,13 @@
     "modifiedDate": "2025-04-13",
     "tech": "CSS, HTML",
     "path": "071.Simple FAQs Section"
+  },
+  {
+    "id": "072",
+    "title": "Simple Menu CSS Variable",
+    "createdDate": "2025-04-14",
+    "modifiedDate": "2025-04-14",
+    "tech": "CSS, HTML",
+    "path": "072.Simple Menu CSS Variable"
   }
 ]
