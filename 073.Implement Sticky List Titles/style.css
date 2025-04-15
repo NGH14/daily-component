@@ -24,3 +24,32 @@ body {
   font-family: 'Inter', sans-serif;
   color: #fbfbfa;
 }
+
+
+.stack__sticky {
+  background-color: #c2c2c0;
+  color: #171117;
+  margin: 0;
+  height: 60vh;
+  width: 320px;
+  border-radius: 15px;
+  overflow-y: auto;
+}
+
+.stack__sticky dt {
+  position: sticky;
+  top: 0;
+  font-weight: 700;
+  background-color: #6F826A;
+  padding: 0.22rem 1rem;
+
+}
+
+.stack__sticky dd {
+  margin: 0;
+  padding: 0.75rem 1rem;
+}
+
+.stack__sticky dd+dt {
+  margin-top: 1rem;
+}
