@@ -574,5 +574,13 @@
     "modifiedDate": "2025-04-14",
     "tech": "CSS, HTML",
     "path": "072.Simple Menu CSS Variable"
+  },
+  {
+    "id": "073",
+    "title": "Implement Sticky List Titles",
+    "createdDate": "2025-04-15",
+    "modifiedDate": "2025-04-15",
+    "tech": "CSS, HTML",
+    "path": "073.Implement Sticky List Titles"
   }
 ]
