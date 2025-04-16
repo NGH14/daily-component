@@ -582,5 +582,13 @@
     "modifiedDate": "2025-04-15",
     "tech": "CSS, HTML",
     "path": "073.Implement Sticky List Titles"
+  },
+  {
+    "id": "074",
+    "title": "CSS For a Tag Without Class",
+    "createdDate": "2025-04-16",
+    "modifiedDate": "2025-04-16",
+    "tech": "CSS, HTML",
+    "path": "074.CSS For a Tag Without Class"
   }
 ]

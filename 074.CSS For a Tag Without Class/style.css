@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100dvh;
+
+  position: relative;
+  background-color: #171117;
+
+  display: grid;
+  place-content: center;
+
+  font-family: 'Inter', sans-serif;
+  color: #fbfbfa;
+}
+
+a[href]:not([class]) {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffa200;
+  text-decoration: underline dotted #b09059;
+
+  &:hover {
+    text-decoration: underline solid currentColor;
+  }
+}

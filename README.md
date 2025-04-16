@@ -87,4 +87,5 @@ Personal repository for learning and practicing web components techniques throug
 | 71  | [Simple FAQs Section](./071.Simple%20FAQs%20Section) | 2025-04-13 | 2025-04-13 | CSS, HTML |
 | 72  | [Simple Menu CSS Variable](./072.Simple%20Menu%20CSS%20Variable) | 2025-04-14 | 2025-04-14 | CSS, HTML |
 | 73  | [Implement Sticky List Titles](./073.Implement%20Sticky%20List%20Titles) | 2025-04-15 | 2025-04-15 | CSS, HTML |
+| 74  | [CSS For a Tag Without Class](./074.CSS%20For%20a%20Tag%20Without%20Class) | 2025-04-16 | 2025-04-16 | CSS, HTML |
 <!-- PROGRESS TABLE END -->
