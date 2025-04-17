@@ -590,5 +590,13 @@
     "modifiedDate": "2025-04-16",
     "tech": "CSS, HTML",
     "path": "074.CSS For a Tag Without Class"
+  },
+  {
+    "id": "075",
+    "title": "Simple Sliding Up Image Caption",
+    "createdDate": "2025-04-17",
+    "modifiedDate": "2025-04-17",
+    "tech": "CSS, HTML",
+    "path": "075.Simple Sliding Up Image Caption"
   }
 ]
