@@ -596,7 +596,15 @@
     "title": "Simple Sliding Up Image Caption",
     "createdDate": "2025-04-17",
     "modifiedDate": "2025-04-17",
-    "tech": "CSS, HTML",
+    "tech": "CSS, HTML, JPG",
     "path": "075.Simple Sliding Up Image Caption"
+  },
+  {
+    "id": "076",
+    "title": "Simple Drop Caps",
+    "createdDate": "2025-04-18",
+    "modifiedDate": "2025-04-18",
+    "tech": "CSS, HTML",
+    "path": "076.Simple Drop Caps"
   }
 ]

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100dvh;
+
+  position: relative;
+  background-color: #171117;
+
+  display: grid;
+  place-content: center;
+
+  font-family: 'Inter', sans-serif;
+  color: #fbfbfa;
+}
+
+.content {
+  width: 500px;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: justify;
+  margin-block: 1rem;
+  padding: 1rem;
+
+  blockquote:first-child::first-letter {
+    color: #4f5fb3;
+    float: left;
+    margin: 0 8px 0 4px;
+
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
+
+    text-transform: uppercase;
+  }
+
+  cite {
+    font-style: italic;
+    font-weight: 600;
+    color: #4f5fb3;
+  }
+}

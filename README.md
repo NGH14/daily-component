@@ -88,5 +88,6 @@ Personal repository for learning and practicing web components techniques throug
 | 72  | [Simple Menu CSS Variable](./072.Simple%20Menu%20CSS%20Variable) | 2025-04-14 | 2025-04-14 | CSS, HTML |
 | 73  | [Implement Sticky List Titles](./073.Implement%20Sticky%20List%20Titles) | 2025-04-15 | 2025-04-15 | CSS, HTML |
 | 74  | [CSS For a Tag Without Class](./074.CSS%20For%20a%20Tag%20Without%20Class) | 2025-04-16 | 2025-04-16 | CSS, HTML |
-| 75  | [Simple Sliding Up Image Caption](./075.Simple%20Sliding%20Up%20Image%20Caption) | 2025-04-17 | 2025-04-17 | CSS, HTML |
+| 75  | [Simple Sliding Up Image Caption](./075.Simple%20Sliding%20Up%20Image%20Caption) | 2025-04-17 | 2025-04-17 | CSS, HTML, JPG |
+| 76  | [Simple Drop Caps](./076.Simple%20Drop%20Caps) | 2025-04-18 | 2025-04-18 | CSS, HTML |
 <!-- PROGRESS TABLE END -->
