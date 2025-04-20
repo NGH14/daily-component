@@ -606,5 +606,13 @@
     "modifiedDate": "2025-04-18",
     "tech": "CSS, HTML",
     "path": "076.Simple Drop Caps"
+  },
+  {
+    "id": "077",
+    "title": "Simple Css Long Paragraph Column",
+    "createdDate": "2025-04-20",
+    "modifiedDate": "2025-04-20",
+    "tech": "CSS, HTML",
+    "path": "077.Simple Css Long Paragraph Column"
   }
 ]

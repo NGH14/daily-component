@@ -90,4 +90,5 @@ Personal repository for learning and practicing web components techniques throug
 | 74  | [CSS For a Tag Without Class](./074.CSS%20For%20a%20Tag%20Without%20Class) | 2025-04-16 | 2025-04-16 | CSS, HTML |
 | 75  | [Simple Sliding Up Image Caption](./075.Simple%20Sliding%20Up%20Image%20Caption) | 2025-04-17 | 2025-04-17 | CSS, HTML, JPG |
 | 76  | [Simple Drop Caps](./076.Simple%20Drop%20Caps) | 2025-04-18 | 2025-04-18 | CSS, HTML |
+| 77  | [Simple Css Long Paragraph Column](./077.Simple%20Css%20Long%20Paragraph%20Column) | 2025-04-20 | 2025-04-20 | CSS, HTML |
 <!-- PROGRESS TABLE END -->
