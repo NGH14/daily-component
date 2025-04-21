@@ -614,5 +614,13 @@
     "modifiedDate": "2025-04-20",
     "tech": "CSS, HTML",
     "path": "077.Simple Css Long Paragraph Column"
+  },
+  {
+    "id": "078",
+    "title": "Simple Input With Prefix",
+    "createdDate": "2025-04-21",
+    "modifiedDate": "2025-04-21",
+    "tech": "CSS, HTML",
+    "path": "078.Simple Input With Prefix"
   }
 ]

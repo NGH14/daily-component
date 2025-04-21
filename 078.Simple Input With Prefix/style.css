@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100dvh;
+
+  position: relative;
+  background-color: #171117;
+
+  display: grid;
+  place-content: center;
+
+  font-family: 'Inter', sans-serif;
+  color: #fbfbfa;
+}
+
+.input--prefix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  width: 70px;
+  font-weight: 600;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.input--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 270px;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
+  border: 2px solid #000000;
+
+  input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    font-weight: 500;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px 10px;
+    height: 100%;
+    width: 160px;
+    font-size: 15px;
+  }
+}
+
+.input--icon {
+  font-size: 16px;
+  background-color: currentColor;
+  height: 100%;
+  width: 40px;
+  display: grid;
+  place-content: center;
+  padding-right: 10px;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+  position: relative;
+}

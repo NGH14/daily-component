@@ -91,4 +91,5 @@ Personal repository for learning and practicing web components techniques throug
 | 75  | [Simple Sliding Up Image Caption](./075.Simple%20Sliding%20Up%20Image%20Caption) | 2025-04-17 | 2025-04-17 | CSS, HTML, JPG |
 | 76  | [Simple Drop Caps](./076.Simple%20Drop%20Caps) | 2025-04-18 | 2025-04-18 | CSS, HTML |
 | 77  | [Simple Css Long Paragraph Column](./077.Simple%20Css%20Long%20Paragraph%20Column) | 2025-04-20 | 2025-04-20 | CSS, HTML |
+| 78  | [Simple Input With Prefix](./078.Simple%20Input%20With%20Prefix) | 2025-04-21 | 2025-04-21 | CSS, HTML |
 <!-- PROGRESS TABLE END -->
