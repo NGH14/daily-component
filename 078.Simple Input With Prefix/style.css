@@ -24,56 +24,62 @@ body {
   color: #fbfbfa;
 }
 
-.input--prefix {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666;
-  font-size: 15px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  height: 100%;
-  width: 70px;
-  font-weight: 600;
-  padding: 10px;
-  background-color: #f0f0f0;
-  border-radius: 10px 0px 0px 10px;
-}
-
 .input--container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 270px;
-  height: 50px;
+  width: 15em;
+  height: 3em;
   border-radius: 10px;
   position: relative;
   border: 2px solid #000000;
+  font-size: 18px;
 
   input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     outline: none;
-    font-weight: 500;
+    font-weight: normal;
     border: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 0px 10px;
+    padding: 0px 1em;
     height: 100%;
-    width: 160px;
+    width: 15em;
     font-size: 15px;
   }
 }
 
-.input--icon {
-  font-size: 16px;
-  background-color: currentColor;
-  height: 100%;
-  width: 40px;
+.input--prefix {
   display: grid;
   place-content: center;
+  width: 10em;
+  height: 100%;
+
+  color: #999;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 1em;
+  background-color: #dedede;
+
+  border-radius: 10px 0px 0px 10px;
+
+  cursor: not-allowed;
+}
+
+.input--icon {
+  display: grid;
+  place-content: center;
+
+  font-size: 1e;
+  filter: grayscale(50%);
+  background-color: currentColor;
+  vertical-align: middle;
+
+  height: 100%;
+
+
+
   padding-right: 10px;
   border-radius: 0px 10px 10px 0px;
-  cursor: pointer;
+
+  cursor: default;
   position: relative;
 }
