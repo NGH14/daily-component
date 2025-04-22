@@ -1,26 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Day #078: Simple Input With Prefix</title>
-  <link rel="stylesheet" href="style.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day #078: Simple Input With Prefix</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+  </head>
+  <body>
+    <section class="example">
+      <h2>Domain Prefix and Postfix</h2>
+      <form id="domainForm">
+        <div class="form-group">
+          <div class="input-container">
+            <span class="prefix">https://</span>
+            <input
+              type="text"
+              class="input-field"
+              id="domainInput"
+              placeholder="example"
+              data-prefix="https://"
+              data-postfix=".com"
+            />
+            <span class="postfix">.com</span>
+          </div>
+        </div>
+      </form>
+    </section>
 
-</head>
-<body>
-<section class="input--container">
-  <span class="input--prefix">https://</span>
-  <input placeholder="site.com.vn" />
-  <p class="input--icon">
-    &#127760;
-  </p>
-</section>
+    <section class="example">
+      <h2>Social Prefix</h2>
+      <form id="socialForm">
+        <div class="form-group">
+          <div class="input-container">
+            <span class="prefix">@</span>
+            <input
+              type="text"
+              class="input-field"
+              id="handleInput"
+              placeholder="username"
+              data-prefix="@"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
 
-</body>
+    <section class="example">
+      <h2>Price Postfix</h2>
+      <form id="priceForm">
+        <div class="form-group">
+          <div class="input-container">
+            <input
+              type="number"
+              class="input-field"
+              id="priceInput"
+              min="0"
+              placeholder="100"
+              data-postfix="VND"
+            />
+            <span class="postfix">VND</span>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
 </html>

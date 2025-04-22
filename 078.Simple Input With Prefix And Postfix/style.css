@@ -17,69 +17,67 @@ body {
   position: relative;
   background-color: #171117;
 
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  gap: 3em;
 
   font-family: 'Inter', sans-serif;
   color: #fbfbfa;
 }
 
-.input--container {
+.input-container {
   display: flex;
-  justify-content: space-between;
+  border-radius: 8px;
+  border: 2px solid #333;
+  overflow: hidden;
+  height: 3rem;
+  width: 100%;
+  background-color: #fff;
+}
+
+.prefix,
+.postfix {
+  display: flex;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 15em;
-  height: 3em;
-  border-radius: 10px;
-  position: relative;
-  border: 2px solid #000000;
-  font-size: 18px;
-
-  input {
-    outline: none;
-    font-weight: normal;
-    border: none;
-    padding: 0px 1em;
-    height: 100%;
-    width: 15em;
-    font-size: 15px;
-  }
-}
-
-.input--prefix {
-  display: grid;
-  place-content: center;
-  width: 10em;
-  height: 100%;
-
-  color: #999;
-  font-size: 15px;
-  font-weight: bolder;
-  padding: 1em;
+  justify-content: center;
+  padding: 0 1rem;
   background-color: #dedede;
-
-  border-radius: 10px 0px 0px 10px;
-
-  cursor: not-allowed;
+  color: #666;
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  user-select: none;
 }
 
-.input--icon {
-  display: grid;
-  place-content: center;
-
-  font-size: 1e;
-  filter: grayscale(50%);
-  background-color: currentColor;
-  vertical-align: middle;
-
+.input-field {
+  flex: 1;
   height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 0.75rem;
+  font-size: 0.95rem;
+  text-align: center;
+  appearance: none;
+}
 
+.example {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 1rem;
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
 
-  padding-right: 10px;
-  border-radius: 0px 10px 10px 0px;
-
-  cursor: default;
-  position: relative;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }
