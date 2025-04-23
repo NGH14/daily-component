@@ -619,8 +619,16 @@
     "id": "078",
     "title": "Simple Input With Prefix And Postfix",
     "createdDate": "2025-04-21",
-    "modifiedDate": "2025-04-21",
+    "modifiedDate": "2025-04-22",
     "tech": "CSS, HTML",
     "path": "078.Simple Input With Prefix And Postfix"
+  },
+  {
+    "id": "079",
+    "title": "Vertical Scroll Snap",
+    "createdDate": "2025-04-23",
+    "modifiedDate": "2025-04-23",
+    "tech": "CSS, HTML",
+    "path": "079.Vertical Scroll Snap"
   }
 ]
