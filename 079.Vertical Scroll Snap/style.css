@@ -24,3 +24,61 @@ body {
   font-family: 'Inter', sans-serif;
   color: #fbfbfa;
 }
+
+.scroll--gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  height: 360px;
+
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  overscroll-behavior-y: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #d4d4d4 transparent;
+}
+
+
+.scroll--gallery::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll--gallery::-webkit-scrollbar-thumb {
+  background-color: #d4d4d4;
+  border-radius: 8px;
+}
+
+.scroll--gallery__item {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  transition: transform 0.3s ease;
+}
+
+.scroll--gallery__item:hover {
+  transform: scale(1.05) ;
+}
+
+.scroll--gallery__item img {
+  width: 300px;
+  max-width: none;
+  object-fit: cover;
+  border-radius: 1rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 30px;
+}
+
+.content {
+  width: 100%;
+  max-width: 600px;
+}
+
+h2 {
+  font-size: 24px;
+  small {
+  opacity: 0.7;
+    font-weight: normal;
+  }
+}
