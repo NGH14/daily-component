@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -24,3 +23,54 @@ body {
   font-family: 'Inter', sans-serif;
   color: #fbfbfa;
 }
+
+.rating-component {
+  caret-color: transparent;
+  background-color: rgba(0, 0, 16, 0.8);
+  padding: 0.4rem;
+  border-radius: 2.2rem;
+  cursor: pointer;
+}
+
+.rating-component__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rating-component__label {
+  position: relative;
+}
+
+.rating-component__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.rating-component__icon {
+  fill: rgb(242, 242, 242);
+  height: 3.6rem;
+  width: 3.6rem;
+  margin: 0.2rem;
+  transition: fill 0.2s ease;
+}
+
+.rating-component__input--happy:is(:hover, :checked, :focus)
+  + .rating-component__icon {
+  fill: rgb(0, 204, 79);
+}
+
+.rating-component__input--neutral:hover + .rating-component__icon,
+.rating-component__input--neutral:checked + .rating-component__icon,
+.rating-component__input--neutral:focus + .rating-component__icon {
+  fill: rgb(232, 214, 0);
+}
+
+.rating-component__input--sad:hover + .rating-component__icon,
+.rating-component__input--sad:checked + .rating-component__icon,
+.rating-component__input--sad:focus + .rating-component__icon {
+  fill: rgb(239, 42, 16);
+}
+
+
+
