@@ -627,8 +627,16 @@
     "id": "079",
     "title": "Vertical Scroll Snap",
     "createdDate": "2025-04-23",
-    "modifiedDate": "2025-04-23",
+    "modifiedDate": "2025-04-24",
     "tech": "CSS, HTML",
     "path": "079.Vertical Scroll Snap"
+  },
+  {
+    "id": "080",
+    "title": "Rating Scale Feedback",
+    "createdDate": "2025-04-26",
+    "modifiedDate": "2025-04-26",
+    "tech": "CSS, HTML",
+    "path": "080.Rating Scale Feedback"
   }
 ]
