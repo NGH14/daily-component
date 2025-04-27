@@ -57,19 +57,15 @@ body {
 
 .rating-component__input--happy:is(:hover, :checked, :focus)
   + .rating-component__icon {
-  fill: rgb(0, 204, 79);
+  fill: hsl(143, 100%, 40%);
 }
 
-.rating-component__input--neutral:hover + .rating-component__icon,
-.rating-component__input--neutral:checked + .rating-component__icon,
-.rating-component__input--neutral:focus + .rating-component__icon {
-  fill: rgb(232, 214, 0);
+.rating-component__input--neutral:is(:hover, :checked, :focus)+.rating-component__icon {
+fill: hsl(55, 100%, 45%)
 }
 
-.rating-component__input--sad:hover + .rating-component__icon,
-.rating-component__input--sad:checked + .rating-component__icon,
-.rating-component__input--sad:focus + .rating-component__icon {
-  fill: rgb(239, 42, 16);
+.rating-component__input--sad:is(:hover, :checked, :focus) + .rating-component__icon {
+  fill: hsl(0, 100%, 40%);
 }
 
 
