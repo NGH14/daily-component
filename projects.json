@@ -539,7 +539,7 @@
     "id": "068",
     "title": "Directionally Aware Button",
     "createdDate": "2025-04-09",
-    "modifiedDate": "2025-04-10",
+    "modifiedDate": "2025-04-27",
     "tech": "CSS, HTML, JavaScript",
     "path": "068.Directionally Aware Button"
   },
@@ -635,8 +635,16 @@
     "id": "080",
     "title": "Rating Scale Feedback",
     "createdDate": "2025-04-26",
-    "modifiedDate": "2025-04-26",
-    "tech": "CSS, HTML",
+    "modifiedDate": "2025-04-27",
+    "tech": "CSS, HTML, Markdown",
     "path": "080.Rating Scale Feedback"
+  },
+  {
+    "id": "081",
+    "title": "Tabs Header  With Badge",
+    "createdDate": "2025-04-27",
+    "modifiedDate": "2025-04-27",
+    "tech": "CSS, HTML",
+    "path": "081.Tabs Header  With Badge"
   }
 ]

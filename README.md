@@ -81,7 +81,7 @@ Personal repository for learning and practicing web components techniques throug
 | 65  | [Simple Ellipse Text](./065.Simple%20Ellipse%20Text) | 2025-04-04 | 2025-04-09 | CSS, HTML |
 | 66  | [Simple Card With Transition](./066.Simple%20Card%20With%20Transition) | 2025-04-06 | 2025-04-09 | CSS, HTML |
 | 67  | [Button Keyboard Style](./067.Button%20Keyboard%20Style) | 2025-04-08 | 2025-04-09 | CSS, HTML |
-| 68  | [Directionally Aware Button](./068.Directionally%20Aware%20Button) | 2025-04-09 | 2025-04-10 | CSS, HTML, JavaScript |
+| 68  | [Directionally Aware Button](./068.Directionally%20Aware%20Button) | 2025-04-09 | 2025-04-27 | CSS, HTML, JavaScript |
 | 69  | [Simple Notify Button](./069.Simple%20Notify%20Button) | 2025-04-10 | 2025-04-10 | CSS, HTML |
 | 70  | [Image On Error Placeholder](./070.Image%20On%20Error%20Placeholder) | 2025-04-11 | 2025-04-11 | CSS, HTML, JPG |
 | 71  | [Simple FAQs Section](./071.Simple%20FAQs%20Section) | 2025-04-13 | 2025-04-13 | CSS, HTML |
@@ -93,5 +93,6 @@ Personal repository for learning and practicing web components techniques throug
 | 77  | [Simple Css Long Paragraph Column](./077.Simple%20Css%20Long%20Paragraph%20Column) | 2025-04-20 | 2025-04-20 | CSS, HTML |
 | 78  | [Simple Input With Prefix And Postfix](./078.Simple%20Input%20With%20Prefix%20And%20Postfix) | 2025-04-21 | 2025-04-22 | CSS, HTML |
 | 79  | [Vertical Scroll Snap](./079.Vertical%20Scroll%20Snap) | 2025-04-23 | 2025-04-24 | CSS, HTML |
-| 80  | [Rating Scale Feedback](./080.Rating%20Scale%20Feedback) | 2025-04-26 | 2025-04-26 | CSS, HTML |
+| 80  | [Rating Scale Feedback](./080.Rating%20Scale%20Feedback) | 2025-04-26 | 2025-04-27 | CSS, HTML, Markdown |
+| 81  | [Tabs Header  With Badge](./081.Tabs%20Header%20%20With%20Badge) | 2025-04-27 | 2025-04-27 | CSS, HTML |
 <!-- PROGRESS TABLE END -->
