@@ -11,9 +11,28 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-  
+
 </head>
 <body>
+<section class="tabs-selector">
+    <div class="tabs-selector__container">
+      <input class="tabs-selector__input" checked name="tabs" id="tab-weekly" type="radio">
+      <label class="tabs-selector__label" for="tab-weekly">Weekly</label>
 
+      <input class="tabs-selector__input" name="tabs" id="tab-monthly" type="radio">
+      <label class="tabs-selector__label" for="tab-monthly">
+        Monthly
+        <span class="tabs-selector__notification">SAVE 28%</span>
+      </label>
+
+      <input class="tabs-selector__input" name="tabs" id="tab-yearly" type="radio">
+      <label class="tabs-selector__label" for="tab-yearly">
+        Yearly
+        <span class="tabs-selector__notification">SAVE 55%</span>
+      </label>
+
+      <span class="tabs-selector__slider"></span>
+    </div>
+  </section>
 </body>
 </html>
