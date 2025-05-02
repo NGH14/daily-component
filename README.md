@@ -94,5 +94,6 @@ Personal repository for learning and practicing web components techniques throug
 | 78  | [Simple Input With Prefix And Postfix](./078.Simple%20Input%20With%20Prefix%20And%20Postfix) | 2025-04-21 | 2025-04-22 | CSS, HTML |
 | 79  | [Vertical Scroll Snap](./079.Vertical%20Scroll%20Snap) | 2025-04-23 | 2025-04-24 | CSS, HTML |
 | 80  | [Rating Scale Feedback](./080.Rating%20Scale%20Feedback) | 2025-04-26 | 2025-04-27 | CSS, HTML, Markdown |
-| 81  | [Tabs Header  With Badge](./081.Tabs%20Header%20%20With%20Badge) | 2025-04-27 | 2025-04-27 | CSS, HTML |
+| 81  | [Tabs Header With Badge](./081.Tabs%20Header%20With%20Badge) | 2025-04-27 | 2025-04-30 | CSS, HTML |
+| 82  | [Test New](./082.Test%20New) | 2025-05-01 | 2025-05-01 | CSS, HTML |
 <!-- PROGRESS TABLE END -->
