@@ -96,4 +96,5 @@ Personal repository for learning and practicing web components techniques throug
 | 80  | [Rating Scale Feedback](./080.Rating%20Scale%20Feedback) | 2025-04-26 | 2025-04-27 | CSS, HTML, Markdown |
 | 81  | [Tabs Header With Badge](./081.Tabs%20Header%20With%20Badge) | 2025-04-27 | 2025-04-30 | CSS, HTML |
 | 82  | [Trail Dotted](./082.Trail%20Dotted) | 2025-05-01 | 2025-05-02 | CSS, HTML, Markdown, PNG |
+| 83  | [Sticky Sidebar Section](./083.Sticky%20Sidebar%20Section) | 2025-05-04 | 2025-05-04 | CSS, HTML |
 <!-- PROGRESS TABLE END -->

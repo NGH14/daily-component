@@ -654,5 +654,13 @@
     "modifiedDate": "2025-05-02",
     "tech": "CSS, HTML, Markdown, PNG",
     "path": "082.Trail Dotted"
+  },
+  {
+    "id": "083",
+    "title": "Sticky Sidebar Section",
+    "createdDate": "2025-05-04",
+    "modifiedDate": "2025-05-04",
+    "tech": "CSS, HTML",
+    "path": "083.Sticky Sidebar Section"
   }
 ]
