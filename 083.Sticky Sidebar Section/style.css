@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -18,9 +17,40 @@ body {
   position: relative;
   background-color: #171117;
 
-  display: grid;
-  place-content: center;
-
   font-family: 'Inter', sans-serif;
   color: #fbfbfa;
+}
+
+main,
+.page-width {
+  max-width: 900px;
+  padding-inline: 3rem;
+  margin-inline: auto;
+}
+
+main {
+  padding-block: 2em;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  align-items: start;
+  gap: 2rem;
+
+  text-align: left;
+
+  p {
+    margin: 0 1em 1em 1em;
+    line-height: 1.5;
+  }
+}
+
+aside {
+  position: sticky;
+
+  top: 2rem;
+  padding-inline: 0.5em;
+}
+
+header,
+footer {
+  height: 80px;
 }
