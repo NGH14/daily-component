@@ -659,8 +659,16 @@
     "id": "083",
     "title": "Sticky Sidebar Section",
     "createdDate": "2025-05-04",
-    "modifiedDate": "2025-05-04",
-    "tech": "CSS, HTML",
+    "modifiedDate": "2025-05-06",
+    "tech": "CSS, HTML, Markdown, PNG",
     "path": "083.Sticky Sidebar Section"
+  },
+  {
+    "id": "084",
+    "title": "Infinite Scroll Stock Statistics",
+    "createdDate": "2025-05-06",
+    "modifiedDate": "2025-05-06",
+    "tech": "CSS, HTML",
+    "path": "084.Infinite Scroll Stock Statistics"
   }
 ]
