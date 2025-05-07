@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day #084: Infinite Scroll Stock Statistics</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="ticker">
+        <ul class="ticker__list">
+          <li class="ticker__item" data-trend="down">
+            <span class="ticker__food">PHO</span>
+            <span class="ticker__price">81.16</span>
+            <span class="ticker__change">-1.36 (-0.75%)</span>
+          </li>
+          <li class="ticker__item" data-trend="up">
+            <span class="ticker__food">BANH_MI</span>
+            <span class="ticker__price">19.40</span>
+            <span class="ticker__change">+7.43 (+3.87%)</span>
+          </li>
+          <li class="ticker__item" data-trend="up">
+            <span class="ticker__food">BUN_CHA</span>
+            <span class="ticker__price">57.65</span>
+            <span class="ticker__change">+4.09 (+0.70%)</span>
+          </li>
+          <li class="ticker__item" data-trend="down">
+            <span class="ticker__food">GIO_CHA</span>
+            <span class="ticker__price">18.75</span>
+            <span class="ticker__change">-6.54 (-4.50%)</span>
+          </li>
+          <li class="ticker__item" data-trend="up">
+            <span class="ticker__food">GOI_CUON</span>
+            <span class="ticker__price">70.92</span>
+            <span class="ticker__change">+2.75 (+0.35%)</span>
+          </li>
+          <li class="ticker__item" data-trend="down">
+            <span class="ticker__food">COM_TAM</span>
+            <span class="ticker__price">47.54</span>
+            <span class="ticker__change">-2.80 (-0.68%)</span>
+          </li>
+          <li class="ticker__item" data-trend="up">
+            <span class="ticker__food">CA_KHO</span>
+            <span class="ticker__price">47.05</span>
+            <span class="ticker__change">+5.31 (+1.10%)</span>
+          </li>
+          <li class="ticker__item" data-trend="down">
+            <span class="ticker__food">CHE</span>
+            <span class="ticker__price">6.34</span>
+            <span class="ticker__change">-0.37 (-0.61%)</span>
+          </li>
+        </ul>
+        <ul class="ticker__list" aria-hidden="true">
+          <li class="ticker__item" data-trend="down">
+            <span class="ticker__food">PHO</span>
+            <span class="ticker__price">81.16</span>
+            <span class="ticker__change">-1.36 (-0.75%)</span>
+          </li>
+          <li class="ticker__item" data-trend="up">
+            <span class="ticker__food">BANH_MI</span>
+            <span class="ticker__price">19.40</span>
+            <span class="ticker__change">+7.43 (+3.87%)</span>
+          </li>
+          <li class="ticker__item" data-trend="up">
+            <span class="ticker__food">BUN_CHA</span>
+            <span class="ticker__price">57.65</span>
+            <span class="ticker__change">+4.09 (+0.70%)</span>
+          </li>
+          <li class="ticker__item" data-trend="down">
+            <span class="ticker__food">GIO_CHA</span>
+            <span class="ticker__price">18.75</span>
+            <span class="ticker__change">-6.54 (-4.50%)</span>
+          </li>
+          <li class="ticker__item" data-trend="up">
+            <span class="ticker__food">GOI_CUON</span>
+            <span class="ticker__price">70.92</span>
+            <span class="ticker__change">+2.75 (+0.35%)</span>
+          </li>
+          <li class="ticker__item" data-trend="down">
+            <span class="ticker__food">COM_TAM</span>
+            <span class="ticker__price">47.54</span>
+            <span class="ticker__change">-2.80 (-0.68%)</span>
+          </li>
+          <li class="ticker__item" data-trend="up">
+            <span class="ticker__food">CA_KHO</span>
+            <span class="ticker__price">47.05</span>
+            <span class="ticker__change">+5.31 (+1.10%)</span>
+          </li>
+          <li class="ticker__item" data-trend="down">
+            <span class="ticker__food">CHE</span>
+            <span class="ticker__price">6.34</span>
+            <span class="ticker__change">-0.37 (-0.61%)</span>
+          </li>
+        </ul>
+      </section>
+          <section class="ticker ">
+        <ul class="ticker__list reverse">
+          <li class="ticker__item" data-trend="down">
+            <span class="ticker__food">PHO</span>
+            <span class="ticker__price">81.16</span>
+            <span class="ticker__change">-1.36 (-0.75%)</span>
+          </li>
+          <li class="ticker__item" data-trend="up">
+            <span class="ticker__food">BANH_MI</span>
+            <span class="ticker__price">19.40</span>
+            <span class="ticker__change">+7.43 (+3.87%)</span>
+          </li>
+          <li class="ticker__item" data-trend="up">
+            <span class="ticker__food">BUN_CHA</span>
+            <span class="ticker__price">57.65</span>
+            <span class="ticker__change">+4.09 (+0.70%)</span>
+          </li>
+          <li class="ticker__item" data-trend="down">
+            <span class="ticker__food">GIO_CHA</span>
+            <span class="ticker__price">18.75</span>
+            <span class="ticker__change">-6.54 (-4.50%)</span>
+          </li>
+          <li class="ticker__item" data-trend="up">
+            <span class="ticker__food">GOI_CUON</span>
+            <span class="ticker__price">70.92</span>
+            <span class="ticker__change">+2.75 (+0.35%)</span>
+          </li>
+          <li class="ticker__item" data-trend="down">
+            <span class="ticker__food">COM_TAM</span>
+            <span class="ticker__price">47.54</span>
+            <span class="ticker__change">-2.80 (-0.68%)</span>
+          </li>
+          <li class="ticker__item" data-trend="up">
+            <span class="ticker__food">CA_KHO</span>
+            <span class="ticker__price">47.05</span>
+            <span class="ticker__change">+5.31 (+1.10%)</span>
+          </li>
+          <li class="ticker__item" data-trend="down">
+            <span class="ticker__food">CHE</span>
+            <span class="ticker__price">6.34</span>
+            <span class="ticker__change">-0.37 (-0.61%)</span>
+          </li>
+        </ul>
+        <ul class="ticker__list reverse" aria-hidden="true">
+          <li class="ticker__item" data-trend="down">
+            <span class="ticker__food">PHO</span>
+            <span class="ticker__price">81.16</span>
+            <span class="ticker__change">-1.36 (-0.75%)</span>
+          </li>
+          <li class="ticker__item" data-trend="up">
+            <span class="ticker__food">BANH_MI</span>
+            <span class="ticker__price">19.40</span>
+            <span class="ticker__change">+7.43 (+3.87%)</span>
+          </li>
+          <li class="ticker__item" data-trend="up">
+            <span class="ticker__food">BUN_CHA</span>
+            <span class="ticker__price">57.65</span>
+            <span class="ticker__change">+4.09 (+0.70%)</span>
+          </li>
+          <li class="ticker__item" data-trend="down">
+            <span class="ticker__food">GIO_CHA</span>
+            <span class="ticker__price">18.75</span>
+            <span class="ticker__change">-6.54 (-4.50%)</span>
+          </li>
+          <li class="ticker__item" data-trend="up">
+            <span class="ticker__food">GOI_CUON</span>
+            <span class="ticker__price">70.92</span>
+            <span class="ticker__change">+2.75 (+0.35%)</span>
+          </li>
+          <li class="ticker__item" data-trend="down">
+            <span class="ticker__food">COM_TAM</span>
+            <span class="ticker__price">47.54</span>
+            <span class="ticker__change">-2.80 (-0.68%)</span>
+          </li>
+          <li class="ticker__item" data-trend="up">
+            <span class="ticker__food">CA_KHO</span>
+            <span class="ticker__price">47.05</span>
+            <span class="ticker__change">+5.31 (+1.10%)</span>
+          </li>
+          <li class="ticker__item" data-trend="down">
+            <span class="ticker__food">CHE</span>
+            <span class="ticker__price">6.34</span>
+            <span class="ticker__change">-0.37 (-0.61%)</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

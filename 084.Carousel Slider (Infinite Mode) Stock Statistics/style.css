@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100dvh;
+
+  position: relative;
+  background-color: #171117;
+
+  display: grid;
+  place-content: center;
+
+  font-family: 'Inter', sans-serif;
+  color: #fbfbfa;
+}
+
+.ticker {
+  --gap: 25px;
+  max-width: 900px;
+  font-size: 18px;
+  padding-block: 8px;
+  border-block: 1px solid;
+
+  overflow: hidden;
+  user-select: none;
+
+  margin-bottom: 15px;
+
+  display: flex;
+  gap: var(--gap);
+}
+
+.ticker__list {
+  list-style: none;
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+
+  animation: scroll 15s linear infinite;
+
+  &.reverse {
+    animation: scroll-reverse 15s linear infinite;
+  }
+}
+
+.ticker:hover .ticker__list {
+  animation-play-state: paused;
+}
+
+.ticker__item {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    margin-right: 4px;
+  }
+  &[data-trend='up']::before {
+    content: '↑';
+    color: #089981;
+  }
+  &[data-trend='down']::before {
+    content: '↓';
+    color: #f23645;
+  }
+}
+
+.ticker__item .ticker__food,
+.ticker__price {
+  font-weight: bold;
+}
+
+.ticker__price {
+  font-style: italic;
+  margin-inline: 8px;
+}
+
+.ticker__change {
+  margin-left: 8px;
+}
+
+.ticker__item[data-trend='up'] .ticker__change {
+  color: hsl(170, 90%, 32%);
+}
+
+.ticker__item[data-trend='down'] .ticker__change {
+  color: hsl(355, 88%, 58%);
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes scroll-reverse {
+  from {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
