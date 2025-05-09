@@ -118,7 +118,7 @@ body {
 }
 
 .dropdown__menu::after {
-    content: '';
+  content: '';
   position: absolute;
   top: -7px;
   left: 30px;
@@ -149,7 +149,8 @@ body {
 
   border-radius: 5px;
 
-  padding: 5px 20px 15px;
+  padding: 5px 15px 5px 20px;
+  margin: 2px 0px;
 
   transition: all 200ms linear;
 }
