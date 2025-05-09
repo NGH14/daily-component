@@ -4,8 +4,8 @@
   "types": "module",
   "description": "Personal repository for learning and practicing web components techniques through daily coding exercises.",
   "scripts": {
-    "start": "node ./tasks/newProject.mjs",
-    "readme": "node ./tasks/updateREADME.mjs"
+    "start": "node ./.tasks/newProject.mjs",
+    "readme": "node ./.tasks/updateREADME.mjs"
   },
   "repository": {
     "type": "git",
