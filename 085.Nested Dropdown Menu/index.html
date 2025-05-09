@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Day #085: Nested Dropdown Menu</title>
+  <title>Day #085: Nested Menu</title>
   <link rel="stylesheet" href="style.css">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,9 +11,49 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-  
+
 </head>
 <body>
+ <section class="dropdown">
+    <input class="dropdown__toggle" type="checkbox" id="dropdown-toggle">
+    <label class="dropdown__btn" for="dropdown-toggle">
+      Menu
+    </label>
 
+    <div class="dropdown__menu">
+      <a href="#" class="dropdown__item">
+        Link
+        <i class="dropdown__item-icon">→</i>
+      </a>
+
+      <div class="dropdown__sub">
+        <input class="dropdown__sub-toggle" type="checkbox" id="dropdown-sub-toggle">
+        <label class="dropdown__sub-btn" for="dropdown-sub-toggle">
+          Sub Menu
+          <i class="dropdown__item-icon dropdown__sub-btn-icon">+</i>
+        </label>
+
+        <div class="dropdown__submenu">
+          <a href="#" class="dropdown__submenu-item">
+            Sub Link
+            <i class="dropdown__submenu-icon">→</i>
+          </a>
+          <a href="#" class="dropdown__submenu-item">
+            Sub Link
+            <i class="dropdown__submenu-icon">→</i>
+          </a>
+        </div>
+      </div>
+
+      <a href="#" class="dropdown__item">
+        Link
+        <i class="dropdown__item-icon">→</i>
+      </a>
+      <a href="#" class="dropdown__item">
+        Link
+        <i class="dropdown__item-icon">→</i>
+      </a>
+    </div>
+    </section>
 </body>
 </html>
