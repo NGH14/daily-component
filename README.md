@@ -98,5 +98,6 @@ Personal repository for learning and practicing web components techniques throug
 | 82  | [Trail Dotted](./082.Trail%20Dotted) | 2025-05-01 | 2025-05-02 | CSS, HTML, Markdown, PNG |
 | 83  | [Sticky Sidebar Section](./083.Sticky%20Sidebar%20Section) | 2025-05-04 | 2025-05-07 | CSS, HTML, MP4, Markdown, PNG |
 | 84  | [Carousel Slider (Infinite Mode) Stock Statistics](./084.Carousel%20Slider%20(Infinite%20Mode)%20Stock%20Statistics) | 2025-05-06 | 2025-05-07 | CSS, HTML, MP4, Markdown |
-| 85  | [Nested Dropdown Menu](./085.Nested%20Dropdown%20Menu) | 2025-05-07 | 2025-05-07 | CSS, HTML |
+| 85  | [Nested Dropdown Menu](./085.Nested%20Dropdown%20Menu) | 2025-05-07 | 2025-05-09 | CSS, HTML, MP4, Markdown |
+| 86  | [Simple Tooltips](./086.Simple%20Tooltips) | 2025-05-11 | 2025-05-11 | CSS, HTML |
 <!-- PROGRESS TABLE END -->
