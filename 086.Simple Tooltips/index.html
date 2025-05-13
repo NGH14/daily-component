@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Day #086: Simple Tooltips</title>
-  <link rel="stylesheet" href="style.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day #086: Simple Tooltips</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-  
-</head>
-<body>
-
-</body>
+  </head>
+  <body>
+    <section class="tooltip">
+      <button class="tooltip__button">
+        <span class="tooltip__button-content">
+          <svg
+            class="tooltip__icon"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            fill="none"
+          >
+            <path
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              stroke-width="2"
+              stroke-linejoin="round"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+        </span>
+      </button>
+      <div class="tooltip__content">
+        <div class="tooltip__box">
+          <div class="tooltip__header">
+            <h3 class="tooltip__title">Tooltips Header</h3>
+          </div>
+          <p class="tooltip__text">
+            The extra information about something when the user moves the mouse pointer over an element
+          </p>
+          <div class="tooltip__arrow"></div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

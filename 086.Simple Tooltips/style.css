@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -23,4 +22,107 @@ body {
 
   font-family: 'Inter', sans-serif;
   color: #fbfbfa;
+}
+
+.tooltip {
+  --arrow-size: 8px;
+  position: relative;
+  display: inline-block;
+
+  &:hover .tooltip__content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    transition: opacity 0.3s, transform 0.3s, visibility 0s linear 0s;
+  }
+}
+
+.tooltip__button {
+  position: relative;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fafafb;
+  background-color: hsla(256, 50%, 47%, 0.9);
+  border-radius: 0.75rem;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: hsla(256, 50%, 47%, 0.5);
+  }
+}
+
+.tooltip__button-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tooltip__icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.tooltip__content {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(0.5rem);
+  width: 18rem;
+  visibility: hidden;
+  opacity: 0;
+  margin-bottom: 0.75rem;
+  transition: opacity 0.3s, transform 0.3s, visibility 0s linear 0.3s;
+}
+
+.tooltip__box {
+  position: relative;
+  padding: 1rem;
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tooltip__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.tooltip__title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fafafb;
+  margin: 0;
+}
+
+.tooltip__text {
+  font-size: 0.875rem;
+  color: hsl(216, 15%, 84%);
+  margin-bottom: 0.5rem;
+}
+
+.tooltip__tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.tooltip__arrow {
+  position: absolute;
+  bottom: calc(-1*var(--arrow-size));
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0px;
+  height: 0px;
+  border-right: var(--arrow-size) solid transparent;
+  border-left: var(--arrow-size) solid transparent;
+  border-top: var(--arrow-size) solid rgba(255, 255, 255, 0.3);
 }
