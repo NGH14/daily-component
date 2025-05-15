@@ -6,7 +6,7 @@
   <source src="screenshot.mp4" type="video/mp4">
 </video>
 
-The key of this tooltips component is `position: absolute` also with the technic implement the simple arrow by the `border`.
+The key of this tooltips component is `position: absolute` also with the technique implement the simple arrow by the `border`.
 
 ```css
 .tooltip__arrow {
