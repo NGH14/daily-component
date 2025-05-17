@@ -48,11 +48,10 @@ main {
   }
 
   section span::before {
-    content: counters(section-chapter, '.', decimal) var(--text, ' ');
+    content: counters(section-chapter, '.', decimal) '. ';
   }
 
   h2 {
-    --text: '. ';
     font-weight: bold;
   }
 
