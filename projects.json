@@ -675,7 +675,7 @@
     "id": "085",
     "title": "Nested Dropdown Menu",
     "createdDate": "2025-05-07",
-    "modifiedDate": "2025-05-09",
+    "modifiedDate": "2025-05-15",
     "tech": "CSS, HTML, MP4, Markdown",
     "path": "085.Nested Dropdown Menu"
   },
@@ -683,16 +683,16 @@
     "id": "086",
     "title": "Simple Tooltips",
     "createdDate": "2025-05-11",
-    "modifiedDate": "2025-05-13",
+    "modifiedDate": "2025-05-15",
     "tech": "CSS, HTML, MP4, Markdown",
     "path": "086.Simple Tooltips"
   },
   {
     "id": "087",
-    "title": "Automatic Numbering With Css Counters",
+    "title": "Numbering With CSS Counters",
     "createdDate": "2025-05-14",
     "modifiedDate": "2025-05-14",
     "tech": "CSS, HTML",
-    "path": "087.Automatic Numbering With Css Counters"
+    "path": "087.Numbering With CSS Counters"
   }
 ]
