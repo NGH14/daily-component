@@ -99,6 +99,7 @@ Personal repository for learning and practicing web components techniques throug
 | 83  | [Sticky Sidebar Section](./083.Sticky%20Sidebar%20Section) | 2025-05-04 | 2025-05-07 | CSS, HTML, MP4, Markdown, PNG |
 | 84  | [Carousel Slider (Infinite Mode) Stock Statistics](./084.Carousel%20Slider%20(Infinite%20Mode)%20Stock%20Statistics) | 2025-05-06 | 2025-05-07 | CSS, HTML, MP4, Markdown |
 | 85  | [Nested Dropdown Menu](./085.Nested%20Dropdown%20Menu) | 2025-05-07 | 2025-05-15 | CSS, HTML, MP4, Markdown |
-| 86  | [Simple Tooltips](./086.Simple%20Tooltips) | 2025-05-11 | 2025-05-15 | CSS, HTML, MP4, Markdown |
-| 87  | [Numbering With CSS Counters](./087.Numbering%20With%20CSS%20Counters) | 2025-05-14 | 2025-05-14 | CSS, HTML |
+| 86  | [Simple Tooltips](./086.Simple%20Tooltips) | 2025-05-11 | 2025-05-17 | CSS, HTML, MP4, Markdown |
+| 87  | [Numbering With CSS Counters](./087.Numbering%20With%20CSS%20Counters) | 2025-05-17 | 2025-05-17 | CSS, HTML |
+| 88  | [Nested Toggle Button](./088.Nested%20Toggle%20Button) | 2025-05-19 | 2025-05-19 | CSS, HTML |
 <!-- PROGRESS TABLE END -->
