@@ -25,34 +25,32 @@ body {
 
 .text__shine {
   background-image: linear-gradient(
-    90deg,
-    #e0e0e0 0,
-    #ffffff 10%,
-    #d0d0d0 20%
+    95deg,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 1) 100%
   );
-  background-position: 0;
-  background-clip: text;
+   background-position: 0;
+   background-clip: text;
 
-
-  animation: shine 2s infinite linear;
+  animation: shine 2s ease-out infinite;
   animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: normal;
 
   color: transparent;
   font-weight: 900;
   font-size: 50px;
   white-space: nowrap;
+  background-size: 300px;
 }
 
 @keyframes shine {
   0% {
     background-position: 0;
   }
-
-  60% {
-    background-position: 120px;
-  }
-
   100% {
-    background-position: 180px;
+    background-position: 300px;
   }
 }
