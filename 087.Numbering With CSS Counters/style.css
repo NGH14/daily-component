@@ -25,13 +25,16 @@ body {
 }
 
 main {
+  &,
+  section > div:first-of-type {
+    counter-reset: section-chapter;
+  }
+
   &:hover {
     section {
       filter: blur(1px);
     }
   }
-
-
 
   section {
     counter-increment: section-chapter 1;
@@ -40,11 +43,6 @@ main {
     &:hover section {
       filter: blur(0);
     }
-  }
-
-  main,
-  section > div:first-of-type {
-    counter-reset: section-chapter;
   }
 
   section span::before {
