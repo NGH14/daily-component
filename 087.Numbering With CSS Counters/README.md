@@ -32,5 +32,4 @@ span::before {
 }
 ```
 
-
 - ___[Predefined Counter Style in w3](https://www.w3.org/TR/predefined-counter-styles/)___
