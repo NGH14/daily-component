@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Day #088: Nested Toggle Button</title>
-  <link rel="stylesheet" href="style.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day #088: Nested Toggle Button</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-  
-</head>
-<body>
+  </head>
+  <body>
+    <section class="toggle-container">
+      <div>
+        <div class="toggle-wrapper light">
+          <div class="toggle-main">
+            <div
+              class="option-free active"
+              onclick="togglePrimary(false, this)"
+            >
+              Free
+            </div>
+            <div class="option-premium">
+              <div class="premium-label" onclick="togglePrimary(true, this)">
+                Premium
+              </div>
+              <div class="toggle-secondary">
+                <div
+                  class="secondary-option active"
+                  onclick="toggleSecondary(false, this)"
+                >
+                  Solo
+                </div>
+                <div
+                  class="secondary-option"
+                  onclick="toggleSecondary(true, this)"
+                >
+                  Team
+                </div>
+                <div class="secondary-slider"></div>
+              </div>
+            </div>
+          </div>
+          <div class="toggle-slider"></div>
+        </div>
+      </div>
+    </se>
 
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
