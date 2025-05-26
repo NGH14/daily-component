@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Day #088: Nested Toggle Button</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,42 +12,51 @@
     />
   </head>
   <body>
-    <section class="toggle-container">
-      <div>
-        <div class="toggle-wrapper light">
-          <div class="toggle-main">
-            <div
-              class="option-free active"
-              onclick="togglePrimary(false, this)"
-            >
-              Free
-            </div>
-            <div class="option-premium">
-              <div class="premium-label" onclick="togglePrimary(true, this)">
-                Premium
-              </div>
-              <div class="toggle-secondary">
-                <div
-                  class="secondary-option active"
-                  onclick="toggleSecondary(false, this)"
-                >
-                  Solo
-                </div>
-                <div
-                  class="secondary-option"
-                  onclick="toggleSecondary(true, this)"
-                >
-                  Team
-                </div>
-                <div class="secondary-slider"></div>
-              </div>
-            </div>
-          </div>
-          <div class="toggle-slider"></div>
-        </div>
-      </div>
-    </se>
+    <section class="toggle">
+      <form class="toggle__form" id="tierForm">
+        <section class="toggle__track">
+          <div class="toggle__indicator"></div>
 
-    <script src="script.js"></script>
+          <input
+            class="toggle__input sr-only"
+            type="radio"
+            name="tier"
+            id="free"
+            value="free"
+            checked
+          />
+          <label class="toggle__label" for="free">Free</label>
+
+          <input
+            class="toggle__input sr-only"
+            type="radio"
+            name="tier"
+            id="month"
+            value="month"
+          />
+          <input
+            class="toggle__input sr-only"
+            type="radio"
+            name="tier"
+            id="year"
+            value="year"
+          />
+
+
+          <div class="toggle__premium">
+            <div class="toggle__premium-indicator"></div>
+            <label class="toggle__premium-label" for="month">
+              <span>Month</span>
+              <span class="sr-only">Premium Month</span>
+            </label>
+            <label class="toggle__premium-label" for="year">
+              <span>Year</span>
+              <span class="sr-only">Premium Year</span>
+            </label>
+          </div>
+        </section>
+      </form>
+    </section>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
