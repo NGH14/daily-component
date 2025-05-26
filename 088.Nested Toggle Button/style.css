@@ -29,8 +29,7 @@ body {
   --primary-text: hsl(0, 0%, 100%);
   --secondary-bg: hsl(0, 0%, 100%);
   --secondary-text: hsl(0, 0%, 0%);
-  --inactive-text: hsl(0, 0%, 48%);
-  --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --default-text: hsl(0, 0%, 48%);
   --shadow-strong: 0 8px 30px rgba(0, 0, 0, 0.15);
   --duration: 0.3s;
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
@@ -65,11 +64,9 @@ body {
 .toggle__indicator {
   position: absolute;
   width: calc(50% - 3px);
-  left: 3px;
-  top: 3px;
-  bottom: 3px;
+  inset: 3px;
   background: var(--primary-bg);
-  border-radius: 50px;
+  border-radius: 100px;
   transition: transform var(--duration) var(--ease);
   z-index: 1;
 }
@@ -82,7 +79,7 @@ body {
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
-  color: var(--inactive-text);
+  color: var(--default-text);
   transition: color var(--duration) var(--ease);
 
   z-index: 2;
@@ -101,7 +98,7 @@ body {
   bottom: 6px;
 
   width: calc(50% - 3px);
-  color: var(--secondary-text);
+  color: var();
   border-radius: 100px;
 
   display: flex;
@@ -111,16 +108,6 @@ body {
 
   transform-origin: center;
   transition: all var(--duration) var(--ease);
-
-  &::before {
-      content: 'Premium';
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      translate: -50% -80%;
-      color: var(--secondary-text);
-      z-index: 2;
-    }
 }
 
 .toggle__premium-indicator {
@@ -155,37 +142,19 @@ body {
   align-items: flex-end;
 
   transition: color var(--duration) var(--ease);
-
-
-
-
 }
 
-.toggle__premium-label span:first-child {
-  display: block;
-}
-
-.toggle__input:nth-of-type(1):checked ~ .toggle__indicator {
+.toggle__input:nth-of-type(1):checked .toggle__indicator {
   transform: translateX(0);
-}
-
-.toggle__input:nth-of-type(1):checked ~ .toggle__label:nth-of-type(2) {
-  color: var(--secondary-text);
 }
 
 .toggle__input:nth-of-type(2):checked ~ .toggle__indicator,
 .toggle__input:nth-of-type(3):checked ~ .toggle__indicator {
-  transform: translateX(calc(100% + 6px));
+  transform: translateX(100%);
 }
 
-.toggle__input:nth-of-type(2):checked ~ .toggle__label:nth-of-type(1),
-.toggle__input:nth-of-type(3):checked ~ .toggle__label:nth-of-type(1) {
-  color: var(--secondary-text);
-}
-
-.toggle__input:nth-of-type(2):checked ~ .toggle__label:nth-of-type(2),
-.toggle__input:nth-of-type(3):checked ~ .toggle__label:nth-of-type(2) {
-  color: var(--inactive-text);
+.toggle__input:has(:nth-of-type(2):checked) ~ .toggle__label:nth-of-type(2) {
+  color: var(--primary-text);
 }
 
 .toggle__input:nth-of-type(2):checked
