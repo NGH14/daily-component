@@ -6,7 +6,7 @@
   <source src="screenshot.mp4" type="video/mp4">
 </video>
 
-The key of nested toggle button is `transform: translateX(<value>)` of the button indicator(`toggle__indicator`).
+The key of nested toggle button is `transform: translateX(<value>)` of the button indicator or slider (`toggle__indicator`) that show the selected state.
 
 Also the supported of the screen reader element.
 
