@@ -6,6 +6,8 @@
   <source src="screenshot.mp4" type="video/mp4">
 </video>
 
+![Image title](output.gif)
+
 The key of nested toggle button is `transform: translateX(<value>)` of the button indicator or slider (`.toggle__indicator`) that show the selected state.
 
 Also the supported of the screen reader element (`.sr-only`).
