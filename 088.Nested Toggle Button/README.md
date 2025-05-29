@@ -9,6 +9,7 @@
 The key of nested toggle button is `transform: translateX(<value>)` of the button indicator(`toggle__indicator`).
 
 Also the supported of the screen reader element.
+
 ```css
   position: absolute;
   width: 1px;
