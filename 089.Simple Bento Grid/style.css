@@ -14,8 +14,8 @@
   --yellow-500: hsl(39, 100%, 71%);
   --background: #f5f5f5;
   --black: hsl(0, 0%, 7%);
-  --font-normal: 400;
-  --font-semi-bold: 500;
+  --weight-normal: 400;
+  --weight-semi-bold: 500;
 }
 
 html {
@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   background-color: var(--background);
   display: grid;
   place-content: center;
@@ -34,7 +34,7 @@ body {
   padding: 2rem;
   font-family: "DM Sans", sans-serif;
   font-size: 1.8rem;
-  font-weight: var(--font-normal);
+  font-weight: var(--weight-normal);
 }
 
 h2 {
@@ -71,7 +71,7 @@ h2 {
 
 .title-card h1 {
   line-height: 4rem;
-  font-weight: var(--font-semi-bold);
+  font-weight: var(--weight-semi-bold);
   text-align: center;
   font-size: 4rem;
   margin-bottom: 2rem;
@@ -152,7 +152,8 @@ h2 {
 }
 
 .growth-card h1 {
-  font-weight: var(--font-semi-bold);
+  font-family: "DM Sans", sans-serif;
+  font-weight: var(--weight-semi-bold);
   font-size: 4rem;
 }
 
@@ -364,6 +365,7 @@ h2 {
   }
 
   .container {
+    display: grid;
     margin: 1rem;
     grid-auto-rows: 7.5rem;
     grid-auto-columns: 25rem;
