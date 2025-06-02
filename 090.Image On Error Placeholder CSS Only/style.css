@@ -12,16 +12,17 @@
 
 body {
   width: 100vw;
-  height: 100dvh;
-
+  padding: 10px;
   position: relative;
   background-color: #171117;
-
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-family: 'Inter', sans-serif;
   color: #fbfbfa;
+
+  overflow: scroll;
 }
 
 img {
@@ -30,7 +31,7 @@ img {
   width: 100%;
   height: 300px;
 
-  object-fit: cover;
+  object-fit: contain;
   position: relative;
 
   border-radius: 30px;
@@ -39,7 +40,7 @@ img {
     color: transparent;
   }
   &::after {
-    content: "Fail to load the \A" attr(alt) " image";
+    content: 'Fail to load the \A'attr(alt) ' image';
     position: absolute;
     inset: 0;
     display: grid;
@@ -47,7 +48,9 @@ img {
     text-align: center;
     background: transparent;
     border: 2px dashed currentColor;
-    font: bold 1.6em/1.5 system-ui;
+    border-radius: 30px;
+    font-size: 1.6em;
+    font-weight: 500;
     white-space: pre-wrap;
     color: hsla(0, 39%, 49%, 0.894);
   }
@@ -64,4 +67,11 @@ p {
   margin-block: 1em;
   font-size: 1.2em;
   line-height: 1.5;
+}
+
+.aside-image {
+  float: left;
+  height: 100%;
+  width: 33.33%;
+  margin-right: 10px;
 }
