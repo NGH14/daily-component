@@ -713,10 +713,10 @@
   },
   {
     "id": "090",
-    "title": "Image On Error Placeholder  2",
+    "title": "Image On Error Placeholder CSS Only",
     "createdDate": "2025-06-02",
     "modifiedDate": "2025-06-02",
-    "tech": "CSS, HTML",
-    "path": "090.Image On Error Placeholder  2"
+    "tech": "CSS, HTML, Markdown, PNG, WEBP",
+    "path": "090.Image On Error Placeholder CSS Only"
   }
 ]

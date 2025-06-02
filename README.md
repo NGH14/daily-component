@@ -103,5 +103,5 @@ Personal repository for learning and practicing web components techniques throug
 | 87  | [Numbering With CSS Counters](./087.Numbering%20With%20CSS%20Counters) | 2025-05-29 | 2025-05-29 | CSS, HTML, MP4, Markdown |
 | 88  | [Nested Toggle Button](./088.Nested%20Toggle%20Button) | 2025-05-29 | 2025-05-31 | CSS, GIF, HTML, JavaScript, MP4, Markdown |
 | 89  | [Simple Bento Grid](./089.Simple%20Bento%20Grid) | 2025-05-30 | 2025-06-01 | CSS, GIF, HTML, MP4, Markdown |
-| 90  | [Image On Error Placeholder  2](./090.Image%20On%20Error%20Placeholder%20%202) | 2025-06-02 | 2025-06-02 | CSS, HTML |
+| 90  | [Image On Error Placeholder CSS Only](./090.Image%20On%20Error%20Placeholder%20CSS%20Only) | 2025-06-02 | 2025-06-02 | CSS, HTML, Markdown, PNG, WEBP |
 <!-- PROGRESS TABLE END -->
