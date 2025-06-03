@@ -6,7 +6,9 @@ There are the first solution ofr placeholder broken image link with `Javascript`
 
 The key of the image placeholder is `::after` creates a [`pseudo-element`](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements), with the [`attr()`](https://developer.mozilla.org/en-US/docs/Web/CSS/attr) CSS function is used to retrieve the value of an attribute of the selected element and use it in a property value.
 
-The main reason using the `::after` instead of `::before` is some brownser like Firefox take the `::before` in `img` tag to show the `alt` content when image link broken.
+![screenshot.png](screenshot.png)
+
+The main reason using the `::after` instead of `::before` is some brownser like Firefox take the `::before` in `img` tag to show the `alt` content when image link broken. Also, the `content` in `::before` pseudo element not able to override the brownser content default.
 
 ```css
 img {
@@ -39,4 +41,4 @@ img {
 }
 ```
 
-_Content ref: https://vinpearl.com/en/bun-bo-hue-noodles-beloved-vietnamese-dish_
+_Content ref: `https://vinpearl.com/en/bun-bo-hue-noodles-beloved-vietnamese-dish`_
