@@ -718,13 +718,5 @@
     "modifiedDate": "2025-06-03",
     "tech": "CSS, HTML, Markdown, PNG, WEBP",
     "path": "090.Image On Error Placeholder CSS Only"
-  },
-  {
-    "id": "091",
-    "title": "Image Comparison Slider",
-    "createdDate": "2025-06-04",
-    "modifiedDate": "2025-06-04",
-    "tech": "CSS, HTML, JavaScript",
-    "path": "091.Image Comparison Slider"
   }
 ]

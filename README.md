@@ -104,5 +104,4 @@ Personal repository for learning and practicing web components techniques throug
 | 88  | [Nested Toggle Button](./088.Nested%20Toggle%20Button) | 2025-05-29 | 2025-05-31 | CSS, GIF, HTML, JavaScript, MP4, Markdown |
 | 89  | [Simple Bento Grid](./089.Simple%20Bento%20Grid) | 2025-05-30 | 2025-06-01 | CSS, GIF, HTML, MP4, Markdown |
 | 90  | [Image On Error Placeholder CSS Only](./090.Image%20On%20Error%20Placeholder%20CSS%20Only) | 2025-06-02 | 2025-06-03 | CSS, HTML, Markdown, PNG, WEBP |
-| 91  | [Image Comparison Slider](./091.Image%20Comparison%20Slider) | 2025-06-04 | 2025-06-04 | CSS, HTML, JavaScript |
 <!-- PROGRESS TABLE END -->
