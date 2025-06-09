@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -47,17 +46,16 @@ img {
 }
 
 .slider-image {
-
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: left;
+  object-position: top;
 }
 
 .image-before {
   position: absolute;
   inset: 0;
-  width: var(--indicator);
+  height: var(--indicator);
   filter: grayscale(100%)
 }
 
@@ -78,11 +76,11 @@ img {
 .slider-line {
   position: absolute;
   inset: 0;
-  width: .2rem;
-  height: 100%;
+  width: 100%;
+  height: 0.2rem;
   background-color: hsl(0, 0%, 80%);
-  left: var(--indicator);
-  transform: translateX(-50%);
+  top: var(--indicator);
+  transform: translateY(-50%);
   pointer-events: none;
 }
 
@@ -95,8 +93,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 50%;
-  left: var(--indicator);
+  left: 50%;
+  top: var(--indicator);
   transform: translate(-50%, -50%);
   pointer-events: none;
   box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
