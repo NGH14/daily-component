@@ -33,7 +33,7 @@ img {
 }
 
 .slider-container {
-  --indicator: 50%;
+  --position: 50%;
   display: grid;
   place-content: center;
   position: relative;
@@ -56,7 +56,7 @@ img {
 .image-before {
   position: absolute;
   inset: 0;
-  width: var(--indicator);
+  width: var(--position);
   filter: grayscale(100%)
 }
 
@@ -80,7 +80,7 @@ img {
   width: .2rem;
   height: 100%;
   background-color: hsl(0, 0%, 80%);
-  left: var(--indicator);
+  left: var(--position);
   transform: translateX(-50%);
   pointer-events: none;
 }
@@ -95,7 +95,7 @@ img {
   justify-content: center;
   align-items: center;
   top: 50%;
-  left: var(--indicator);
+  left: var(--position);
   transform: translate(-50%, -50%);
   pointer-events: none;
   box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
