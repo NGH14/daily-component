@@ -718,5 +718,21 @@
     "modifiedDate": "2025-06-11",
     "tech": "CSS, HTML, Markdown",
     "path": "090.Image On Error Placeholder CSS Only"
+  },
+  {
+    "id": "091",
+    "title": "Horizontal Image Comparison Slider",
+    "createdDate": "2025-06-04",
+    "modifiedDate": "2025-06-11",
+    "tech": "CSS, HTML, JavaScript, Markdown",
+    "path": "091.Horizontal Image Comparison Slider"
+  },
+  {
+    "id": "092",
+    "title": "Vertical Image Comparison Slider",
+    "createdDate": "2025-06-07",
+    "modifiedDate": "2025-06-11",
+    "tech": "CSS, HTML, JavaScript",
+    "path": "092.Vertical Image Comparison Slider"
   }
 ]
