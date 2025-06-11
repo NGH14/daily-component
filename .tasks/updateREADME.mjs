@@ -7,7 +7,7 @@ import path from 'path';
 function addProjectsToReadMe() {
   console.time('Total execution time');
 
-  const folderPattern = /^(\d+)\.(.+)$/;
+  const folderPattern = /^(\d+[a-z]?)\.(.+)$/;
   const ID_PADDING_LENGTH = 3;
   const PADDING_CHAR = '0';
   console.time('Reading directories');
@@ -28,10 +28,10 @@ function addProjectsToReadMe() {
     .map((dir) => {
       const match = dir.match(folderPattern);
       if (match) {
-        const dayNumber = parseInt(match[1], 10);
+        const dayNumber = match[1]; // Keep the full match including letter suffix
         const projectName = match[2].trim();
 
-        const id = dayNumber.toString().padStart(ID_PADDING_LENGTH, PADDING_CHAR);
+        const id = dayNumber.padStart(ID_PADDING_LENGTH, PADDING_CHAR);
 
         const { createdDate, modifiedDate, fileExtensions } = getProjectMetadata(dir);
 
@@ -88,7 +88,14 @@ function addProjectsToReadMe() {
     .filter((project) => project !== null);
   console.timeEnd('Processing projects');
 
-  projects.sort((a, b) => parseInt(a.id) - parseInt(b.id));
+  projects.sort((a, b) => {
+    const aNum = parseInt(a.id.replace(/[a-z]/g, ''));
+    const bNum = parseInt(b.id.replace(/[a-z]/g, ''));
+    if (aNum === bNum) {
+      return a.id.localeCompare(b.id); // Sort alphabetically for same numbers (091a before 091b)
+    }
+    return aNum - bNum;
+  });
 
   console.time('Writing JSON');
   const jsonData = JSON.stringify(projects, null, 2);
@@ -198,7 +205,7 @@ function updateReadMeFromJson(projects) {
   const newRows = projects.map((project) => {
     const linkedProjectName = `[${project.title}](./${encodeURIComponent(project.path)})`;
 
-    return `| ${parseInt(project.id)}  | ${linkedProjectName} | ${project.createdDate} | ${project.modifiedDate} | ${project.tech} |`;
+    return `| ${project.id}  | ${linkedProjectName} | ${project.createdDate} | ${project.modifiedDate} | ${project.tech} |`;
   });
 
   const updatedTableContent =
