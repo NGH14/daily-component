@@ -52,7 +52,7 @@
     "title": "Simple Quote",
     "createdDate": "2025-05-29",
     "modifiedDate": "2025-05-29",
-    "tech": "CSS, HTML, WEBP",
+    "tech": "CSS, HTML",
     "path": "007.Simple Quote"
   },
   {
@@ -452,7 +452,7 @@
     "title": "Animated Noise Background",
     "createdDate": "2025-05-29",
     "modifiedDate": "2025-05-29",
-    "tech": "CSS, HTML, PNG",
+    "tech": "CSS, HTML",
     "path": "057.Animated Noise Background"
   },
   {
@@ -460,7 +460,7 @@
     "title": "CSS has() for Highlight Category",
     "createdDate": "2025-05-29",
     "modifiedDate": "2025-05-29",
-    "tech": "CSS, HTML, JPG",
+    "tech": "CSS, HTML",
     "path": "058.CSS has() for Highlight Category"
   },
   {
@@ -556,7 +556,7 @@
     "title": "Image On Error Placeholder",
     "createdDate": "2025-05-29",
     "modifiedDate": "2025-05-29",
-    "tech": "CSS, HTML, JPG",
+    "tech": "CSS, HTML",
     "path": "070.Image On Error Placeholder"
   },
   {
@@ -596,7 +596,7 @@
     "title": "Simple Sliding Up Image Caption",
     "createdDate": "2025-05-29",
     "modifiedDate": "2025-05-29",
-    "tech": "CSS, HTML, JPG",
+    "tech": "CSS, HTML",
     "path": "075.Simple Sliding Up Image Caption"
   },
   {
@@ -652,7 +652,7 @@
     "title": "Trail Dotted",
     "createdDate": "2025-05-29",
     "modifiedDate": "2025-05-29",
-    "tech": "CSS, HTML, Markdown, PNG",
+    "tech": "CSS, HTML, Markdown",
     "path": "082.Trail Dotted"
   },
   {
@@ -660,7 +660,7 @@
     "title": "Sticky Sidebar Section",
     "createdDate": "2025-05-29",
     "modifiedDate": "2025-05-29",
-    "tech": "CSS, HTML, MP4, Markdown, PNG",
+    "tech": "CSS, HTML, Markdown",
     "path": "083.Sticky Sidebar Section"
   },
   {
@@ -668,7 +668,7 @@
     "title": "Carousel Slider (Infinite Mode) Stock Statistics",
     "createdDate": "2025-05-29",
     "modifiedDate": "2025-05-29",
-    "tech": "CSS, HTML, MP4, Markdown",
+    "tech": "CSS, HTML, Markdown",
     "path": "084.Carousel Slider (Infinite Mode) Stock Statistics"
   },
   {
@@ -676,7 +676,7 @@
     "title": "Nested Dropdown Menu",
     "createdDate": "2025-05-29",
     "modifiedDate": "2025-05-29",
-    "tech": "CSS, HTML, MP4, Markdown",
+    "tech": "CSS, HTML, Markdown",
     "path": "085.Nested Dropdown Menu"
   },
   {
@@ -684,7 +684,7 @@
     "title": "Simple Tooltips",
     "createdDate": "2025-05-29",
     "modifiedDate": "2025-05-29",
-    "tech": "CSS, HTML, MP4, Markdown",
+    "tech": "CSS, HTML, Markdown",
     "path": "086.Simple Tooltips"
   },
   {
@@ -692,7 +692,7 @@
     "title": "Numbering With CSS Counters",
     "createdDate": "2025-05-29",
     "modifiedDate": "2025-05-29",
-    "tech": "CSS, HTML, MP4, Markdown",
+    "tech": "CSS, HTML, Markdown",
     "path": "087.Numbering With CSS Counters"
   },
   {
@@ -700,7 +700,7 @@
     "title": "Nested Toggle Button",
     "createdDate": "2025-05-29",
     "modifiedDate": "2025-05-31",
-    "tech": "CSS, GIF, HTML, JavaScript, MP4, Markdown",
+    "tech": "CSS, HTML, JavaScript, Markdown",
     "path": "088.Nested Toggle Button"
   },
   {
@@ -708,15 +708,15 @@
     "title": "Simple Bento Grid",
     "createdDate": "2025-05-30",
     "modifiedDate": "2025-06-01",
-    "tech": "CSS, GIF, HTML, MP4, Markdown",
+    "tech": "CSS, HTML, Markdown",
     "path": "089.Simple Bento Grid"
   },
   {
     "id": "090",
     "title": "Image On Error Placeholder CSS Only",
     "createdDate": "2025-06-02",
-    "modifiedDate": "2025-06-03",
-    "tech": "CSS, HTML, Markdown, PNG, WEBP",
+    "modifiedDate": "2025-06-11",
+    "tech": "CSS, HTML, Markdown",
     "path": "090.Image On Error Placeholder CSS Only"
   }
 ]

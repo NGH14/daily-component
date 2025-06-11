@@ -20,7 +20,7 @@ Personal repository for learning and practicing web components techniques throug
 | 4  | [Google Input Style](./004.Google%20Input%20Style) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 5  | [Newsletter](./005.Newsletter) | 2025-05-29 | 2025-05-29 | CSS, HTML, JavaScript |
 | 6  | [Scroll Long Image on Hover](./006.Scroll%20Long%20Image%20on%20Hover) | 2025-05-29 | 2025-05-29 | CSS, HTML |
-| 7  | [Simple Quote](./007.Simple%20Quote) | 2025-05-29 | 2025-05-29 | CSS, HTML, WEBP |
+| 7  | [Simple Quote](./007.Simple%20Quote) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 8  | [Simple Grids](./008.Simple%20Grids) | 2025-05-29 | 2025-05-29 | CSS, HTML, JSON, JavaScript |
 | 9  | [Glass Effect](./009.Glass%20Effect) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 10  | [Simple Textarea](./010.Simple%20Textarea%20) | 2025-05-29 | 2025-05-29 | CSS, HTML, JavaScript |
@@ -70,8 +70,8 @@ Personal repository for learning and practicing web components techniques throug
 | 54  | [Simple 2.5D Button](./054.Simple%202.5D%20Button) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 55  | [Simple Grid Background With Conic-Gradient](./055.Simple%20Grid%20Background%20With%20Conic-Gradient) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 56  | [Simple del & ins HTML tag](./056.Simple%20del%20%26%20ins%20HTML%20tag) | 2025-05-29 | 2025-05-29 | CSS, HTML |
-| 57  | [Animated Noise Background](./057.Animated%20Noise%20Background) | 2025-05-29 | 2025-05-29 | CSS, HTML, PNG |
-| 58  | [CSS has() for Highlight Category](./058.CSS%20has()%20for%20Highlight%20Category) | 2025-05-29 | 2025-05-29 | CSS, HTML, JPG |
+| 57  | [Animated Noise Background](./057.Animated%20Noise%20Background) | 2025-05-29 | 2025-05-29 | CSS, HTML |
+| 58  | [CSS has() for Highlight Category](./058.CSS%20has()%20for%20Highlight%20Category) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 59  | [Group Avatar](./059.Group%20Avatar) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 60  | [Hover Button Animation By Transform](./060.Hover%20Button%20Animation%20By%20Transform%20) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 61  | [Customize Checkbox](./061.Customize%20Checkbox) | 2025-05-29 | 2025-05-29 | CSS, HTML |
@@ -83,25 +83,25 @@ Personal repository for learning and practicing web components techniques throug
 | 67  | [Button Keyboard Style](./067.Button%20Keyboard%20Style) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 68  | [Directionally Aware Button](./068.Directionally%20Aware%20Button) | 2025-05-29 | 2025-05-29 | CSS, HTML, JavaScript |
 | 69  | [Simple Notify Button](./069.Simple%20Notify%20Button) | 2025-05-29 | 2025-05-29 | CSS, HTML |
-| 70  | [Image On Error Placeholder](./070.Image%20On%20Error%20Placeholder) | 2025-05-29 | 2025-05-29 | CSS, HTML, JPG |
+| 70  | [Image On Error Placeholder](./070.Image%20On%20Error%20Placeholder) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 71  | [Simple FAQs Section](./071.Simple%20FAQs%20Section) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 72  | [Simple Menu CSS Variable](./072.Simple%20Menu%20CSS%20Variable) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 73  | [Implement Sticky List Titles](./073.Implement%20Sticky%20List%20Titles) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 74  | [CSS For a Tag Without Class](./074.CSS%20For%20a%20Tag%20Without%20Class) | 2025-05-29 | 2025-05-29 | CSS, HTML |
-| 75  | [Simple Sliding Up Image Caption](./075.Simple%20Sliding%20Up%20Image%20Caption) | 2025-05-29 | 2025-05-29 | CSS, HTML, JPG |
+| 75  | [Simple Sliding Up Image Caption](./075.Simple%20Sliding%20Up%20Image%20Caption) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 76  | [Simple Drop Caps](./076.Simple%20Drop%20Caps) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 77  | [Simple Css Long Paragraph Column](./077.Simple%20Css%20Long%20Paragraph%20Column) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 78  | [Simple Input With Prefix And Postfix](./078.Simple%20Input%20With%20Prefix%20And%20Postfix) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 79  | [Vertical Scroll Snap](./079.Vertical%20Scroll%20Snap) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 80  | [Rating Scale Feedback](./080.Rating%20Scale%20Feedback) | 2025-05-29 | 2025-05-29 | CSS, HTML, Markdown |
 | 81  | [Tabs Header With Badge](./081.Tabs%20Header%20With%20Badge) | 2025-05-29 | 2025-05-29 | CSS, HTML |
-| 82  | [Trail Dotted](./082.Trail%20Dotted) | 2025-05-29 | 2025-05-29 | CSS, HTML, Markdown, PNG |
-| 83  | [Sticky Sidebar Section](./083.Sticky%20Sidebar%20Section) | 2025-05-29 | 2025-05-29 | CSS, HTML, MP4, Markdown, PNG |
-| 84  | [Carousel Slider (Infinite Mode) Stock Statistics](./084.Carousel%20Slider%20(Infinite%20Mode)%20Stock%20Statistics) | 2025-05-29 | 2025-05-29 | CSS, HTML, MP4, Markdown |
-| 85  | [Nested Dropdown Menu](./085.Nested%20Dropdown%20Menu) | 2025-05-29 | 2025-05-29 | CSS, HTML, MP4, Markdown |
-| 86  | [Simple Tooltips](./086.Simple%20Tooltips) | 2025-05-29 | 2025-05-29 | CSS, HTML, MP4, Markdown |
-| 87  | [Numbering With CSS Counters](./087.Numbering%20With%20CSS%20Counters) | 2025-05-29 | 2025-05-29 | CSS, HTML, MP4, Markdown |
-| 88  | [Nested Toggle Button](./088.Nested%20Toggle%20Button) | 2025-05-29 | 2025-05-31 | CSS, GIF, HTML, JavaScript, MP4, Markdown |
-| 89  | [Simple Bento Grid](./089.Simple%20Bento%20Grid) | 2025-05-30 | 2025-06-01 | CSS, GIF, HTML, MP4, Markdown |
-| 90  | [Image On Error Placeholder CSS Only](./090.Image%20On%20Error%20Placeholder%20CSS%20Only) | 2025-06-02 | 2025-06-03 | CSS, HTML, Markdown, PNG, WEBP |
+| 82  | [Trail Dotted](./082.Trail%20Dotted) | 2025-05-29 | 2025-05-29 | CSS, HTML, Markdown |
+| 83  | [Sticky Sidebar Section](./083.Sticky%20Sidebar%20Section) | 2025-05-29 | 2025-05-29 | CSS, HTML, Markdown |
+| 84  | [Carousel Slider (Infinite Mode) Stock Statistics](./084.Carousel%20Slider%20(Infinite%20Mode)%20Stock%20Statistics) | 2025-05-29 | 2025-05-29 | CSS, HTML, Markdown |
+| 85  | [Nested Dropdown Menu](./085.Nested%20Dropdown%20Menu) | 2025-05-29 | 2025-05-29 | CSS, HTML, Markdown |
+| 86  | [Simple Tooltips](./086.Simple%20Tooltips) | 2025-05-29 | 2025-05-29 | CSS, HTML, Markdown |
+| 87  | [Numbering With CSS Counters](./087.Numbering%20With%20CSS%20Counters) | 2025-05-29 | 2025-05-29 | CSS, HTML, Markdown |
+| 88  | [Nested Toggle Button](./088.Nested%20Toggle%20Button) | 2025-05-29 | 2025-05-31 | CSS, HTML, JavaScript, Markdown |
+| 89  | [Simple Bento Grid](./089.Simple%20Bento%20Grid) | 2025-05-30 | 2025-06-01 | CSS, HTML, Markdown |
+| 90  | [Image On Error Placeholder CSS Only](./090.Image%20On%20Error%20Placeholder%20CSS%20Only) | 2025-06-02 | 2025-06-11 | CSS, HTML, Markdown |
 <!-- PROGRESS TABLE END -->
