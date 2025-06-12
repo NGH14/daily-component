@@ -732,7 +732,15 @@
     "title": "Vertical Image Comparison Slider",
     "createdDate": "2025-06-07",
     "modifiedDate": "2025-06-11",
-    "tech": "CSS, HTML, JavaScript",
+    "tech": "CSS, HTML, JavaScript, Markdown",
     "path": "092.Vertical Image Comparison Slider"
+  },
+  {
+    "id": "093",
+    "title": "Timeline Css Only",
+    "createdDate": "2025-06-12",
+    "modifiedDate": "2025-06-12",
+    "tech": "CSS, HTML",
+    "path": "093.Timeline Css Only"
   }
 ]
