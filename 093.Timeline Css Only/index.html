@@ -1,19 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Day #093: Timeline Css Only</title>
-  <link rel="stylesheet" href="style.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day #93: Timeline Css Only</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-  
-</head>
-<body>
-
-</body>
+  </head>
+  <body>
+    <ol class="timeline">
+      <li class="timeline-item">
+        <span class="timeline-item-icon faded-icon">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            viewBox="0 0 16 16"
+            width="16"
+            height="16"
+            fill="currentColor"
+            display="inline-block"
+            overflow="visible"
+            style="vertical-align: text-bottom"
+          >
+            <path
+              d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"
+            ></path>
+          </svg>
+        </span>
+        <div class="timeline-item-description">
+          <i class="avatar small">
+            <img src="https://avatars.githubusercontent.com/u/80865148?v=4" />
+          </i>
+          <span
+            ><a href="https://github.com/NGH14/daily-component" target="_blank"
+              >Ngh14</a
+            >
+            has initialized the
+            <a href="https://github.com/NGH14/daily-component" target="_blank"
+              >repository</a
+            >
+            on <time datetime="21-01-2021">June 10, 2025</time></span
+          >
+        </div>
+      </li>
+      <li class="timeline-item blank-item">
+        <span class="timeline-item-icon filled-icon">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            viewBox="0 0 16 16"
+            width="16"
+            height="16"
+            fill="currentColor"
+            style="vertical-align: text-bottom"
+          >
+            <path
+              d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"
+            ></path>
+          </svg>
+        </span>
+        <div class="timeline-item-description">
+          <i class="avatar small">
+            <img src="https://avatars.githubusercontent.com/u/80865148?v=4" />
+          </i>
+          <span
+            ><a href="https://github.com/NGH14/daily-component" target="_blank"
+              >Ngh14</a
+            >
+            modified
+            <a href="https://github.com/NGH14/daily-component" target="_blank"
+              >📄 README.md</a
+            >
+            on <time datetime="12-08-2025">June 12, 2025</time></span
+          >
+        </div>
+      </li>
+      <li class="timeline-item">
+        <span class="timeline-item-icon faded-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path
+              fill="currentColor"
+              d="M6.455 19L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455zM7 10v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2z"
+            />
+          </svg>
+        </span>
+        <div class="timeline-item-wrapper">
+          <div class="timeline-item-description">
+            <i class="avatar small">
+              <img src="https://avatars.githubusercontent.com/u/80865148?v=4" />
+            </i>
+            <span
+              ><a
+                href="https://github.com/NGH14/daily-component"
+                target="_blank"
+                >Ngh14</a
+              >
+              commited on <time datetime="12-08-2025">June 12, 2025</time></span
+            >
+          </div>
+          <div class="commit">
+            <p>docs: remove unnecessary blank lines in README</p>
+          </div>
+          <a
+            class="show-more"
+            href="https://github.com/NGH14/daily-component"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-arrow-forward"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M15 11l4 4l-4 4m4 -4h-11a4 4 0 0 1 0 -8h1" />
+            </svg>
+            Show 3 activities
+          </a>
+        </div>
+      </li>
+    </ol>
+  </body>
 </html>
