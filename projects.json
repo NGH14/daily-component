@@ -739,8 +739,16 @@
     "id": "093",
     "title": "Timeline Css Only",
     "createdDate": "2025-06-12",
-    "modifiedDate": "2025-06-12",
-    "tech": "CSS, HTML",
+    "modifiedDate": "2025-06-17",
+    "tech": "CSS, HTML, Markdown",
     "path": "093.Timeline Css Only"
+  },
+  {
+    "id": "094",
+    "title": "Simple Inline Svgs",
+    "createdDate": "2025-06-18",
+    "modifiedDate": "2025-06-18",
+    "tech": "CSS, HTML",
+    "path": "094.Simple Inline Svgs"
   }
 ]

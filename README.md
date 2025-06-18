@@ -106,5 +106,6 @@ Personal repository for learning and practicing web components techniques throug
 | 90  | [Image On Error Placeholder CSS Only](./090.Image%20On%20Error%20Placeholder%20CSS%20Only) | 2025-06-02 | 2025-06-11 | CSS, HTML, Markdown |
 | 91  | [Horizontal Image Comparison Slider](./091.Horizontal%20Image%20Comparison%20Slider) | 2025-06-04 | 2025-06-11 | CSS, HTML, JavaScript, Markdown |
 | 92  | [Vertical Image Comparison Slider](./092.Vertical%20Image%20Comparison%20Slider) | 2025-06-07 | 2025-06-11 | CSS, HTML, JavaScript, Markdown |
-| 93  | [Timeline Css Only](./093.Timeline%20Css%20Only) | 2025-06-12 | 2025-06-12 | CSS, HTML |
+| 93  | [Timeline Css Only](./093.Timeline%20Css%20Only) | 2025-06-12 | 2025-06-17 | CSS, HTML, Markdown |
+| 94  | [Simple Inline Svgs](./094.Simple%20Inline%20Svgs) | 2025-06-18 | 2025-06-18 | CSS, HTML |
 <!-- PROGRESS TABLE END -->
