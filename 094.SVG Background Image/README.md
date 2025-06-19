@@ -1,4 +1,4 @@
-# Timeline
+# Inline SVG
 
 > the visual representation of events or activities arranged in order
 

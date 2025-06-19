@@ -107,5 +107,5 @@ Personal repository for learning and practicing web components techniques throug
 | 91  | [Horizontal Image Comparison Slider](./091.Horizontal%20Image%20Comparison%20Slider) | 2025-06-04 | 2025-06-11 | CSS, HTML, JavaScript, Markdown |
 | 92  | [Vertical Image Comparison Slider](./092.Vertical%20Image%20Comparison%20Slider) | 2025-06-07 | 2025-06-11 | CSS, HTML, JavaScript, Markdown |
 | 93  | [Timeline Css Only](./093.Timeline%20Css%20Only) | 2025-06-12 | 2025-06-17 | CSS, HTML, Markdown |
-| 94  | [Simple Inline Svgs](./094.Simple%20Inline%20Svgs) | 2025-06-18 | 2025-06-18 | CSS, HTML |
+| 94  | [SVG Background Image](./094.SVG%20Background%20Image) | 2025-06-18 | 2025-06-19 | CSS, HTML, Markdown |
 <!-- PROGRESS TABLE END -->
