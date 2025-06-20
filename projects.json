@@ -750,5 +750,13 @@
     "modifiedDate": "2025-06-19",
     "tech": "CSS, HTML, Markdown",
     "path": "094.SVG Background Image"
+  },
+  {
+    "id": "095",
+    "title": "Blur Table Rows Focus",
+    "createdDate": "2025-06-20",
+    "modifiedDate": "2025-06-20",
+    "tech": "CSS, HTML",
+    "path": "095.Blur Table Rows Focus"
   }
 ]
