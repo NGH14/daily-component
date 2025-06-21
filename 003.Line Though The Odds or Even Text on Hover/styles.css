@@ -28,7 +28,7 @@ body {
   transition: color 0.25s linear;
   color: #111414;
 
-  span:nth-child(even) {
+  span:nth-child(odd) {
     position: relative;
     z-index: 2;
   }
