@@ -17,18 +17,18 @@
   },
   {
     "id": "003",
-    "title": "Hover The Odds Text",
+    "title": "Line Through The Odds or Even Text on Hover",
     "createdDate": "2025-05-29",
-    "modifiedDate": "2025-05-29",
-    "tech": "CSS, HTML",
-    "path": "003.Hover The Odds Text"
+    "modifiedDate": "2025-06-22",
+    "tech": "CSS, HTML, Markdown",
+    "path": "003.Line Through The Odds or Even Text on Hover"
   },
   {
     "id": "004",
     "title": "Google Input Style",
     "createdDate": "2025-05-29",
-    "modifiedDate": "2025-05-29",
-    "tech": "CSS, HTML",
+    "modifiedDate": "2025-06-25",
+    "tech": "CSS, HTML, Markdown",
     "path": "004.Google Input Style"
   },
   {
@@ -315,7 +315,7 @@
     "id": "040",
     "title": "Stack Avatars CSS only",
     "createdDate": "2025-05-29",
-    "modifiedDate": "2025-05-29",
+    "modifiedDate": "2025-06-23",
     "tech": "CSS, HTML",
     "path": "040.Stack Avatars CSS only"
   },
@@ -753,10 +753,18 @@
   },
   {
     "id": "095",
-    "title": "Blur Table Rows Focus",
+    "title": "Table focus-within",
     "createdDate": "2025-06-20",
-    "modifiedDate": "2025-06-20",
+    "modifiedDate": "2025-06-27",
+    "tech": "CSS, HTML, Markdown",
+    "path": "095.Table focus-within"
+  },
+  {
+    "id": "096",
+    "title": "Simple Tooltip In Navbar",
+    "createdDate": "2025-06-28",
+    "modifiedDate": "2025-06-28",
     "tech": "CSS, HTML",
-    "path": "095.Blur Table Rows Focus"
+    "path": "096.Simple Tooltip In Navbar"
   }
 ]

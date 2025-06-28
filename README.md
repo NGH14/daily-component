@@ -16,8 +16,8 @@ Personal repository for learning and practicing web components techniques throug
 |-----|-----------|---------|--------------|------|
 | 1  | [Simple Validate Form with Vanilla JS](./001.Simple%20Validate%20Form%20with%20Vanilla%20JS) | 2025-05-29 | 2025-05-29 | CSS, HTML, JavaScript |
 | 2  | [Simple Skeleton with Vanilla JS](./002.Simple%20Skeleton%20with%20Vanilla%20JS) | 2025-05-29 | 2025-05-29 | CSS, HTML, JavaScript |
-| 3  | [Hover The Odds Text](./003.Hover%20The%20Odds%20Text) | 2025-05-29 | 2025-05-29 | CSS, HTML |
-| 4  | [Google Input Style](./004.Google%20Input%20Style) | 2025-05-29 | 2025-05-29 | CSS, HTML |
+| 3  | [Line Through The Odds or Even Text on Hover](./003.Line%20Through%20The%20Odds%20or%20Even%20Text%20on%20Hover) | 2025-05-29 | 2025-06-22 | CSS, HTML, Markdown |
+| 4  | [Google Input Style](./004.Google%20Input%20Style) | 2025-05-29 | 2025-06-25 | CSS, HTML, Markdown |
 | 5  | [Newsletter](./005.Newsletter) | 2025-05-29 | 2025-05-29 | CSS, HTML, JavaScript |
 | 6  | [Scroll Long Image on Hover](./006.Scroll%20Long%20Image%20on%20Hover) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 7  | [Simple Quote](./007.Simple%20Quote) | 2025-05-29 | 2025-05-29 | CSS, HTML |
@@ -53,7 +53,7 @@ Personal repository for learning and practicing web components techniques throug
 | 37  | [Grid Image with Caption](./037.Grid%20Image%20with%20Caption) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 38  | [Button with text Color and Color Mix](./038.Button%20with%20text%20Color%20and%20Color%20Mix) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 39  | [Simple Camera Border with conic-gradient](./039.Simple%20Camera%20Border%20with%20conic-gradient) | 2025-05-29 | 2025-05-29 | CSS, HTML |
-| 40  | [Stack Avatars CSS only](./040.Stack%20Avatars%20CSS%20only) | 2025-05-29 | 2025-05-29 | CSS, HTML |
+| 40  | [Stack Avatars CSS only](./040.Stack%20Avatars%20CSS%20only) | 2025-05-29 | 2025-06-23 | CSS, HTML |
 | 41  | [Toggle Button IOS style](./041.Toggle%20Button%20IOS%20style) | 2025-05-29 | 2025-05-29 | CSS, HTML |
 | 42  | [Counting Up Number](./042.Counting%20Up%20Number) | 2025-05-29 | 2025-05-29 | CSS, HTML, JavaScript |
 | 43  | [Simple Bounce Loader](./043.Simple%20Bounce%20Loader) | 2025-05-29 | 2025-05-29 | CSS, HTML |
@@ -108,5 +108,6 @@ Personal repository for learning and practicing web components techniques throug
 | 92  | [Vertical Image Comparison Slider](./092.Vertical%20Image%20Comparison%20Slider) | 2025-06-07 | 2025-06-11 | CSS, HTML, JavaScript, Markdown |
 | 93  | [Timeline Css Only](./093.Timeline%20Css%20Only) | 2025-06-12 | 2025-06-17 | CSS, HTML, Markdown |
 | 94  | [SVG Background Image](./094.SVG%20Background%20Image) | 2025-06-18 | 2025-06-19 | CSS, HTML, Markdown |
-| 95  | [Blur Table Rows Focus](./095.Blur%20Table%20Rows%20Focus) | 2025-06-20 | 2025-06-20 | CSS, HTML |
+| 95  | [Table focus-within](./095.Table%20focus-within) | 2025-06-20 | 2025-06-27 | CSS, HTML, Markdown |
+| 96  | [Simple Tooltip In Navbar](./096.Simple%20Tooltip%20In%20Navbar) | 2025-06-28 | 2025-06-28 | CSS, HTML |
 <!-- PROGRESS TABLE END -->
