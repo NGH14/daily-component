@@ -37,7 +37,7 @@ The key of the line-through (strike-through) is using the `::before` pseudo elem
 }
 ```
 
-Change the `:nth-child` to change between the odd and the even that the line go through.
+Change the [`:nth-child`](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child) to change between the odd and the even that the line go through.
 
 ```css
   span:nth-child(odd) {
