@@ -19,6 +19,13 @@ main {
 }
 
 abbr {
+  font-weight: bold;
   font-style: italic;
   color: chocolate;
+  cursor: pointer;
+}
+
+p {
+  width: 300px;
+  text-align: justify;
 }
