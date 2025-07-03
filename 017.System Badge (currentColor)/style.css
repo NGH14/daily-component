@@ -1,21 +1,21 @@
 :root {
-	--color-primary-bg: #f9fafb;
+	--color-primary-bg: color-mix(in srgb, var(--color-primary-border) 12%, transparent);
 	--color-primary-border: currentColor;
 	--color-primary-text: #525252;
 
-	--color-danger-bg: #fef2f2;
+	--color-danger-bg: color-mix(in srgb, var(--color-danger-border) 12%, transparent);
 	--color-danger-border: currentColor;
 	--color-danger-text: #dc2626;
 
-	--color-warning-bg: #fffbeb;
+	--color-warning-bg: color-mix(in srgb, var(--color-warning-border) 12%, transparent);
 	--color-warning-border: currentColor;
 	--color-warning-text: #b45309;
 
-	--color-success-bg: #f0fdf4;
+	--color-success-bg: color-mix(in srgb, var(--color-success-border) 12%, transparent);
 	--color-success-border: currentColor;
 	--color-success-text: #15803d;
 
-	--color-brand-bg: #eef2ff;
+	--color-brand-bg: color-mix(in srgb, var(--color-brand-border) 12%, transparent);
 	--color-brand-border: currentColor;
 	--color-brand-text: #4338ca;
 }
@@ -49,8 +49,7 @@ main {
 .badge__variants {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	gap: 24px;
+	gap: 30px;
 
 	p {
 		display: inline;
@@ -58,7 +57,7 @@ main {
 }
 
 .badge {
-	border-radius: 9999px;
+	border-radius: 30px;
 	text-align: center;
 	border-width: 1px;
 	border-style: solid;
