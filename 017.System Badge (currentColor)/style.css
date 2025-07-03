@@ -1,7 +1,7 @@
 :root {
 	--color-primary-bg: color-mix(in srgb, var(--color-primary-border) 12%, transparent);
 	--color-primary-border: currentColor;
-	--color-primary-text: #525252;
+	--color-primary-text: #0e37cd;
 
 	--color-danger-bg: color-mix(in srgb, var(--color-danger-border) 12%, transparent);
 	--color-danger-border: currentColor;
@@ -38,6 +38,7 @@ main {
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+	caret-color: transparent;
 }
 
 .badge__section {
@@ -61,11 +62,12 @@ main {
 	text-align: center;
 	border-width: 1px;
 	border-style: solid;
+	width: 80px;
 }
 
 .badge--size-sm {
-	height: 20px;
-	padding: 1px 5px;
+	height: 22px;
+	padding: 1px 4px;
 	font-size: 12px;
 	line-height: 16px;
 }
