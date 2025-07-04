@@ -2,7 +2,7 @@
 
 > Reimplement the input that inspired Google's style
 
-The key concept in this style is moving or animation the label which relocated to the border of the input.
+The key concept in this style is moving or animation the label which moved to the border of the input.
 
 ```css
 .form__input:focus ~ .form__label,
