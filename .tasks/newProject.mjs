@@ -13,10 +13,6 @@ const rl = readline.createInterface({
 });
 
 
-
-
-
-// Function to find the next day number
 function findNextDayNumber() {
   const dayRegex = /^\d{3}\./;
   const dirs = fs.readdirSync('.')
@@ -44,7 +40,6 @@ function createNewProject() {
     const sanitizedName = projectName
       .trim()
       .replace(/[^a-zA-Z0-9]/g, ' ')
-      .toLowerCase();
 
     // Format project name for display (capitalize first letter)
     const formattedName = sanitizedName
@@ -53,7 +48,6 @@ function createNewProject() {
       .join(' ');
 
     const titleName = `Day #${nextDay}: ${formattedName}`;
-
 
 
     // Create folder name with padded day number and sanitized project name
@@ -65,8 +59,6 @@ function createNewProject() {
       // Create the folder
       fs.mkdirSync(folderName);
       console.log(`Created folder: ${folderName}`);
-
-
 
       // Create and write HTML file
       fs.writeFileSync(
