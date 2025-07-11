@@ -33,3 +33,5 @@ The key of tooltip is `position: absolute` which set default as `transform: scal
     }
   }
 ```
+
+- [`Day#18: Tooltip (abbr)`](../018.Tooltip%20(abbr)/) is another tooltip implement by `abbr` tag.
