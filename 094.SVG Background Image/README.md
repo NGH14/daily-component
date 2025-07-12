@@ -15,7 +15,9 @@ p {
 }
 ```
 
-__NOTE__: make sure using the encode of `#` as `%23` when using hex code in `background-image/l url()`
+__NOTE__:
+Make sure using the encode of `#` as `%23` when using hex code in `background-image: url()` and `data:image/svg+xml;utf8` in `url()`
+
 
 ![screenshot](screenshot.png)
 
