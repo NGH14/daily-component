@@ -12,6 +12,8 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
+const prefixNumber = 3;
+
 
 function findNextDayNumber() {
   const dayRegex = /^\d{3}\./;
@@ -28,7 +30,7 @@ function findNextDayNumber() {
     .filter(num => !isNaN(num));
 
   const nextDay = Math.max(...dayNumbers) + 1;
-  return nextDay.toString().padStart(3, '0');
+  return nextDay.toString().padStart(prefixNumber, '0');
 }
 
 // Main function to create a new project
