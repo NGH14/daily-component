@@ -3,9 +3,9 @@ import path from 'path';
 import readline from 'readline';
 import addProjectsToReadMe from './updateREADME.mjs';
 
-import { createCssTemplate } from './template/templateCSS.mjs';
-import { createHtmlTemplate } from './template/templateHTML.mjs';
-import { createJsTemplate } from './template/templateJS.mjs';
+import { createCSSTemplate } from './template/templateCSS.mjs';
+import { createHTMLTemplate } from './template/templateHTML.mjs';
+import { createJSTemplate } from './template/templateJS.mjs';
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -37,7 +37,7 @@ function findNextDayNumber() {
 function createNewProject() {
   const nextDay = findNextDayNumber();
 
-  rl.question('Enter a brief project name (one or two words): ', (projectName) => {
+  rl.question('Enter a brief project name: ', (projectName) => {
     // Trim and remove any non-alphanumeric characters
     const sanitizedName = projectName
       .trim()

@@ -1,4 +1,4 @@
-export function createHtmlTemplate(projectName, includeJS) {
+export function createHTMLTemplate(projectName, includeJS) {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>

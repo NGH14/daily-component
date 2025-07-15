@@ -1,5 +1,5 @@
 // JS template
-export function createJsTemplate(projectName) {
+export function createJSTemplate(projectName) {
   return `
 document.addEventListener('DOMContentLoaded', () => {
   console.log('${projectName} loaded!');
