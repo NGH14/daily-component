@@ -15,5 +15,13 @@
 			"label": "init the new project",
 			"detail": "node ./tasks/newProject.mjs"
 		}
+		,
+		{
+			"type": "shell",
+			"command": "node ./.tasks/helper/folderRenamer.mjs",
+			"problemMatcher": [],
+			"label": "rename folders based on 3-digit prefix",
+			"detail": "Renames folders to match the 3-digit prefix format."
+		}
 	]
 }

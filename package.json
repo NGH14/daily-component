@@ -1,7 +1,6 @@
 {
   "name": "daily-component",
   "version": "1.0.0",
-  "types": "module",
   "description": "Personal repository for learning and practicing web components techniques through daily coding exercises.",
   "scripts": {
     "start": "node ./.tasks/newProject.mjs",
