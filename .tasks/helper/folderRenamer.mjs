@@ -11,8 +11,8 @@ fs.readdirSync(baseDir, { withFileTypes: true }).forEach(dirent => {
   const match = originalName.match(/^(\d{3}\.)(.*)/);
   if (!match) return;
 
-  const prefix = match[1]; // e.g., "095."
-  const namePart = match[2]; // e.g., "table focus-within"
+  const dayNumberPrefix = match[1]; 
+  const namePart = match[2]; 
 
   const formattedNamePart = formatFolderName(namePart);
 
