@@ -5,3 +5,5 @@
 <video width="480" height="300" controls>
   <source src="screenshot.mp4" type="video/mp4">
 </video>
+
+![Image title](output.gif)
