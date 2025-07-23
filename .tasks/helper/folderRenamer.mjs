@@ -11,8 +11,8 @@ fs.readdirSync(baseDir, { withFileTypes: true }).forEach(dirent => {
   const match = originalName.match(/^(\d{3}\.)(.*)/);
   if (!match) return;
 
-  const dayNumberPrefix = match[1]; 
-  const namePart = match[2]; 
+  const dayNumberPrefix = match[1];
+  const namePart = match[2];
 
   const formattedNamePart = formatFolderName(namePart);
 
@@ -24,8 +24,6 @@ fs.readdirSync(baseDir, { withFileTypes: true }).forEach(dirent => {
     fs.renameSync(oldPath, newPath);
     console.log(`Renamed: "${originalName}" → "${newName}"`);
   }
-
-  // If the folder name is already formatted correctly, skip renaming
   else {
     console.log(`No change needed for: ${originalName}`);
   }
