@@ -2,7 +2,11 @@
 
 >A tooltip is a contextual text bubble that displays a description for an element that appears on pointer hover or keyboard focus.
 
-![screenshot](output.gif)
+<video width="480" height="300" controls>
+  <source src="screenshot.mp4" type="video/mp4">
+</video>
+
+![screenshot](./output.gif)
 
 The key of tooltip is `position: absolute` which set default as `transform: scale(0)` and `opacity: 0`
 
