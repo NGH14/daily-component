@@ -1,9 +1,6 @@
 import fs from 'fs';
 import path from 'path';
 
-/**
- * Creates a JSON file with project data and updates the README.md
- */
 function addProjectsToReadMe() {
   console.time('Total execution time');
 
@@ -44,27 +41,13 @@ function addProjectsToReadMe() {
           'ts': 'TypeScript',
           'vue': 'Vue',
           'svelte': 'Svelte',
-          'py': 'Python',
-          'json': 'JSON',
           'md': 'Markdown',
           'php': 'PHP',
           'scss': 'SCSS',
           'sass': 'Sass',
           'less': 'Less',
-          'go': 'Go',
-          'rb': 'Ruby',
-          'java': 'Java',
-          'c': 'C',
-          'cpp': 'C++',
-          'cs': 'C#',
-          'sh': 'Shell',
-          'sql': 'SQL',
-          'swift': 'Swift',
-          'kt': 'Kotlin',
-          'rs': 'Rust'
         };
 
-        // Filter out non-technical extensions
         const technicalExtensions = fileExtensions.filter(ext => techMap.hasOwnProperty(ext));
 
         const tech = technicalExtensions.length > 0
@@ -103,11 +86,6 @@ function addProjectsToReadMe() {
   console.timeEnd('Total execution time');
 }
 
-/**
- * Gets metadata (dates and file extensions) for a project folder in a single pass
- * @param {string} dirPath - The path to the directory
- * @returns {Object} - Object containing createdDate, modifiedDate, and fileExtensions
- */
 function getProjectMetadata(dirPath) {
   try {
     const folderStats = fs.statSync(dirPath);
@@ -140,19 +118,17 @@ function getProjectMetadata(dirPath) {
           }
 
           if (fileStats.isFile()) {
-            const ext = path.extname(file).toLowerCase().slice(1); // Remove the dot
             if (ext && ext.length > 0) {
               fileExtensions.add(ext);
             }
           }
         } catch (err) {
-          // Skip files that can't be accessed
+          console.warn(`Could not read file stats for ${filePath}: ${err.message}`);
         }
       }
     } catch (err) {
-      // Skip directories that can't be read
+      console.warn(`Could not read directory stats for ${dirPath}: ${err.message}`);
     }
-
     return {
       createdDate: oldestTime.toISOString().split('T')[0],
       modifiedDate: newestTime.toISOString().split('T')[0],
@@ -169,9 +145,6 @@ function getProjectMetadata(dirPath) {
   }
 }
 
-/**
- * Updates the README.md file using the project data
- */
 function updateReadMeFromJson(projects) {
   const readmePath = 'README.md';
   if (!fs.existsSync(readmePath)) {
@@ -230,7 +203,6 @@ function checkForChanges() {
 
       const jsonDirs = new Set(existingData.map(project => project.path));
 
-      // Check if directories have changed
       const needsUpdate =
         currentDirs.size !== jsonDirs.size ||
         ![...currentDirs].every(dir => jsonDirs.has(dir)) ||
@@ -241,7 +213,6 @@ function checkForChanges() {
         return true;
       }
 
-      // Check if any project folder has been modified
       for (const project of existingData) {
         try {
           const { modifiedDate } = getProjectMetadata(project.path);
@@ -260,7 +231,6 @@ function checkForChanges() {
       return false;
     }
 
-    // If projects.json doesn't exist, we need to create it
     console.log("projects.json not found, creating...");
     return true;
   } catch (err) {
