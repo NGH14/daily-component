@@ -59,20 +59,20 @@ function createNewProject() {
 
       fs.writeFileSync(
         path.join(folderName, 'index.html'),
-        createHtmlTemplate(titleName, includeJS)
+        createHTMLTemplate(titleName, includeJS)
       );
       console.log('Created index.html');
 
       fs.writeFileSync(
         path.join(folderName, 'style.css'),
-        createCssTemplate(formattedName)
+        createCSSTemplate(formattedName)
       );
       console.log('Created style.css');
 
       if (includeJS) {
         fs.writeFileSync(
           path.join(folderName, 'script.js'),
-          createJsTemplate(formattedName)
+          createJSTemplate(formattedName)
         );
         console.log('Created script.js');
       }

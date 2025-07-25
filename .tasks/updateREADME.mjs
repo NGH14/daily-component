@@ -32,37 +32,15 @@ function addProjectsToReadMe() {
 
         const { createdDate, modifiedDate, fileExtensions } = getProjectMetadata(dir);
 
-        const techMap = {
-          'html': 'HTML',
-          'css': 'CSS',
-          'js': 'JavaScript',
-          'jsx': 'React',
-          'tsx': 'React/TypeScript',
-          'ts': 'TypeScript',
-          'vue': 'Vue',
-          'svelte': 'Svelte',
-          'md': 'Markdown',
-          'php': 'PHP',
-          'scss': 'SCSS',
-          'sass': 'Sass',
-          'less': 'Less',
-        };
 
-        const technicalExtensions = fileExtensions.filter(ext => techMap.hasOwnProperty(ext));
 
-        const tech = technicalExtensions.length > 0
-          ? technicalExtensions
-            .map(ext => techMap[ext])
-            .sort()
-            .join(', ')
-          : 'Folder Created';
+
 
         return {
           id,
           title: projectName,
           createdDate,
           modifiedDate,
-          tech,
           path: dir
         };
       }
@@ -116,12 +94,6 @@ function getProjectMetadata(dirPath) {
           if (fileStats.mtime > newestTime) {
             newestTime = fileStats.mtime;
           }
-
-          if (fileStats.isFile()) {
-            if (ext && ext.length > 0) {
-              fileExtensions.add(ext);
-            }
-          }
         } catch (err) {
           console.warn(`Could not read file stats for ${filePath}: ${err.message}`);
         }
@@ -165,7 +137,7 @@ function updateReadMeFromJson(projects) {
     return;
   }
 
-  const headerRows = `| Day | Component | Created | Last Modified | Tags |
+  const headerRows = `| Day | Component | Created | Last Modified |
 |-----|-----------|---------|--------------|------|`;
 
   const newRows = projects.map((project) => {
