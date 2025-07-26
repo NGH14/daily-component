@@ -1,6 +1,6 @@
 # :snake: Daily Component
 
-Personal repository for learning and practicing web components techniques through daily coding exercises.
+Personal repository for learning and practicing web components techniques through daily (or weekly) coding exercises.
 
 ## 🎯 Purpose
 
