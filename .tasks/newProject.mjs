@@ -12,7 +12,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-const prefixNumber = 3;
+const prefixNumber = 3; // Formated as 001 
 
 
 function findNextDayNumber() {
