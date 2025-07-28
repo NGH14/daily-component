@@ -27,15 +27,9 @@ function addProjectsToReadMe() {
       if (match) {
         const dayNumber = parseInt(match[1], 10);
         const projectName = match[2].trim();
-
         const id = dayNumber.toString().padStart(ID_PADDING_LENGTH, PADDING_CHAR);
-
         const { createdDate, modifiedDate, fileExtensions } = getProjectMetadata(dir);
-
-
-
-
-
+        
         return {
           id,
           title: projectName,
@@ -138,7 +132,7 @@ function updateReadMeFromJson(projects) {
   }
 
   const headerRows = `| Day | Component | Created | Last Modified |
-|-----|-----------|---------|--------------|------|`;
+|-----|-----------|---------|--------------|`;
 
   const newRows = projects.map((project) => {
     const linkedProjectName = `[${project.title}](./${encodeURIComponent(project.path)})`;
