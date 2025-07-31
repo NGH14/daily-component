@@ -27,15 +27,26 @@ function addProjectsToReadMe() {
       if (match) {
         const dayNumber = parseInt(match[1], 10);
         const projectName = match[2].trim();
+<<<<<<< HEAD
         const id = dayNumber.toString().padStart(ID_PADDING_LENGTH, PADDING_CHAR);
         const { createdDate, modifiedDate, fileExtensions } = getProjectMetadata(dir);
         
+=======
+
+        const id = dayNumber
+          .toString()
+          .padStart(ID_PADDING_LENGTH, PADDING_CHAR);
+
+        const { createdDate, modifiedDate, fileExtensions } =
+          getProjectMetadata(dir);
+
+>>>>>>> 98c055e (fix(task): remove the extra table column causing the readme messy table)
         return {
           id,
           title: projectName,
           createdDate,
           modifiedDate,
-          path: dir
+          path: dir,
         };
       }
       return null;
@@ -62,9 +73,10 @@ function getProjectMetadata(dirPath) {
   try {
     const folderStats = fs.statSync(dirPath);
 
-    let oldestTime = folderStats.birthtime && folderStats.birthtime.getTime() > 0
-      ? folderStats.birthtime
-      : folderStats.mtime;
+    let oldestTime =
+      folderStats.birthtime && folderStats.birthtime.getTime() > 0
+        ? folderStats.birthtime
+        : folderStats.mtime;
 
     let newestTime = folderStats.mtime;
     let fileExtensions = new Set();
@@ -77,9 +89,10 @@ function getProjectMetadata(dirPath) {
         try {
           const fileStats = fs.statSync(filePath);
 
-          const fileCreateTime = fileStats.birthtime && fileStats.birthtime.getTime() > 0
-            ? fileStats.birthtime
-            : fileStats.mtime;
+          const fileCreateTime =
+            fileStats.birthtime && fileStats.birthtime.getTime() > 0
+              ? fileStats.birthtime
+              : fileStats.mtime;
 
           if (fileCreateTime < oldestTime) {
             oldestTime = fileCreateTime;
@@ -89,16 +102,20 @@ function getProjectMetadata(dirPath) {
             newestTime = fileStats.mtime;
           }
         } catch (err) {
-          console.warn(`Could not read file stats for ${filePath}: ${err.message}`);
+          console.warn(
+            `Could not read file stats for ${filePath}: ${err.message}`,
+          );
         }
       }
     } catch (err) {
-      console.warn(`Could not read directory stats for ${dirPath}: ${err.message}`);
+      console.warn(
+        `Could not read directory stats for ${dirPath}: ${err.message}`,
+      );
     }
     return {
       createdDate: oldestTime.toISOString().split('T')[0],
       modifiedDate: newestTime.toISOString().split('T')[0],
-      fileExtensions: Array.from(fileExtensions)
+      fileExtensions: Array.from(fileExtensions),
     };
   } catch (err) {
     console.warn(`Could not get metadata for ${dirPath}: ${err.message}`);
@@ -106,7 +123,7 @@ function getProjectMetadata(dirPath) {
     return {
       createdDate: now.toISOString().split('T')[0],
       modifiedDate: now.toISOString().split('T')[0],
-      fileExtensions: []
+      fileExtensions: [],
     };
   }
 }
@@ -123,7 +140,9 @@ function updateReadMeFromJson(projects) {
   const startMarker = '<!-- PROGRESS TABLE START -->';
   const endMarker = '<!-- PROGRESS TABLE END -->';
 
-  const tableRegex = new RegExp(`(${startMarker}\\n)([\\s\\S]*?)\\n(${endMarker})`);
+  const tableRegex = new RegExp(
+    `(${startMarker}\\n)([\\s\\S]*?)\\n(${endMarker})`,
+  );
   const tableMatch = readmeContent.match(tableRegex);
 
   if (!tableMatch) {
@@ -135,80 +154,101 @@ function updateReadMeFromJson(projects) {
 |-----|-----------|---------|--------------|`;
 
   const newRows = projects.map((project) => {
-    const linkedProjectName = `[${project.title}](./${encodeURIComponent(project.path)})`;
+    const linkedProjectName = `[${project.title}](./${encodeURIComponent(
+      project.path,
+    )})`;
 
-    return `| ${parseInt(project.id)}  | ${linkedProjectName} | ${project.createdDate} | ${project.modifiedDate} | ${project.tech} |`;
+    return `| ${parseInt(project.id)}  | ${linkedProjectName} | ${
+      project.createdDate
+    } | ${project.modifiedDate} | ${project.tech} |`;
   });
 
   const updatedTableContent =
-    tableMatch[1] + headerRows + '\n' + newRows.join('\n') + '\n' + tableMatch[3];
+    tableMatch[1] +
+    headerRows +
+    '\n' +
+    newRows.join('\n') +
+    '\n' +
+    tableMatch[3];
 
   const updatedReadme = readmeContent.replace(tableRegex, updatedTableContent);
 
   fs.writeFileSync(readmePath, updatedReadme);
-  console.log(`README.md has been updated with ${projects.length} projects total.`);
+  console.log(
+    `README.md has been updated with ${projects.length} projects total.`,
+  );
 }
 
-function checkForChanges() {
-  try {
-    if (fs.existsSync('projects.json')) {
-      const existingData = JSON.parse(fs.readFileSync('projects.json', 'utf8'));
-      const folderPattern = /^(\d+)\.(.+)$/;
+function checkForChanges(force = false) {
+  if (force) {
+    console.log('Force update triggered.');
+  } else {
+    try {
+      if (fs.existsSync('projects.json')) {
+        const existingData = JSON.parse(
+          fs.readFileSync('projects.json', 'utf8'),
+        );
+        const folderPattern = /^(\d+)\.(.+)$/;
 
-      const currentDirs = new Set(
-        fs.readdirSync('.')
-          .filter(file => {
-            try {
-              return fs.statSync(file).isDirectory();
-            } catch (err) {
-              return false;
-            }
-          })
-          .filter(dir => folderPattern.test(dir))
-      );
+        const currentDirs = new Set(
+          fs
+            .readdirSync('.')
+            .filter((file) => {
+              try {
+                return fs.statSync(file).isDirectory();
+              } catch (err) {
+                return false;
+              }
+            })
+            .filter((dir) => folderPattern.test(dir)),
+        );
 
-      const jsonDirs = new Set(existingData.map(project => project.path));
+        const jsonDirs = new Set(existingData.map((project) => project.path));
 
-      const needsUpdate =
-        currentDirs.size !== jsonDirs.size ||
-        ![...currentDirs].every(dir => jsonDirs.has(dir)) ||
-        ![...jsonDirs].every(dir => currentDirs.has(dir));
+        const needsUpdate =
+          currentDirs.size !== jsonDirs.size ||
+          ![...currentDirs].every((dir) => jsonDirs.has(dir)) ||
+          ![...jsonDirs].every((dir) => currentDirs.has(dir));
 
-      if (needsUpdate) {
-        console.log("Directory changes detected, updating...");
-        return true;
-      }
-
-      for (const project of existingData) {
-        try {
-          const { modifiedDate } = getProjectMetadata(project.path);
-          if (modifiedDate > project.modifiedDate) {
-            console.log(`Changes detected in ${project.path}, updating...`);
-            return true;
-          }
-        } catch (err) {
-          console.log(`Error checking ${project.path}, will update...`);
+        if (needsUpdate) {
+          console.log('Directory changes detected, updating...');
           return true;
         }
+
+        for (const project of existingData) {
+          try {
+            const { modifiedDate } = getProjectMetadata(project.path);
+            if (modifiedDate > project.modifiedDate || modifiedDate < project.createdDate) {
+              console.log(`Changes detected in ${project.path}, updating...`);
+              return true;
+            }
+          } catch (err) {
+            console.log(`Error checking ${project.path}, will update...`);
+            return true;
+          }
+        }
+
+        console.log('No changes detected. Using existing projects.json');
+        updateReadMeFromJson(existingData);
+        return false;
       }
 
-      console.log("No changes detected. Using existing projects.json");
-      updateReadMeFromJson(existingData);
-      return false;
+      console.log('projects.json not found, creating...');
+      return true;
+    } catch (err) {
+      console.warn(
+        'Error checking for changes, will regenerate data:',
+        err.message,
+      );
+      return true;
     }
-
-    console.log("projects.json not found, creating...");
-    return true;
-  } catch (err) {
-    console.warn("Error checking for changes, will regenerate data:", err.message);
-    return true;
   }
 }
 
 if (checkForChanges()) {
   addProjectsToReadMe();
 } else {
-  console.log("Using existing data - no changes detected");
+  console.log('Using existing data - no changes detected');
 }
 
 export default addProjectsToReadMe;
