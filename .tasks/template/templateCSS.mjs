@@ -1,4 +1,4 @@
-export function createCSSTemplate(projectName) {
+export default function createCSSTemplate(projectName) {
   return `
 * {
   margin: 0;
