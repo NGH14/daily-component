@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/NGH14/daily-component/issues"
   },
-  "homepage": "https://github.com/NGH14/daily-component#readme"
+  "homepage": "https://github.com/NGH14/daily-component#readme",
+  "devDependencies": {
+    "picocolors": "^1.1.1"
+  }
 }

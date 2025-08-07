@@ -1,6 +1,6 @@
-
 export function formatWord(word) {
   if (word === word.toUpperCase()) return word;
+
   return word
     .split('-')
     .map(part =>
