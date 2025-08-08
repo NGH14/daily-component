@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/NGH14/daily-component#readme",
   "devDependencies": {
+    "inquirer": "^12.9.0",
     "picocolors": "^1.1.1"
   }
 }
