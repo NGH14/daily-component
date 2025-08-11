@@ -4,10 +4,10 @@ import { formatWord, formatFolderName } from '../formatFolderName.js';
 
 const baseDir = path.resolve('./');
 
-fs.readdirSync(baseDir, { withFileTypes: true }).forEach(dirent => {
-  if (!dirent.isDirectory()) return console.log(`Skipping non-directory: ${dirent.name}`);
+fs.readdirSync(baseDir, { withFileTypes: true }).forEach(fileEntry => {
+  if (!fileEntry.isDirectory()) return console.log(`Skipping non-directory: ${fileEntry.name}`);
 
-  const originalName = dirent.name;
+  const originalName = fileEntry.name;
   const match = originalName.match(/^(\d{3}\.)(.*)/);
   if (!match) return;
 
