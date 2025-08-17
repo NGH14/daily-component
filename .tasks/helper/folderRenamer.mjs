@@ -16,9 +16,9 @@ fs.readdirSync(baseDir, { withFileTypes: true }).forEach(fileEntry => {
 
   const formattedNamePart = formatFolderName(namePart);
 
-  const newName = prefix + formattedNamePart;
+  const newNamePart = prefix + formattedNamePart;
 
-  if (newName !== originalName) {
+  if (newNamePart !== originalName) {
     const oldPath = path.join(baseDir, originalName);
     const newPath = path.join(baseDir, newName);
     fs.renameSync(oldPath, newPath);
