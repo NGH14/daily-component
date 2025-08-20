@@ -5,7 +5,7 @@
 			"type": "npm",
 			"script": "readme",
 			"problemMatcher": [],
-			"label": "update readme.md only",
+			"label": "update only README.md",
 			"detail": "node updateREADME.mjs"
 		},
 		{
