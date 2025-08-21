@@ -13,7 +13,7 @@ export default function createCSSTemplate(projectName) {
 }
 
 body {
-  width: 100vw;
+  width: 100dvw;
   height: 100dvh;
 
   position: relative;
