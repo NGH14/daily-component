@@ -27,11 +27,6 @@ function addProjectsToReadMe() {
       if (match) {
         const dayNumber = parseInt(match[1], 10);
         const projectName = match[2].trim();
-<<<<<<< HEAD
-        const id = dayNumber.toString().padStart(ID_PADDING_LENGTH, PADDING_CHAR);
-        const { createdDate, modifiedDate, fileExtensions } = getProjectMetadata(dir);
-        
-=======
 
         const id = dayNumber
           .toString()
@@ -40,7 +35,6 @@ function addProjectsToReadMe() {
         const { createdDate, modifiedDate, fileExtensions } =
           getProjectMetadata(dir);
 
->>>>>>> 98c055e (fix(task): remove the extra table column causing the readme messy table)
         return {
           id,
           title: projectName,
