@@ -12,8 +12,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-const prefixNumber = 3; // Formated as 001
-
+const prefixNumber = 3; // Day format FolderName start 001
 
 function findNextDayNumber() {
   const dayRegex = /^\d{3}\./;

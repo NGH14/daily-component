@@ -154,7 +154,7 @@ function updateReadMeFromJson(projects) {
 
     return `| ${parseInt(project.id)}  | ${linkedProjectName} | ${
       project.createdDate
-    } | ${project.modifiedDate} | ${project.tech} |`;
+    } | ${project.modifiedDate} |`;
   });
 
   const updatedTableContent =
