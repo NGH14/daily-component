@@ -9,7 +9,6 @@ import createJSTemplate from './template/templateJS.mjs';
 
 const prefixNumber = 3; // Day format FolderName start 001
 
-// ASCII Art Banner
 const banner = `
 ${pc.cyan('┌─────────────────────────────────────┐')}
 ${pc.cyan('│')}  ${pc.bold(
@@ -128,31 +127,25 @@ async function createNewProject() {
     const titleName = `Day #${nextDay}: ${projectName}`;
     const folderName = `${nextDay}.${projectName}`;
 
-    // Create project with loading animation
     console.log(`\n${pc.cyan('⠋')} ${pc.gray('Creating project...')}`);
 
-    // Simulate some processing time for better UX
     await new Promise((resolve) => setTimeout(resolve, 500));
 
-    // Create folder
     fs.mkdirSync(folderName);
     console.log(`${pc.green('✔')} Created folder: ${pc.cyan(folderName)}`);
 
-    // Create HTML file
     fs.writeFileSync(
       path.join(folderName, 'index.html'),
       createHTMLTemplate(titleName, includeJS, template),
     );
     console.log(`${pc.green('✔')} Created ${pc.cyan('index.html')}`);
 
-    // Create CSS file
     fs.writeFileSync(
       path.join(folderName, 'style.css'),
       createCSSTemplate(projectName, template),
     );
     console.log(`${pc.green('✔')} Created ${pc.cyan('style.css')}`);
 
-    // Create JS file if requested
     if (includeJS) {
       fs.writeFileSync(
         path.join(folderName, 'script.js'),
@@ -161,11 +154,9 @@ async function createNewProject() {
       console.log(`${pc.green('✔')} Created ${pc.cyan('script.js')}`);
     }
 
-    // Update README
     addProjectsToReadMe();
     console.log(`${pc.green('✔')} Updated ${pc.cyan('README.md')}`);
 
-    // Success message
     console.log(`
 ${pc.green('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')}
 ${pc.green('🎉 SUCCESS!')} Project ${pc.bold(
@@ -199,7 +190,6 @@ ${pc.green('━━━━━━━━━━━━━━━━━━━━━━�
   }
 }
 
-// Handle process interruption gracefully
 process.on('SIGINT', () => {
   console.log(
     `\n${pc.yellow('⚠')} ${pc.gray('Process interrupted. Goodbye!')}`,
@@ -207,5 +197,4 @@ process.on('SIGINT', () => {
   process.exit(0);
 });
 
-// Run the CLI
 createNewProject();
