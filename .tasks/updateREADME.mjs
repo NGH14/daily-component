@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 function addProjectsToReadMe() {
-  console.time('Total execution time:');
+  console.time('Total execution time');
 
   const folderPattern = /^(\d+)\.(.+)$/;
   const ID_PADDING_LENGTH = 3;
