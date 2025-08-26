@@ -7,7 +7,8 @@ import createCSSTemplate from './template/templateCSS.mjs';
 import createHTMLTemplate from './template/templateHTML.mjs';
 import createJSTemplate from './template/templateJS.mjs';
 
-const prefixNumber = 3; // Day format FolderName start 001
+const PREFIX_NUMBER = 3; // Day format FolderName start 001
+const WORKING_DIR = '.';
 
 const banner = `
 ${pc.cyan('┌─────────────────────────────────────┐')}
@@ -23,7 +24,7 @@ ${pc.cyan('└──────────────────────
 function findNextDayNumber() {
   const dayRegex = /^\d{3}\./;
   const dirs = fs
-    .readdirSync('.')
+    .readdirSync(WORKING_DIR)
     .filter((file) => fs.statSync(file).isDirectory())
     .filter((dir) => dayRegex.test(dir));
 
@@ -36,7 +37,7 @@ function findNextDayNumber() {
     .filter((num) => !isNaN(num));
 
   const nextDay = Math.max(...dayNumbers) + 1;
-  return nextDay.toString().padStart(prefixNumber, '0');
+  return nextDay.toString().padStart(PREFIX_NUMBER, '0');
 }
 
 function sanitizeProjectName(name) {
