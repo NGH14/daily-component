@@ -9,6 +9,7 @@ import createJSTemplate from './template/templateJS.mjs';
 
 const PREFIX_NUMBER = 3; // Day format FolderName start 001
 const WORKING_DIR = '.';
+const MAX_PROJECT_NAME_LENGTH = 50;
 
 const banner = `
 ${pc.cyan('┌─────────────────────────────────────┐')}
@@ -54,8 +55,8 @@ function validateProjectName(input) {
   if (!input || input.trim().length === 0) {
     return 'Project name cannot be empty!';
   }
-  if (input.trim().length > 50) {
-    return 'Project name is too long (max 50 characters)!';
+  if (input.trim().length > MAX_PROJECT_NAME_LENGTH) {
+    return `Project name is too long (max ${MAX_PROJECT_NAME_LENGTH} characters)!`;
   }
   return true;
 }
