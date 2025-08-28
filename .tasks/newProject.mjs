@@ -85,7 +85,7 @@ async function createNewProject() {
       {
         type: 'confirm',
         name: 'includeJS',
-        message: `Include JavaScript file?`,
+        message: `Using JavaScript?`,
         default: false,
         transformer: (input) => (input ? pc.green('Yes') : pc.red('No')),
       },
