@@ -194,7 +194,7 @@ ${pc.green('━━━━━━━━━━━━━━━━━━━━━━�
 
 process.on('SIGINT', () => {
   console.log(
-    `\n${pc.yellow('⚠')} ${pc.gray('Process interrupted. Tạm Biệt!')}`,
+    `\n${pc.yellow('⚠')} ${pc.gray('Process interrupted!')}`,
   );
   process.exit(0);
 });
