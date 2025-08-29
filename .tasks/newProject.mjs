@@ -181,7 +181,7 @@ ${pc.green('━━━━━━━━━━━━━━━━━━━━━━�
       );
     } else if (error.name === 'ExitPromptError') {
       console.log(
-        `\n${pc.yellow('⚠')} ${pc.gray('Operation cancelled by user.')}`,
+        `\n${pc.yellow('⚠')} ${pc.gray('Operation cancelled.')}`,
       );
     } else {
       console.error(
@@ -194,7 +194,7 @@ ${pc.green('━━━━━━━━━━━━━━━━━━━━━━�
 
 process.on('SIGINT', () => {
   console.log(
-    `\n${pc.yellow('⚠')} ${pc.gray('Process interrupted. Goodbye!')}`,
+    `\n${pc.yellow('⚠')} ${pc.gray('Process interrupted. Tạm Biệt!')}`,
   );
   process.exit(0);
 });
