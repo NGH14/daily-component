@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import inquirer from 'inquirer';
 import pc from 'picocolors';
+
 import addProjectsToReadMe from './updateREADME.mjs';
 import createCSSTemplate from './template/templateCSS.mjs';
 import createHTMLTemplate from './template/templateHTML.mjs';
