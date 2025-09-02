@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 
+import {startMarker, endMarker} from './constants.mjs';
+
 function addProjectsToReadMe() {
   console.time('Total execution time');
 
@@ -131,9 +133,6 @@ function updateReadMeFromJson(projects) {
   }
 
   let readmeContent = fs.readFileSync(readmePath, 'utf8');
-
-  const startMarker = '<!-- PROGRESS TABLE START -->';
-  const endMarker = '<!-- PROGRESS TABLE END -->';
 
   const tableRegex = new RegExp(
     `(${startMarker}\\n)([\\s\\S]*?)\\n(${endMarker})`,
