@@ -110,5 +110,5 @@ Personal repository for learning and practicing web components techniques throug
 | 94  | [SVG Background Image](./094.SVG%20Background%20Image) | 2025-06-18 | 2025-07-12 |
 | 95  | [Table Focus-Within](./095.Table%20Focus-Within) | 2025-07-15 | 2025-07-15 |
 | 96  | [Simple Tooltip In Navbar](./096.Simple%20Tooltip%20In%20Navbar) | 2025-07-15 | 2025-07-23 |
-| 97  | [Context Menu Customization](./097.Context%20Menu%20Customization) | 2025-07-25 | 2025-07-25 |
+| 97  | [Context Menu Customization](./097.Context%20Menu%20Customization) | 2025-07-25 | 2025-09-01 |
 <!-- PROGRESS TABLE END -->
