@@ -8,9 +8,11 @@ import createCSSTemplate from './template/templateCSS.mjs';
 import createHTMLTemplate from './template/templateHTML.mjs';
 import createJSTemplate from './template/templateJS.mjs';
 
-const PREFIX_NUMBER = 3; // Day format FolderName start 001
-const WORKING_DIR = '.';
-const MAX_PROJECT_NAME_LENGTH = 50;
+import {
+  PREFIX_NUMBER,
+  WORKING_DIR,
+  MAX_PROJECT_NAME_LENGTH,
+} from './constants.mjs';
 
 const banner = `
 ${pc.cyan('┌─────────────────────────────────────┐')}
@@ -181,9 +183,7 @@ ${pc.green('━━━━━━━━━━━━━━━━━━━━━━�
         )}`,
       );
     } else if (error.name === 'ExitPromptError') {
-      console.log(
-        `\n${pc.yellow('⚠')} ${pc.gray('Operation cancelled.')}`,
-      );
+      console.log(`\n${pc.yellow('⚠')} ${pc.gray('Operation cancelled.')}`);
     } else {
       console.error(
         `${pc.red('✖')} ${pc.gray('An error occurred:')} ${error.message}`,
@@ -194,9 +194,7 @@ ${pc.green('━━━━━━━━━━━━━━━━━━━━━━�
 }
 
 process.on('SIGINT', () => {
-  console.log(
-    `\n${pc.yellow('⚠')} ${pc.gray('Process interrupted!')}`,
-  );
+  console.log(`\n${pc.yellow('⚠')} ${pc.gray('Process interrupted!')}`);
   process.exit(0);
 });
 
