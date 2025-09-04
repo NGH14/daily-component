@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import inquirer from 'inquirer';
-import pc from 'picocolors';
+import pcl from 'picocolors';
 
 import addProjectsToReadMe from './updateREADME.mjs';
 import createCSSTemplate from './template/templateCSS.mjs';
@@ -15,14 +15,14 @@ import {
 } from './constants.mjs';
 
 const banner = `
-${pc.cyan('┌─────────────────────────────────────┐')}
-${pc.cyan('│')}  ${pc.bold(
-  pc.yellow('🚀 Project Generator CLI   '),
-)}        ${pc.cyan('│')}
-${pc.cyan('│')}  ${pc.gray('Create new web projects instantly')}  ${pc.cyan(
+${pcl.cyan('┌─────────────────────────────────────┐')}
+${pcl.cyan('│')}  ${pcl.bold(
+  pcl.yellow('🚀 Project Generator CLI   '),
+)}        ${pcl.cyan('│')}
+${pcl.cyan('│')}  ${pcl.gray('Create new web projects instantly')}  ${pcl.cyan(
   '│',
 )}
-${pc.cyan('└─────────────────────────────────────┘')}
+${pcl.cyan('└─────────────────────────────────────┘')}
 `;
 
 function findNextDayNumber() {
@@ -70,8 +70,8 @@ async function createNewProject() {
 
   const nextDay = findNextDayNumber();
   console.log(
-    `${pc.dim('→')} ${pc.gray(
-      `Next project number: ${pc.cyan(`#${nextDay}`)}\n`,
+    `${pcl.dim('→')} ${pcl.gray(
+      `Next project number: ${pcl.cyan(`#${nextDay}`)}\n`,
     )}`,
   );
 
@@ -82,7 +82,7 @@ async function createNewProject() {
         name: 'projectName',
         message: `What's project name?`,
         validate: validateProjectName,
-        transformer: (input) => pc.cyan(input),
+        transformer: (input) => pcl.cyan(input),
         filter: sanitizeProjectName,
       },
       {
@@ -90,7 +90,7 @@ async function createNewProject() {
         name: 'includeJS',
         message: `Using JavaScript?`,
         default: false,
-        transformer: (input) => (input ? pc.green('Yes') : pc.red('No')),
+        transformer: (input) => (input ? pcl.green('Yes') : pcl.red('No')),
       },
       {
         type: 'list',
@@ -98,15 +98,15 @@ async function createNewProject() {
         message: `Choose a template style:`,
         choices: [
           {
-            name: `${pc.green('●')} Basic HTML5 Template`,
+            name: `${pcl.green('●')} Basic HTML5 Template`,
             value: 'basic',
           },
           {
-            name: `${pc.blue('●')} Modern CSS Grid Layout`,
+            name: `${pcl.blue('●')} Modern CSS Grid Layout`,
             value: 'grid',
           },
           {
-            name: `${pc.magenta('●')} Flexbox Centered Layout`,
+            name: `${pcl.magenta('●')} Flexbox Centered Layout`,
             value: 'flex',
           },
         ],
@@ -117,14 +117,14 @@ async function createNewProject() {
         name: 'confirm',
         message: (answers) => {
           const folderName = `${nextDay}.${answers.projectName}`;
-          return `Create project "${pc.cyan(folderName)}"?`;
+          return `Create project "${pcl.cyan(folderName)}"?`;
         },
         default: true,
       },
     ]);
 
     if (!answers.confirm) {
-      console.log(`\n${pc.red('✖')} ${pc.gray('Project creation cancelled.')}`);
+      console.log(`\n${pcl.red('✖')} ${pcl.gray('Project creation cancelled.')}`);
       process.exit(0);
     }
 
@@ -132,61 +132,61 @@ async function createNewProject() {
     const titleName = `Day #${nextDay}: ${projectName}`;
     const folderName = `${nextDay}.${projectName}`;
 
-    console.log(`\n${pc.cyan('⠋')} ${pc.gray('Creating project...')}`);
+    console.log(`\n${pcl.cyan('⠋')} ${pcl.gray('Creating project...')}`);
 
     await new Promise((resolve) => setTimeout(resolve, 500));
 
     fs.mkdirSync(folderName);
-    console.log(`${pc.green('✔')} Created folder: ${pc.cyan(folderName)}`);
+    console.log(`${pcl.green('✔')} Created folder: ${pcl.cyan(folderName)}`);
 
     fs.writeFileSync(
       path.join(folderName, 'index.html'),
       createHTMLTemplate(titleName, includeJS, template),
     );
-    console.log(`${pc.green('✔')} Created ${pc.cyan('index.html')}`);
+    console.log(`${pcl.green('✔')} Created ${pcl.cyan('index.html')}`);
 
     fs.writeFileSync(
       path.join(folderName, 'style.css'),
       createCSSTemplate(projectName, template),
     );
-    console.log(`${pc.green('✔')} Created ${pc.cyan('style.css')}`);
+    console.log(`${pcl.green('✔')} Created ${pcl.cyan('style.css')}`);
 
     if (includeJS) {
       fs.writeFileSync(
         path.join(folderName, 'script.js'),
         createJSTemplate(projectName),
       );
-      console.log(`${pc.green('✔')} Created ${pc.cyan('script.js')}`);
+      console.log(`${pcl.green('✔')} Created ${pcl.cyan('script.js')}`);
     }
 
     addProjectsToReadMe();
-    console.log(`${pc.green('✔')} Updated ${pc.cyan('README.md')}`);
+    console.log(`${pcl.green('✔')} Updated ${pcl.cyan('README.md')}`);
 
     console.log(`
-${pc.green('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')}
-${pc.green('🎉 SUCCESS!')} Project ${pc.bold(
-      pc.cyan(`#${nextDay}`),
-    )} "${pc.bold(pc.yellow(projectName))}" created!
+${pcl.green('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')}
+${pcl.green('🎉 SUCCESS!')} Project ${pcl.bold(
+      pcl.cyan(`#${nextDay}`),
+    )} "${pcl.bold(pcl.yellow(projectName))}" created!
 
-${pc.dim('Next steps:')}
-  ${pc.dim('→')} ${pc.cyan(`cd ${folderName}`)}
-  ${pc.dim('→')} Open ${pc.cyan('index.html')} in your browser
-  ${pc.dim('→')} Start coding! ${pc.yellow('✨')}
+${pcl.dim('Next steps:')}
+  ${pcl.dim('→')} ${pcl.cyan(`cd ${folderName}`)}
+  ${pcl.dim('→')} Open ${pcl.cyan('index.html')} in your browser
+  ${pcl.dim('→')} Start coding! ${pcl.yellow('✨')}
 
-${pc.green('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')}
+${pcl.green('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')}
     `);
   } catch (error) {
     if (error.isTtyError) {
       console.error(
-        `${pc.red('✖')} ${pc.gray(
+        `${pcl.red('✖')} ${pcl.gray(
           "Prompt couldn't be rendered in the current environment",
         )}`,
       );
     } else if (error.name === 'ExitPromptError') {
-      console.log(`\n${pc.yellow('⚠')} ${pc.gray('Operation cancelled.')}`);
+      console.log(`\n${pcl.yellow('⚠')} ${pcl.gray('Operation cancelled.')}`);
     } else {
       console.error(
-        `${pc.red('✖')} ${pc.gray('An error occurred:')} ${error.message}`,
+        `${pcl.red('✖')} ${pcl.gray('An error occurred:')} ${error.message}`,
       );
     }
     process.exit(1);
@@ -194,7 +194,7 @@ ${pc.green('━━━━━━━━━━━━━━━━━━━━━━�
 }
 
 process.on('SIGINT', () => {
-  console.log(`\n${pc.yellow('⚠')} ${pc.gray('Process interrupted!')}`);
+  console.log(`\n${pcl.yellow('⚠')} ${pcl.gray('Process interrupted!')}`);
   process.exit(0);
 });
 
