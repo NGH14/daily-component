@@ -12,7 +12,7 @@ import {
   PREFIX_NUMBER,
   WORKING_DIR,
   MAX_PROJECT_NAME_LENGTH,
-  firstDayNumber,
+  FIRST_DAY_NUMBER ,
 } from './constants.mjs';
 
 const banner = `
@@ -34,7 +34,7 @@ function findNextDayNumber() {
     .filter((dir) => dayRegex.test(dir));
 
   if (dirs.length === 0) {
-    return firstDayNumber;
+    return FIRST_DAY_NUMBER ;
   }
 
   const dayNumbers = dirs
