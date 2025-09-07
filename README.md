@@ -111,4 +111,5 @@ Personal repository for learning and practicing web components techniques throug
 | 95  | [Table Focus-Within](./095.Table%20Focus-Within) | 2025-07-15 | 2025-07-15 |
 | 96  | [Simple Tooltip In Navbar](./096.Simple%20Tooltip%20In%20Navbar) | 2025-07-15 | 2025-07-23 |
 | 97  | [Context Menu Customization](./097.Context%20Menu%20Customization) | 2025-07-25 | 2025-09-01 |
+| 98  | [Test](./098.Test) | 2025-09-07 | 2025-09-07 |
 <!-- PROGRESS TABLE END -->

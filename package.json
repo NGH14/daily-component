@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Personal repository for learning and practicing web components techniques through daily coding exercises.",
   "scripts": {
-    "start": "node ./.tasks/newProject.mjs",
+    "start": "node ./.tasks/newDay.mjs",
     "readme": "node ./.tasks/updateREADME.mjs"
   },
   "repository": {
