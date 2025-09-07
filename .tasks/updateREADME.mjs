@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-import {startMarker, endMarker} from './constants.mjs';
+import { START_MARKER, END_MARKER, HEADER_ROWS } from './constants.mjs';
 
 function addProjectsToReadMe() {
   console.time('Total execution time');
@@ -9,7 +9,7 @@ function addProjectsToReadMe() {
   const folderPattern = /^(\d+)\.(.+)$/;
   const ID_PADDING_LENGTH = 3;
   const PADDING_CHAR = '0';
-  
+
   console.time('Reading directories');
   const dirs = fs
     .readdirSync('.')
@@ -135,7 +135,7 @@ function updateReadMeFromJson(projects) {
   let readmeContent = fs.readFileSync(readmePath, 'utf8');
 
   const tableRegex = new RegExp(
-    `(${startMarker}\\n)([\\s\\S]*?)\\n(${endMarker})`,
+    `(${START_MARKER}\\n)([\\s\\S]*?)\\n(${END_MARKER})`,
   );
   const tableMatch = readmeContent.match(tableRegex);
 
@@ -143,9 +143,6 @@ function updateReadMeFromJson(projects) {
     console.error('Could not find the progress table markers in README.md');
     return;
   }
-
-  const headerRows = `| Day | Component | Created | Last Modified |
-|-----|-----------|---------|--------------|`;
 
   const newRows = projects.map((project) => {
     const linkedProjectName = `[${project.title}](./${encodeURIComponent(
@@ -159,7 +156,7 @@ function updateReadMeFromJson(projects) {
 
   const updatedTableContent =
     tableMatch[1] +
-    headerRows +
+    HEADER_ROWS +
     '\n' +
     newRows.join('\n') +
     '\n' +
@@ -212,7 +209,10 @@ function checkForChanges(force = false) {
         for (const project of existingData) {
           try {
             const { modifiedDate } = getProjectMetadata(project.path);
-            if (modifiedDate > project.modifiedDate || modifiedDate < project.createdDate) {
+            if (
+              modifiedDate > project.modifiedDate ||
+              modifiedDate < project.createdDate
+            ) {
               console.log(`Changes detected in ${project.path}, updating...`);
               return true;
             }
