@@ -14,7 +14,7 @@ Personal repository for learning and practicing web components techniques throug
 <!-- PROGRESS TABLE START -->
 | Day | Component | Created | Last Modified |
 |-----|-----------|---------|--------------|
-| 1  | [Simple Validate Form With Vanilla JS](./001.Simple%20Validate%20Form%20With%20Vanilla%20JS) | 2025-07-15 | 2025-07-15 |
+| 1  | [Simple Validate Form With Vanilla JS](./001.Simple%20Validate%20Form%20With%20Vanilla%20JS) | 2025-07-15 | 2025-09-13 |
 | 2  | [Simple Skeleton With Vanilla JS](./002.Simple%20Skeleton%20With%20Vanilla%20JS) | 2025-07-15 | 2025-07-15 |
 | 3  | [Line Through The Odds Or Even Text On Hover](./003.Line%20Through%20The%20Odds%20Or%20Even%20Text%20On%20Hover) | 2025-07-15 | 2025-07-15 |
 | 4  | [Google Input Style](./004.Google%20Input%20Style) | 2025-07-15 | 2025-07-15 |
@@ -111,5 +111,4 @@ Personal repository for learning and practicing web components techniques throug
 | 95  | [Table Focus-Within](./095.Table%20Focus-Within) | 2025-07-15 | 2025-07-15 |
 | 96  | [Simple Tooltip In Navbar](./096.Simple%20Tooltip%20In%20Navbar) | 2025-07-15 | 2025-07-23 |
 | 97  | [Context Menu Customization](./097.Context%20Menu%20Customization) | 2025-07-25 | 2025-09-01 |
-| 98  | [Test](./098.Test) | 2025-09-07 | 2025-09-07 |
 <!-- PROGRESS TABLE END -->
