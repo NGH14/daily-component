@@ -1,5 +1,5 @@
 # Validation Form with Vanilla JS
-
+Simple form validation with regex
 
 
 ## ref 
